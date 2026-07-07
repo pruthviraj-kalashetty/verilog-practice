@@ -1,6 +1,6 @@
-// Code nor-gate
+// Code xor-gate
 
-module nor_gate(
+module xor_gate(
   
   input a,
   input b,
