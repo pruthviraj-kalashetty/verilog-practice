@@ -23,7 +23,7 @@ In Verilog, data types are divided into two primary hardware-representative cate
 
 All basic Verilog data types operate on a 4-state value system consisting of 0 (false), 1 (true), X (unknown), and Z (high impedance).
 
----
+
 
 ### 1. net (e.g., `wire`)
 * **Hardware Analogy:** A physical piece of copper wire.
@@ -58,7 +58,7 @@ All basic Verilog data types operate on a 4-state value system consisting of 0 (
 * **Properties:** Purely for simulation/testbenches. Each character is an 8-bit ASCII value.
 * **Context:** Used for printing debug messages, formatting display tasks (`$display`), and tracking test case names in testbenches.
 
----
+
 
 ## ⚡ Synthesis & Placement Cheat Sheet
 
