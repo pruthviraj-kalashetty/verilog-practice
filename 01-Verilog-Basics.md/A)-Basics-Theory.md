@@ -22,7 +22,9 @@ Quick Summary of Key ConceptsPort Directions: input (data enters module), output
 In Verilog, data types are divided into two primary hardware-representative categories: Nets (which represent physical connections) and Variables/Registers (which abstractly represent data storage elements).
 
 All basic Verilog data types operate on a 4-state value system consisting of 0 (false), 1 (true), X (unknown), and Z (high impedance).
+
 ---
+
 ### 1. net (e.g., `wire`)
 * **Hardware Analogy:** A physical piece of copper wire.
 * **Behavior:** **Does not store values.** It continuously reflects the value of whatever is actively driving it (via a gate output or an `assign` statement). 
