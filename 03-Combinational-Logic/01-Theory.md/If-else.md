@@ -10,6 +10,16 @@
  
 - If 'elif' also false it will print else statment.
 
+  ### *FOR EXAMPLE* :- pyton
+
+   age = 20
+
+       if age < 20
+            print("You are above age u are allow for marriage")
+       else:
+            print("u are under age not eligible for marriage")
+---
+
  # **while statment**
  
 - A while statement is a loop. It tells the computer to repeat a block of code over and over again as long as a specific condition remains True.
