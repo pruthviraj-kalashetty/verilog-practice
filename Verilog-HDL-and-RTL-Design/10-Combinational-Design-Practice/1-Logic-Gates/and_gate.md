@@ -1,4 +1,4 @@
-// Code and_gate
+// Code and_gate.v
 
 module and_gate (a,b,y);
   
