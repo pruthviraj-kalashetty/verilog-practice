@@ -2,13 +2,13 @@
 `timescale 1ns / 1ps
 // OR Gate Design
 
-module and_gate (
+module or_gate (
     input a,
     input b,
     output y
 );
 
-assign y = a + b;
+assign y = a | b;
 
 endmodule
 ```
