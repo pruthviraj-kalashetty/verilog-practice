@@ -1,5 +1,0 @@
-1234
-pruthviraj
-update
-akllS
-nak112233S
