@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 `timescale 1ns/1ps
 
 module and_gate_tb;
@@ -40,3 +41,6 @@ module and_gate_tb;
     end
 
 endmodule
+=======
+
+>>>>>>> 342eaf9d389424ab42b3233f390b60afef437916
