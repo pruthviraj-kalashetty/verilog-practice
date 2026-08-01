@@ -1,6 +1,6 @@
 # 01. Verilog Basics
 
-[![Stage](https://img.shields.io/badge/verilog--practice--blue.svg)](#)
+[![Stage](https://img.shields.io/badge/verilog-practice-blue.svg)](#)
 [![Focus](https://img.shields.io/badge/Focus-Verilog%20Fundamentals-green.svg)](#)
 
 This module introduces the fundamentals of Verilog Hardware Description Language (HDL), the industry-standard language used for digital hardware modeling, simulation, and RTL design. It covers the basic syntax, module structure, data types, operators, number representation, and parameterization required to build synthesizable digital circuits for FPGA and VLSI applications.
