@@ -32,7 +32,7 @@ By working through this module, you will be able to:
 | **[`Sensitivity-List.md`](./Sensitivity-List.md)** | Sensitivity lists, event controls, and their role in triggering procedural blocks. |
 | **[`Blocking-Assignment.md`](./Blocking-Assignment.md)** | Blocking assignment (`=`), sequential statement execution, and its use in procedural modeling. |
 | **[`Non-Blocking-Assignment.md`](./Non-Blocking-Assignment.md)** | Non-blocking assignment (`<=`), scheduled updates, and its use in sequential RTL design. |
-| **[`Blocking-vs-Non-Blocking.md`](./Blocking-vs-Non-Blocking.md)** | Comparison of blocking and non-blocking assignments, execution behavior, and appropriate RTL coding practices. |
+| **[`Blocking-VS-Non-Blocking.md`](./Blocking-VS-Non-Blocking.md)** | Comparison of blocking and non-blocking assignments, execution behavior, and appropriate RTL coding practices. |
 
 ---
 
