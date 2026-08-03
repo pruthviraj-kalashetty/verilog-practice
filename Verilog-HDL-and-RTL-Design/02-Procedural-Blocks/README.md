@@ -27,8 +27,8 @@ By working through this module, you will be able to:
 | File | Core Technical Focus |
 | :--- | :--- |
 | **[`Introduction-to-Procedural-Blocks.md`](./Introduction-to-Procedural-Blocks.md)** | Introduction to procedural modeling and the role of procedural blocks in Verilog HDL. |
-| **[`always-Block.md`](./always-Block.md)** | Structure, execution behavior, and applications of the `always` block in RTL design. |
-| **[`initial-Block.md`](./initial-Block.md)** | Structure and execution behavior of the `initial` block and its use in simulation and testbench environments. |
+| **[`Always-Block.md`](./Always-Block.md)** | Structure, execution behavior, and applications of the `always` block in RTL design. |
+| **[`Initial-Block.md`](./Initial-Block.md)** | Structure and execution behavior of the `initial` block and its use in simulation and testbench environments. |
 | **[`Sensitivity-List.md`](./Sensitivity-List.md)** | Sensitivity lists, event controls, and their role in triggering procedural blocks. |
 | **[`Blocking-Assignment.md`](./Blocking-Assignment.md)** | Blocking assignment (`=`), sequential statement execution, and its use in procedural modeling. |
 | **[`Non-Blocking-Assignment.md`](./Non-Blocking-Assignment.md)** | Non-blocking assignment (`<=`), scheduled updates, and its use in sequential RTL design. |
