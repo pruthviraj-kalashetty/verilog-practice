@@ -27,14 +27,14 @@ By working through this module, you will be able to:
 
 | File | Core Technical Focus |
 | :--- | :--- |
-| **[`01-Introduction-to-Combinational-Logic.md`](./01-Introduction-to-Combinational-Logic.md)** | Fundamentals of combinational logic and its implementation using Verilog HDL. |
-| **[`02-Boolean-Logic.md`](./02-Boolean-Logic.md)** | Application of Boolean expressions and logic operations in Verilog-based hardware modeling. |
-| **[`03-Continuous-Assignment-(assign).md`](./03-Continuous-Assignment-(assign).md)** | Continuous assignment using the `assign` statement for modeling combinational logic. |
-| **[`04-Gate-Level-Modeling.md`](./04-Gate-Level-Modeling.md)** | Structural representation of digital circuits using built-in Verilog gate primitives. |
-| **[`05-Dataflow-Modeling.md`](./05-Dataflow-Modeling.md)** | Dataflow modeling using Boolean expressions and continuous assignments. |
-| **[`06-Behavioral-Modeling.md`](./06-Behavioral-Modeling.md)** | Behavioral description of combinational hardware using procedural constructs. |
-| **[`07-If-Else-Statement.md`](./07-If-Else-Statement.md)** | Implementation of conditional combinational logic using `if`, `else if`, and `else` statements. |
-| **[`08-Case-Statement.md`](./08-Case-Statement.md)** | Implementation of multi-way combinational logic using Verilog `case` statements. |
+| **[`01-Introduction-to-Combinational-Logic.md`](./Introduction-to-Combinational-Logic.md)** | Fundamentals of combinational logic and its implementation using Verilog HDL. |
+| **[`02-Boolean-Logic.md`](./Boolean-Logic.md)** | Application of Boolean expressions and logic operations in Verilog-based hardware modeling. |
+| **[`03-Continuous-Assignment-(assign).md`](./Continuous-Assignment-(assign).md)** | Continuous assignment using the `assign` statement for modeling combinational logic. |
+| **[`04-Gate-Level-Modeling.md`](./Gate-Level-Modeling.md)** | Structural representation of digital circuits using built-in Verilog gate primitives. |
+| **[`05-Dataflow-Modeling.md`](./Dataflow-Modeling.md)** | Dataflow modeling using Boolean expressions and continuous assignments. |
+| **[`06-Behavioral-Modeling.md`](./Behavioral-Modeling.md)** | Behavioral description of combinational hardware using procedural constructs. |
+| **[`07-If-Else-Statement.md`](./If-Else-Statement.md)** | Implementation of conditional combinational logic using `if`, `else if`, and `else` statements. |
+| **[`08-Case-Statement.md`](./Case-Statement.md)** | Implementation of multi-way combinational logic using Verilog `case` statements. |
 
 ---
 
@@ -43,14 +43,14 @@ By working through this module, you will be able to:
 ```text
 03-Combinational-Logic/
 ├── README.md
-├── 01-Introduction-to-Combinational-Logic.md
-├── 02-Boolean-Logic.md
-├── 03-Continuous-Assignment-(assign).md
-├── 04-Gate-Level-Modeling.md
-├── 05-Dataflow-Modeling.md
-├── 06-Behavioral-Modeling.md
-├── 07-If-Else-Statement.md
-└── 08-Case-Statement.md
+├── Introduction-to-Combinational-Logic.md
+├── Boolean-Logic.md
+├── Continuous-Assignment-(assign).md
+├── Gate-Level-Modeling.md
+├── Dataflow-Modeling.md
+├── Behavioral-Modeling.md
+├── If-Else-Statement.md
+└── Case-Statement.md
 ```
 
 ---
