@@ -41,8 +41,8 @@ By working through this module, you will be able to:
 ├── README.md
 ├── 01-Clock-Concept.md
 ├── 02-Edge-Triggering.md
-├── 03-Reset-Synchronous.md
-├── 04-Reset-Asynchronous.md
+├── 03-Synchronous-Reset.md
+├── 04-Asynchronous-Reset.md
 └── 05-Memory-Basics.md
 ```
 
