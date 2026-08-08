@@ -1,6 +1,6 @@
 # 04. Sequential Logic
 
-[![Stage](https://img.shields.io/badge/Stage-A--Digital--Design-blue.svg)](#)
+[![Stage](https://img.shields.io/badge/verilog--practice-blue.svg)](#)
 [![Focus](https://img.shields.io/badge/Focus-Sequential%20Logic-orange.svg)](#)
 
 This module introduces the fundamental concepts of sequential logic, where the behavior of a digital circuit depends on both its present inputs and stored state. It covers clock concepts, edge triggering, synchronous and asynchronous resets, and the fundamentals of memory elements.
