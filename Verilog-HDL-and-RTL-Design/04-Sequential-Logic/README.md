@@ -28,8 +28,8 @@ By working through this module, you will be able to:
 | :--- | :--- |
 | **[`01-Clock-Concept.md`](./01-Clock-Concept.md)** | Clock signals, frequency, time period, duty cycle, and their role in sequential digital systems. |
 | **[`02-Edge-Triggering.md`](./02-Edge-Triggering.md)** | Positive-edge and negative-edge triggering and circuit response to clock transitions. |
-| **[`03-Reset-Synchronous.md`](./03-Reset-Synchronous.md)** | Synchronous reset operation and its relationship with the active clock edge. |
-| **[`04-Reset-Asynchronous.md`](./04-Reset-Asynchronous.md)** | Asynchronous reset operation independent of the active clock edge. |
+| **[`03-Synchronous-Reset.md`](./03-Synchronous-Reset.md)** | Synchronous reset operation and its relationship with the active clock edge. |
+| **[`04-Asynchronous-Reset.md`](./04-Asynchronous-Reset.md)** | Asynchronous reset operation independent of the active clock edge. |
 | **[`05-Memory-Basics.md`](./05-Memory-Basics.md)** | Fundamentals of memory, state storage, and the role of memory elements in digital circuits. |
 
 ---
