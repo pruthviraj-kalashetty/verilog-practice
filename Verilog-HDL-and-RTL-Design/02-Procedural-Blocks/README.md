@@ -1,6 +1,6 @@
 # 02. Procedural Blocks
 
-[![Stage](https://img.shields.io/badge/verilog-practice-blue.svg)](#)
+[![Stage](https://img.shields.io/badge/verilog--practice-blue.svg)](#)
 [![Focus](https://img.shields.io/badge/Focus-Procedural%20Blocks-green.svg)](#)
 
 This module introduces procedural blocks in Verilog HDL, which are used to describe the behavior and operation of digital hardware. It covers `always` and `initial` blocks, sensitivity lists, blocking and non-blocking assignments, and the differences between these assignment types in behavioral and RTL modeling.
