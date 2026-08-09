@@ -1,6 +1,6 @@
-# 05. Hierarchical Design
+# ◈ Hierarchical Design
 
-[![Stage](https://img.shields.io/badge/Stage-B--Verilog--Practice-blue.svg)](#)
+[![Stage](https://img.shields.io/badge/verilog--practice-blue.svg)](#)
 [![Focus](https://img.shields.io/badge/Focus-Hierarchical%20Design-orange.svg)](#)
 
 This module introduces hierarchical design in Verilog, where complex digital systems are developed by connecting smaller, reusable modules together. It covers module instantiation and the differences between structural and behavioral design approaches.
