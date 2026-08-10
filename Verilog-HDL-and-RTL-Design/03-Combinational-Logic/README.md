@@ -1,6 +1,6 @@
 # 03. Combinational Logic
 
-[![Stage](https://img.shields.io/badge/verilog-practice-blue.svg)](#)
+[![Stage](https://img.shields.io/badge/verilog--practice-blue.svg)](#)
 [![Focus](https://img.shields.io/badge/Focus-Combinational%20Logic-green.svg)](#)
 
 This module introduces the implementation of combinational logic circuits using Verilog HDL. It covers Boolean logic, continuous assignments, gate-level, dataflow, and behavioral modeling techniques, along with conditional and case statements used to describe combinational hardware.
