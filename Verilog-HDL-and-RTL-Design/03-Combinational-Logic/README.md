@@ -1,4 +1,4 @@
-# 03. Combinational Logic
+# ◈ Combinational Logic
 
 [![Stage](https://img.shields.io/badge/verilog--practice-blue.svg)](#)
 [![Focus](https://img.shields.io/badge/Focus-Combinational%20Logic-green.svg)](#)
