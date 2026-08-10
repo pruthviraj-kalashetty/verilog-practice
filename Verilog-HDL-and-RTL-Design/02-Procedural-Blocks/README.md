@@ -1,4 +1,4 @@
-# 02. Procedural Blocks
+# ◈ Procedural Blocks
 
 [![Stage](https://img.shields.io/badge/verilog--practice-blue.svg)](#)
 [![Focus](https://img.shields.io/badge/Focus-Procedural%20Blocks-green.svg)](#)
