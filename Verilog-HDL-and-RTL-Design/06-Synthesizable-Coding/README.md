@@ -1,6 +1,6 @@
-# 06. Synthesizable Coding
+# ◈ Synthesizable Coding
 
-[![Stage](https://img.shields.io/badge/Stage-B--Verilog--Practice-blue.svg)](#)
+[![Stage](https://img.shields.io/badge/verilog--practice-blue.svg)](#)
 [![Focus](https://img.shields.io/badge/Focus-Synthesizable%20RTL%20Coding-orange.svg)](#)
 
 This module introduces synthesizable Verilog coding practices used to describe hardware that can be converted from RTL into actual digital logic gates, flip-flops, and other hardware structures.
