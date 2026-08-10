@@ -1,4 +1,4 @@
-# 01. Verilog Basics
+# ◈ Verilog Basics
 
 [![Stage](https://img.shields.io/badge/verilog-practice-blue.svg)](#)
 [![Focus](https://img.shields.io/badge/Focus-Verilog%20Fundamentals-green.svg)](#)
