@@ -7,7 +7,7 @@ module and_gate_tb;
     and_gate DUT (
         .A(A),
         .B(B),
-        .Y(Y)
+        .y(y)
     );
 
     initial begin
