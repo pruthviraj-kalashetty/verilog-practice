@@ -2,7 +2,7 @@ module and_gate_tb;
 
     reg A;
     reg B;
-    wire Y;
+    wire y;
 
     and_gate DUT (
         .A(A),
