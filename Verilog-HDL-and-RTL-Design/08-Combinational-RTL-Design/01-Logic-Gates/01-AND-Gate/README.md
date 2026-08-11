@@ -3,13 +3,13 @@
 ```verilog
 
 module and_gate (
-    input a,
-    input b,
+    input A,
+    input B,
     output y
 
 );
 
-assign y = a & b;
+assign y = A & B;
 
 endmodule
 
