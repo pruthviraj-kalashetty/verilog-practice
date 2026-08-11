@@ -15,7 +15,6 @@ assign y = a & b;
 endmodule
 
 ```
----
 
 # **Truth table**
 
