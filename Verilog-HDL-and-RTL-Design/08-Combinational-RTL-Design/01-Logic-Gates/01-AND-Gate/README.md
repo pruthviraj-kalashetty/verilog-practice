@@ -85,9 +85,9 @@ endmodule
 
 | **Test Case** | **Expected Output** | **Status** |
 |:---|:---:|:---:|
-| `A=0, B=0` | `Y=0` | **PASS** |
-| `A=0, B=1` | `Y=0` | **PASS** |
-| `A=1, B=0` | `Y=0` | **PASS** |
-| `A=1, B=1` | `Y=1` | **PASS** |
+| `A=0, B=0` | `y=0` | **PASS** |
+| `A=0, B=1` | `y=0` | **PASS** |
+| `A=1, B=0` | `y=0` | **PASS** |
+| `A=1, B=1` | `y=1` | **PASS** |
 
 **Verification Result:** `4/4 TEST CASES PASSED`
