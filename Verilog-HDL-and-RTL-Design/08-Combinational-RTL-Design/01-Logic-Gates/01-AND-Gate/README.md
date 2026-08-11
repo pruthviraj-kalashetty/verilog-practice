@@ -37,8 +37,6 @@ endmodule
 
 # **Verification Summary**
 
-## `06` — VERIFICATION
-
 | **Test Case** | **Expected Output** | **Status** |
 |:---|:---:|:---:|
 | `A=0, B=0` | `Y=0` | **PASS** |
