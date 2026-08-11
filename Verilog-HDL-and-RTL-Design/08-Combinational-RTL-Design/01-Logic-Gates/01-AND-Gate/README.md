@@ -37,9 +37,13 @@ endmodule
 
 # **Verification Summary**
 
-| Test | Result |
-|---|:---:|
-| `0 & 0 = 0` | ✅ PASS |
-| `0 & 1 = 0` | ✅ PASS |
-| `1 & 0 = 0` | ✅ PASS |
-| `1 & 1 = 1` | ✅ PASS |
+## `06` — VERIFICATION
+
+| **Test Case** | **Expected Output** | **Status** |
+|:---|:---:|:---:|
+| `A=0, B=0` | `Y=0` | **PASS** |
+| `A=0, B=1` | `Y=0` | **PASS** |
+| `A=1, B=0` | `Y=0` | **PASS** |
+| `A=1, B=1` | `Y=1` | **PASS** |
+
+**Verification Result:** `4/4 TEST CASES PASSED`
