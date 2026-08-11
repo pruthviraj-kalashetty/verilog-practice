@@ -37,10 +37,5 @@ module and_gate_tb;
 
         $finish;
 
-    end
-
-    initial begin
-        $dumpfile("Time%0t | A=%b B=%b y=%b" , $time, A, B, y)
     end    
-
 endmodule
