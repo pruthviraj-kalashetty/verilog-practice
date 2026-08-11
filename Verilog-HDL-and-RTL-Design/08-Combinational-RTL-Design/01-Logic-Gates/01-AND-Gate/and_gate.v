@@ -1,11 +1,11 @@
-// 2-Input AND Gate Module
+// AND Gate
 module and_gate (
-    input  wire a, // First input signal
-    input  wire b, // Second input signal
-    output wire y  // Output signal (a AND b)
+    input a,
+    input b,
+    output y
+
 );
 
-    // Continuous assignment implementing the logical AND function
-    assign y = a & b;
+assign y = a & b;
 
 endmodule
