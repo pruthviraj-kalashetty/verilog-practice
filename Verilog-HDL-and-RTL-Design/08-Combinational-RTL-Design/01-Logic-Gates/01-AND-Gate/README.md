@@ -1,4 +1,4 @@
-# ◈ **Verilog RTL code**
+# ◈ **Verilog RTL code** 🔷
 
 ```verilog
 `timescale 1ns / 1ps
