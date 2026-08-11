@@ -26,7 +26,7 @@ endmodule
 | 1 | 0 | 0 |
 | 1 | 1 | **1** |
 
-# **Testbench**
+# 🧪 **Testbench**
 
 # 🔷 **RTL Schematics**
 
