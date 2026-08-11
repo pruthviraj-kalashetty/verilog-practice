@@ -34,3 +34,12 @@ endmodule
 
 # 📈 **Simulation Result
 ![AND Gate Waveform](waveform.png)
+
+# **Verification Summary**
+
+| Test | Result |
+|---|:---:|
+| `0 & 0 = 0` | ✅ PASS |
+| `0 & 1 = 0` | ✅ PASS |
+| `1 & 0 = 0` | ✅ PASS |
+| `1 & 1 = 1` | ✅ PASS |
