@@ -26,17 +26,11 @@ endmodule
 | 1 | 0 | 0 |
 | 1 | 1 | **1** |
 
----
-
 # **Testbench**
-
----
 
 # **RTL Schematics**
 
 ![AND Gate RTL Schematic](rtl-schematic.png)
-
----
 
 # **Simulation Result
 ![AND Gate Waveform](waveform.png)
