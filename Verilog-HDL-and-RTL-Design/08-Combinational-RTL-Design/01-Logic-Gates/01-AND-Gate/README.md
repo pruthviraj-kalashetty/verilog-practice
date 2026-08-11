@@ -1,4 +1,4 @@
-# ◈ **Verilog RTL code** 🔷
+# ◈ **Verilog RTL code** 
 
 ```verilog
 `timescale 1ns / 1ps
@@ -16,7 +16,7 @@ endmodule
 
 ```
 
-# **Truth table**
+# 📊 **Truth table**
 
 | **Inputs** |  | **Output** |
 |:---:|:---:|:---:|
@@ -28,15 +28,9 @@ endmodule
 
 # **Testbench**
 
-# **RTL Schematics**
+# 🔷 **RTL Schematics**
 
 ![AND Gate RTL Schematic](rtl-schematic.png)
 
-# **Simulation Result
+# 📈 **Simulation Result
 ![AND Gate Waveform](waveform.png)
-
-
-
-<p align="center">
-  <img src="rtl-schematic.png" alt="AND Gate RTL Schematic" width="650">
-</p>
