@@ -1,7 +1,6 @@
 # ◈ **Verilog RTL code** 
 
 ```verilog
-`timescale 1ns / 1ps
 
 module and_gate (
     input a,
@@ -29,6 +28,7 @@ endmodule
 # 🧪 **Testbench**
 
 ```verilog
+
 module and_gate_tb;
 
     reg A;
