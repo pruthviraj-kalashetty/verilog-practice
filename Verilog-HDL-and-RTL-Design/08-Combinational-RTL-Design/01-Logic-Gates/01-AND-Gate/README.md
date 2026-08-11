@@ -32,7 +32,7 @@ endmodule
 
 ![AND Gate RTL Schematic](rtl-schematic.png)
 
-# 📈 **Simulation Result
+# 📈 **Simulation Result**
 ![AND Gate Waveform](waveform.png)
 
 # **Verification Summary**
