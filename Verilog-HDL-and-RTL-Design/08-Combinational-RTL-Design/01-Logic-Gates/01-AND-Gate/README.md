@@ -1,4 +1,7 @@
-`timescale 1ns / 1ps
+```verilog
+`timesacle 1ns / 1ps
+
+```
 
 # Schematics
 
