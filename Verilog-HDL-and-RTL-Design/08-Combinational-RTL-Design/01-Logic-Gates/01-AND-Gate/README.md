@@ -34,3 +34,9 @@ endmodule
 
 # **Simulation Result
 ![AND Gate Waveform](waveform.png)
+
+
+
+<p align="center">
+  <img src="rtl-schematic.png" alt="AND Gate RTL Schematic" width="650">
+</p>
