@@ -1,4 +1,4 @@
-\\ OR Gate
+// OR Gate
 module or_gate(
     input A;
     input B;
