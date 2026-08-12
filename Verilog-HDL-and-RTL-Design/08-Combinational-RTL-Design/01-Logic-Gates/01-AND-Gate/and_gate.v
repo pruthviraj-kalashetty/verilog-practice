@@ -1,10 +1,10 @@
-// OR Gate
-module or_gate(
+module and_gate (
     input A,
     input B,
     output y
+
 );
 
-assign y = A | B;
+assign y = A & B;
 
 endmodule
