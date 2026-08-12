@@ -2,16 +2,15 @@
 
 ```verilog
 
-module and_gate (
+module and_gate(
     input A,
     input B,
-    output y
-
+    output Y
 );
 
-assign y = A & B;
-
-endmodule
+    assign Y = A & B;
+    
+endmodule 
 
 ```
 
