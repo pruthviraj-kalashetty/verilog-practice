@@ -1,8 +1,8 @@
 module nor_gate_tb;
      
-     reg A,
-     reg B,
-     wire Y,
+     reg A;
+     reg B;
+     wire Y;
 
      nor_gate DUT(
         .A(A),
