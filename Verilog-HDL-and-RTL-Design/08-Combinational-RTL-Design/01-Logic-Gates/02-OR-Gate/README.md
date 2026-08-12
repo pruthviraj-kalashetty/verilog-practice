@@ -2,16 +2,17 @@
 
 ```verilog
 
-module and_gate (
+module and_gate(
+
     input A,
     input B,
-    output y
+    output Y
 
 );
 
-assign y = A & B;
-
-endmodule
+    assign Y = A & B;
+    
+endmodule 
 
 ```
 
@@ -33,44 +34,44 @@ module and_gate_tb;
 
     reg A;
     reg B;
-    wire y;
+    wire Y;
 
-    and_gate DUT (
+    and_gate DUT(
         .A(A),
         .B(B),
-        .y(y)
+        .Y(Y)
     );
 
     initial begin
 
-        $dumpfile("and_gate.vcd");
-        $dumpvars(0, and_gate_tb);
+       $dumpfile("and_gate.vcd");
+       $dumpvars(0, and_gate_tb);
 
-        A = 0;
-        B = 0;
+       A = 0;
+       B = 0;
 
-        #10;
+       #10;
 
-        A = 0;
-        B = 1;
+       A = 0;
+       B = 1;
 
-        #10;
+       #10;
 
-        A = 1;
-        B = 0;
+       A = 1;
+       B = 0;
 
-        #10;
+       #10;
 
-        A = 1;
-        B = 1;
+       A = 1;
+       B = 1;
 
-        #10;
+       #10
 
-        $finish;
-
+       $finish;
+       
     end
-
-endmodule
+    
+endmodule       
 
 ```
 
@@ -91,4 +92,3 @@ endmodule
 | `A=1, B=1` | `y=1` | **PASS** |
 
 **Verification Result:** `4/4 TEST CASES PASSED`
-
