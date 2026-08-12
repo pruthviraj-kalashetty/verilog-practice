@@ -1,8 +1,9 @@
 module and_gate(
-    input a,
-    input b,
-    output y
-):
+    input A,
+    input B,
+    output Y
+);
 
-    assign y= a & b;
+    assign Y = A & B;
+    
 endmodule 

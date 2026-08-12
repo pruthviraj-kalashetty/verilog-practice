@@ -1,14 +1,13 @@
 module and_gate_tb;
 
-    reg a;
-    reg b;
+    reg A;
+    reg B;
+    wire Y;
 
-    wire y;
-
-    and_gate dut(
-        .a(A),
-        .b(B),
-        .y(Y)
+    and_gate DUT(
+        .A(A),
+        .B(B),
+        .Y(Y)
     );
 
     initial begin
@@ -16,26 +15,28 @@ module and_gate_tb;
        $dumpfile("and_gate.vcd");
        $dumpvars(0, and_gate_tb);
 
-       a = 0;
-       b = 0;
+       A = 0;
+       B = 0;
 
        #10;
 
-       a = 0;
-       b = 1;
+       A = 0;
+       B = 1;
 
        #10;
 
-       a = 1;
-       b = 0;
+       A = 1;
+       B = 0;
 
        #10;
 
-       a = 1;
-       b = 1;
+       A = 1;
+       B = 1;
 
        #10
 
        $finish;
+       
     end
+    
 endmodule       
