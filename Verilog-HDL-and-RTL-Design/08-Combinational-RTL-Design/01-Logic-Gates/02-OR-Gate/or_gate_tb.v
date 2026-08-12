@@ -1,48 +1,42 @@
-// or_gate_tb.v
-`timescale 1ns / 1ps
+module or_gate_tb
 
-module or_gate_tb;
-
-    // 1. Declare inputs as registers and outputs as wires
-    reg a;
-    reg b;
+    reg A;
+    reg B;
     wire y;
 
-    // 2. Instantiate the Unit Under Test (UUT)
-    or_gate uut (
-        .a(a),
-        .b(b),
-        .y(y)
-    );
+    or_gate DUT( 
+       .A(A),
+       .B(B),
+       .y(y) 
+);
 
-    // 3. Generate stimulus to test all input combinations
-    initial begin
-        // Optional: Setup file dumping for waveform analysis (e.g., GTKWave)
-        $dumpfile("or_gate_dump.vcd");
-        $dumpvars(0, or_gate_tb);
-        
-        // Monitor outputs in the simulation console
-        $monitor("Time = %0t | Input a = %b, b = %b | Output y = %b", $time, a, b, y);
+initial begin
+     
+     $dumpfile("and_gate.vcd");
+     $dumpvars(0, and_gate_tb);
 
-        // Test Case 1: 0 OR 0 = 0
-        a = 0; b = 0;
-        #10; // Wait 10 time units
+     A = 0;
+     B = 0;
 
-        // Test Case 2: 0 OR 1 = 1
-        a = 0; b = 1;
-        #10;
+     #10;
 
-        // Test Case 3: 1 OR 0 = 1
-        a = 1; b = 0;
-        #10;
+     A = 0;
+     B = 1;
 
-        // Test Case 4: 1 OR 1 = 1
-        a = 1; b = 1;
-        #10;
+     #10;
 
-        // End simulation
-        $finish;
+     A = 1;
+     B = 0;
+
+     #10;
+
+     A = 1;
+     B = 1;
+
+     #10
+
+     $finish;
+
     end
 
-endmodule
-
+endmodule     
