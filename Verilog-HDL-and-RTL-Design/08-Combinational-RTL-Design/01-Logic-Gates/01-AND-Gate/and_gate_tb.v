@@ -1,10 +1,10 @@
-module and_gate_tb;
+module or_gate_tb;
 
     reg A;
     reg B;
     wire y;
 
-    and_gate DUT (
+    or_gate DUT (
         .A(A),
         .B(B),
         .y(y)
@@ -12,8 +12,8 @@ module and_gate_tb;
 
     initial begin
 
-        $dumpfile("and_gate.vcd");
-        $dumpvars(0, and_gate_tb);
+        $dumpfile("or_gate.vcd");
+        $dumpvars(0, or_gate_tb);
 
         A = 0;
         B = 0;
@@ -37,5 +37,6 @@ module and_gate_tb;
 
         $finish;
 
-    end    
+    end
+
 endmodule
