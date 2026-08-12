@@ -6,7 +6,7 @@ module nand_gate_tb;
 
      nand_gate DUT(
         .A(A),
-        .A(B),
+        .B(B),
         .Y(Y)
      );
 
