@@ -1,4 +1,4 @@
-module or_gate_tb
+module or_gate_tb;
 
     reg A;
     reg B;
@@ -8,12 +8,12 @@ module or_gate_tb
        .A(A),
        .B(B),
        .y(y) 
-);
+    );
 
-initial begin
+    initial begin
      
-     $dumpfile("and_gate.vcd");
-     $dumpvars(0, and_gate_tb);
+     $dumpfile("or_gate.vcd");
+     $dumpvars(0, or_gate_tb);
 
      A = 0;
      B = 0;
@@ -33,7 +33,7 @@ initial begin
      A = 1;
      B = 1;
 
-     #10
+     #10;
 
      $finish;
 
