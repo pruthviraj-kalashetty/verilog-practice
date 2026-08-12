@@ -29,57 +29,54 @@ endmodule
 
 ```verilog
 
-module and_gate_tb;
+module or_gate_tb;
 
-    reg A;
-    reg B;
-    wire Y;
+     reg A;
+     reg B;
+     wire Y;
 
-    and_gate DUT(
+     or_gate DUT(
         .A(A),
         .B(B),
         .Y(Y)
     );
 
     initial begin
+        $dumpfile("or_gate.vcd");
+        $dumpvars(0, or_gate_tb);
 
-       $dumpfile("and_gate.vcd");
-       $dumpvars(0, and_gate_tb);
+        A = 0;
+        B = 0;
 
-       A = 0;
-       B = 0;
+        #10;
 
-       #10;
+        A = 0;
+        B = 1;
 
-       A = 0;
-       B = 1;
+        #10;
 
-       #10;
+        A = 1;
+        B = 0;
 
-       A = 1;
-       B = 0;
+        #10;
 
-       #10;
+        A = 1;
+        B = 1;
 
-       A = 1;
-       B = 1;
+        #10;
 
-       #10
-
-       $finish;
-       
-    end
-    
-endmodule       
+        $finish;
+    end 
+endmodule             
 
 ```
 
 # 🔷 **RTL Schematics**
 
-![AND Gate RTL Schematic](rtl-schematic.png)
+![OR Gate RTL Schematic](rtl-schematic.png)
 
 # 📈 **Simulation Result**
-![AND Gate Waveform](waveform.png)
+![OR Gate Waveform](waveform.png)
 
 # ◈ **Verification Summary**
 
