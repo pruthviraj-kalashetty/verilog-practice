@@ -2,7 +2,7 @@
 
 ```verilog
 
-module and_gate(
+module or_gate(
 
     input A,
     input B,
@@ -10,10 +10,9 @@ module and_gate(
 
 );
 
-    assign Y = A & B;
-    
-endmodule 
+assign Y = A | B;
 
+endmodule
 ```
 
 # 📊 **Truth table**
@@ -22,8 +21,8 @@ endmodule
 |:---:|:---:|:---:|
 | **A** | **B** | **Y** |
 | 0 | 0 | 0 |
-| 0 | 1 | 0 |
-| 1 | 0 | 0 |
+| 0 | 1 | 1 |
+| 1 | 0 | 1 |
 | 1 | 1 | **1** |
 
 # 🧪 **Testbench**
@@ -87,8 +86,8 @@ endmodule
 | **Test Case** | **Expected Output** | **Status** |
 |:---|:---:|:---:|
 | `A=0, B=0` | `y=0` | **PASS** |
-| `A=0, B=1` | `y=0` | **PASS** |
-| `A=1, B=0` | `y=0` | **PASS** |
+| `A=0, B=1` | `y=1` | **PASS** |
+| `A=1, B=0` | `y=1` | **PASS** |
 | `A=1, B=1` | `y=1` | **PASS** |
 
 **Verification Result:** `4/4 TEST CASES PASSED`
