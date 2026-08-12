@@ -2,17 +2,17 @@
 
 ```verilog
 
-module and_gate (
+module or_gate(
+
     input A,
     input B,
-    output y
+    output Y
 
 );
 
-assign y = A & B;
+assign Y = A | B;
 
 endmodule
-
 ```
 
 # 📊 **Truth table**
@@ -21,30 +21,29 @@ endmodule
 |:---:|:---:|:---:|
 | **A** | **B** | **Y** |
 | 0 | 0 | 0 |
-| 0 | 1 | 0 |
-| 1 | 0 | 0 |
+| 0 | 1 | 1 |
+| 1 | 0 | 1 |
 | 1 | 1 | **1** |
 
 # 🧪 **Testbench**
 
 ```verilog
 
-module and_gate_tb;
+module or_gate_tb;
 
-    reg A;
-    reg B;
-    wire y;
+     reg A;
+     reg B;
+     wire Y;
 
-    and_gate DUT (
+     or_gate DUT(
         .A(A),
         .B(B),
-        .y(y)
+        .Y(Y)
     );
 
     initial begin
-
-        $dumpfile("and_gate.vcd");
-        $dumpvars(0, and_gate_tb);
+        $dumpfile("or_gate.vcd");
+        $dumpvars(0, or_gate_tb);
 
         A = 0;
         B = 0;
@@ -67,28 +66,25 @@ module and_gate_tb;
         #10;
 
         $finish;
-
-    end
-
-endmodule
+    end 
+endmodule             
 
 ```
 
 # 🔷 **RTL Schematics**
 
-![AND Gate RTL Schematic](rtl-schematic.png)
+![OR Gate RTL Schematic](rtl-schematic.png)
 
 # 📈 **Simulation Result**
-![AND Gate Waveform](waveform.png)
+![OR Gate Waveform](waveform.png)
 
 # ◈ **Verification Summary**
 
 | **Test Case** | **Expected Output** | **Status** |
 |:---|:---:|:---:|
 | `A=0, B=0` | `y=0` | **PASS** |
-| `A=0, B=1` | `y=0` | **PASS** |
-| `A=1, B=0` | `y=0` | **PASS** |
+| `A=0, B=1` | `y=1` | **PASS** |
+| `A=1, B=0` | `y=1` | **PASS** |
 | `A=1, B=1` | `y=1` | **PASS** |
 
 **Verification Result:** `4/4 TEST CASES PASSED`
-
