@@ -1,12 +1,10 @@
-// or_gate.v
-module or_gate (
-    input wire a,
-    input wire b,
-    output wire y
+\\ OR Gate
+module or_gate(
+    input A;
+    input B;
+    output y
 );
 
-    // Continuous assignment implementing OR logic
-    assign y = a | b;
+assign y = A | B;
 
 endmodule
-
