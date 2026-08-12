@@ -70,4 +70,4 @@ endmodule
 | `A=1,` | `y=0` | **PASS** |
 | `A=0,` | `y=1` | **PASS** |
 
-**Verification Result:** `4/4 TEST CASES PASSED`
+**Verification Result:** `2/2 TEST CASES PASSED`
