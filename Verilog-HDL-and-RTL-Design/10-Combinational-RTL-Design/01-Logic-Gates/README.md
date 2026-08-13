@@ -1,11 +1,11 @@
-# CMOS Introduction
+# 01. Logic Gates
 
-[![Stage](https://img.shields.io/badge/Stage-A--Digital--Design-blue.svg)](#)
-[![Focus](https://img.shields.io/badge/Focus-CMOS%20Fundamentals-orange.svg)](#)
+[![Stage](https://img.shields.io/badge/Verilog--Practice-blue.svg)](#)
+[![Focus](https://img.shields.io/badge/Focus-Verilog%20Logic%20Gates-orange.svg)](#)
 
-This module introduces the fundamental concepts of Complementary Metal-Oxide-Semiconductor (CMOS) technology, which forms the foundation of modern digital integrated circuits. It covers CMOS fundamentals, complementary NMOS and PMOS operation, the CMOS inverter, CMOS logic operation, and pull-up and pull-down networks.
+This module contains Verilog HDL implementations of fundamental digital logic gates. Each gate is designed using synthesizable RTL and verified using a dedicated Verilog testbench.
 
-These concepts provide the foundation for understanding CMOS logic gates, transistor-level digital circuit design, and VLSI/ASIC implementation.
+The simulations are analyzed using RTL schematics and waveform results, providing practical experience with the complete RTL design flow from **Verilog coding → testbench → simulation → waveform → RTL schematic**.
 
 ---
 
@@ -13,76 +13,170 @@ These concepts provide the foundation for understanding CMOS logic gates, transi
 
 By working through this module, you will be able to:
 
-- Understand the fundamentals of CMOS technology.
-- Explain the complementary operation of NMOS and PMOS transistors.
-- Understand the structure and operation of a CMOS inverter.
-- Analyze how CMOS circuits implement digital logic operations.
-- Understand the role of pull-up and pull-down networks in CMOS logic.
-- Build a strong foundation for transistor-level VLSI design.
+- Understand the Verilog implementation of fundamental logic gates.
+- Write simple synthesizable Verilog modules.
+- Create dedicated testbenches for RTL designs.
+- Simulate Verilog designs and verify their logical behavior.
+- Analyze simulation waveforms and RTL schematics.
+- Understand the relationship between Boolean logic and Verilog operators.
+- Build practical experience with the basic RTL design and verification flow.
 
 ---
 
 ## 📂 Module Contents
 
-| File | Core Technical Focus |
+| Module | Core Technical Focus |
 | :--- | :--- |
-| **[`01-What-is-CMOS.md`](./01-What-is-CMOS.md)** | Introduction to CMOS technology, its basic structure, characteristics, and importance in digital IC design. |
-| **[`02-Complementary-NMOS-PMOS.md`](./02-Complementary-NMOS-PMOS.md)** | Complementary operation of NMOS and PMOS transistors and their role in CMOS logic. |
-| **[`03-CMOS-Inverter.md`](./03-CMOS-Inverter.md)** | CMOS inverter structure, transistor operation, logic levels, and voltage transfer behavior. |
-| **[`04-CMOS-Logic-Operation.md`](./04-CMOS-Logic-Operation.md)** | Fundamental principles of CMOS logic operation and transistor-level implementation of digital functions. |
-| **[`05-Pull-Up-and-Pull-Down-Networks.md`](./05-Pull-Up-and-Pull-Down-Networks.md)** | Operation and complementary relationship of PMOS pull-up and NMOS pull-down networks. |
+| **[`01-AND-Gate`](./01-AND-Gate/)** | Verilog implementation and verification of an AND gate with RTL schematic and simulation waveform. |
+| **[`02-OR-Gate`](./02-OR-Gate/)** | Verilog implementation and verification of an OR gate with RTL schematic and simulation waveform. |
+| **[`03-NOT-Gate`](./03-NOT-Gate/)** | Verilog implementation and verification of a NOT gate with RTL schematic and simulation waveform. |
+| **[`04-NAND-Gate`](./04-NAND-Gate/)** | Verilog implementation and verification of a NAND gate with RTL schematic and simulation waveform. |
+| **[`05-NOR-Gate`](./05-NOR-Gate/)** | Verilog implementation and verification of a NOR gate with RTL schematic and simulation waveform. |
+| **[`06-XOR-Gate`](./06-XOR-Gate/)** | Verilog implementation and verification of an XOR gate with RTL schematic and simulation waveform. |
+| **[`07-XNOR-Gate`](./07-XNOR-Gate/)** | Verilog implementation and verification of an XNOR gate with RTL schematic and simulation waveform. |
 
 ---
 
 ## 🌲 Directory Structure
 
 ```text
-01-CMOS-Introductions/
+01-Logic-Gates/
 ├── README.md
-├── 01-What-is-CMOS.md
-├── 02-Complementary-NMOS-PMOS.md
-├── 03-CMOS-Inverter.md
-├── 04-CMOS-Logic-Operation.md
-└── 05-Pull-Up-and-Pull-Down-Networks.md
+│
+├── 01-AND-Gate/
+│   ├── and_gate.v
+│   ├── and_gate_tb.v
+│   ├── rtl-schematic.png
+│   └── waveform.png
+│
+├── 02-OR-Gate/
+│   ├── or_gate.v
+│   ├── or_gate_tb.v
+│   ├── rtl-schematic.png
+│   └── waveform.png
+│
+├── 03-NOT-Gate/
+│   ├── README.md
+│   ├── not_gate.v
+│   ├── not_gate_tb.v
+│   ├── rtl-schematic.png
+│   └── waveform.png
+│
+├── 04-NAND-Gate/
+│   ├── README.md
+│   ├── nand_gate.v
+│   ├── nand_gate_tb.v
+│   ├── rtl-schematic.png
+│   └── waveform.png
+│
+├── 05-NOR-Gate/
+│   ├── README.md
+│   ├── nor_gate.v
+│   ├── nor_gate_tb.v
+│   ├── rtl-schematic.png
+│   └── waveform.png
+│
+├── 06-XOR-Gate/
+│   ├── README.md
+│   ├── xor_gate.v
+│   ├── xor_gate_tb.v
+│   ├── rtl-schematic.png
+│   └── waveform.png
+│
+└── 07-XNOR-Gate/
+    ├── README.md
+    ├── xnor_gate.v
+    ├── xnor_gate_tb.v
+    ├── rtl-schematic.png
+    └── waveform.png
 ```
 
 ---
 
 ## 🛠️ Core Concepts Covered
 
-### 1. CMOS Fundamentals
+### 1. Fundamental Logic Gates
 
-Understand Complementary Metal-Oxide-Semiconductor (CMOS) technology and why it is widely used for implementing modern digital integrated circuits.
+Implement and verify the basic Boolean logic gates used as building blocks for digital circuits:
 
-### 2. Complementary NMOS and PMOS
+- AND
+- OR
+- NOT
+- NAND
+- NOR
+- XOR
+- XNOR
 
-Understand how NMOS and PMOS transistors operate as complementary devices to establish reliable logic HIGH and LOW output states.
+### 2. Verilog RTL Implementation
 
-### 3. CMOS Inverter
+Learn how Boolean expressions are translated into synthesizable Verilog HDL.
 
-Study the CMOS inverter as the fundamental building block of CMOS logic, consisting of a PMOS pull-up transistor and an NMOS pull-down transistor.
+Key concepts include:
 
-### 4. CMOS Logic Operation
+- Module declaration
+- Input and output ports
+- Logic operators
+- Continuous assignment
+- Synthesizable RTL
+- Hardware representation
 
-Understand how combinations of NMOS and PMOS transistors are arranged to implement Boolean logic functions while maintaining complementary operation.
+### 3. Testbench Development
 
-### 5. Pull-Up and Pull-Down Networks
+Each logic gate is accompanied by a testbench used to apply input combinations and verify the expected output.
 
-Understand the two complementary networks used in CMOS logic:
+The testbenches provide practical experience with:
 
-- **PMOS Pull-Up Network (PUN)** – Connects the output to `VDD` to produce a logic HIGH.
-- **NMOS Pull-Down Network (PDN)** – Connects the output to `GND` to produce a logic LOW.
+- Test stimulus
+- Input combinations
+- Output observation
+- Simulation execution
+- Functional verification
 
-### 6. Foundation for CMOS VLSI Design
+### 4. Simulation and Waveform Analysis
 
-These concepts provide the foundation for studying CMOS logic gates, CMOS characteristics, transistor-level circuit design, standard-cell logic, and VLSI/ASIC implementation.
+Verify the behavior of each design by observing simulation results.
+
+The waveform helps confirm that:
+
+**Input combinations → Expected Boolean output**
+
+This develops the fundamental skill of comparing RTL behavior against the expected truth table.
+
+### 5. RTL Schematic Analysis
+
+Analyze the generated RTL schematic to understand how the Verilog description is interpreted as hardware logic.
+
+This creates a direct connection between:
+
+**Verilog Code → RTL Structure → Hardware Logic**
+
+### 6. Complete RTL Design Flow
+
+This module provides hands-on practice with a basic RTL development workflow:
+
+**RTL Coding → Testbench → Simulation → Waveform Verification → RTL Schematic**
+
+### 7. Foundation for RTL Design
+
+These concepts provide the foundation for designing more complex digital systems such as:
+
+- Adders
+- Subtractors
+- Multiplexers
+- Decoders
+- Encoders
+- Comparators
+- ALUs
+- Registers
+- Counters
+- Finite State Machines
 
 ---
 
 ## 📚 Reference Literature
 
-- Neso Academy – Digital Electronics
-- All About Electronics – CMOS and VLSI Fundamentals
+- Neso Academy – Verilog HDL
+- All About Electronics – Digital Electronics and Verilog HDL Tutorials
 
 ---
 
