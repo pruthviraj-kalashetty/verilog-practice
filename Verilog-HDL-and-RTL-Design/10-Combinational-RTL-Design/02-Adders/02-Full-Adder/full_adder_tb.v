@@ -55,21 +55,15 @@ module full_adder_tb;
          
         #10;
 
-        A = 0;
+        A = 1;
         B = 1;
-        Cin = 1;
+        Cin = 0;
          
         #10;
 
         A = 1;
         B = 1;
         Cin = 1;
-         
-        #10;
-
-        A = 1;
-        B = 1;
-        Cin = 1 ;
          
         #10;
 
