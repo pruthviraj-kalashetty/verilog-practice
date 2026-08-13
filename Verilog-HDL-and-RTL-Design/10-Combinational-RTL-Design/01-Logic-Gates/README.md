@@ -1,6 +1,6 @@
 # 01. Logic Gates
 
-[![Stage](https://img.shields.io/badge/Verilog--Practice-blue.svg)](#)
+[![Stage](https://img.shields.io/badge/Combinational--RTL--Design-blue.svg)](#)
 [![Focus](https://img.shields.io/badge/Focus-Verilog%20Logic%20Gates-orange.svg)](#)
 
 This module contains Verilog HDL implementations of fundamental digital logic gates. Each gate is designed using synthesizable RTL and verified using a dedicated Verilog testbench.
