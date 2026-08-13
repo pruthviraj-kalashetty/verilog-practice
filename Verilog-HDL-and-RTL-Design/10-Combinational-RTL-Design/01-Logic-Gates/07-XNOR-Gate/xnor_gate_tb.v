@@ -1,4 +1,5 @@
 module xnor_gate_tb;
+
     reg A;
     reg B;
     wire Y;
@@ -6,7 +7,7 @@ module xnor_gate_tb;
     xnor_gate DUT(
         .A(A),
         .B(B),
-        ,Y(Y)
+        .Y(Y)
 
     );
 
@@ -33,7 +34,9 @@ module xnor_gate_tb;
         B = 1;
 
         #10;
-
+        
+        $finish;
+        
     end    
 
 endmodule
