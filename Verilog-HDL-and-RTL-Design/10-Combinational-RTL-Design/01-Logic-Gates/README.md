@@ -193,6 +193,7 @@ These concepts provide the foundation for designing more complex digital systems
 | 06 | [XOR Gate](./01-Logic-Gates/06-XOR-Gate/) | `Y = A ^ B` | ✓ RTL + TB + Simulation |
 | 07 | [XNOR Gate](./01-Logic-Gates/07-XNOR-Gate/) | `Y = ~(A ^ B)` | ✓ RTL + TB + Simulation |
 
+
 ## 👤 Author
 
 **Pruthviraj Kalashetty**
