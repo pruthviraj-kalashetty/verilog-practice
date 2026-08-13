@@ -48,7 +48,7 @@ module half_adder_tb.v;
     );
 
     initial begin
-        $dumpfile("half_adder.vcd")
+        $dumpfile("half_adder.vcd");
         $dumpvars(0, half_adder_tb);
 
         A = 0;
