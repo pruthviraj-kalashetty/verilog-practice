@@ -181,19 +181,6 @@ These concepts provide the foundation for designing more complex digital systems
 
 ---
 
-
-
-| # | Design | Boolean Operation | Verification |
-|:--:|:---|:---:|:---:|
-| 01 | [AND Gate](./01-Logic-Gates/01-AND-Gate/) | `Y = A & B` | ✓ RTL + TB + Simulation |
-| 02 | [OR Gate](./01-Logic-Gates/02-OR-Gate/) | `Y = A \| B` | ✓ RTL + TB + Simulation |
-| 03 | [NOT Gate](./01-Logic-Gates/03-NOT-Gate/) | `Y = ~A` | ✓ RTL + TB + Simulation |
-| 04 | [NAND Gate](./01-Logic-Gates/04-NAND-Gate/) | `Y = ~(A & B)` | ✓ RTL + TB + Simulation |
-| 05 | [NOR Gate](./01-Logic-Gates/05-NOR-Gate/) | `Y = ~(A \| B)` | ✓ RTL + TB + Simulation |
-| 06 | [XOR Gate](./01-Logic-Gates/06-XOR-Gate/) | `Y = A ^ B` | ✓ RTL + TB + Simulation |
-| 07 | [XNOR Gate](./01-Logic-Gates/07-XNOR-Gate/) | `Y = ~(A ^ B)` | ✓ RTL + TB + Simulation |
-
-
 ## 👤 Author
 
 **Pruthviraj Kalashetty**
