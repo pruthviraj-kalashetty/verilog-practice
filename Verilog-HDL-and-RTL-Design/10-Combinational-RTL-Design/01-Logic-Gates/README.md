@@ -94,16 +94,19 @@ By working through this module, you will be able to:
 
 ---
 
+## 🧰 Tools & Technologies
+
 | Category | Tool / Technology |
 |:---|:---|
-| HDL | Verilog |
-| RTL Style | Synthesizable RTL |
-| Editor | Visual Studio Code |
-| Simulation | Vivado Simulator |
-| RTL Analysis | Vivado |
-| Waveform Analysis | Vivado Waveform Viewer |
-| Version Control | Git |
-| Repository | GitHub |
+| **HDL** | Verilog HDL |
+| **RTL Design** | Synthesizable RTL |
+| **Code Editor** | Visual Studio Code |
+| **Simulation** | AMD Vivado Simulator |
+| **Synthesis & RTL Analysis** | AMD Vivado |
+| **Waveform Analysis** | Vivado Waveform Viewer |
+| **RTL Schematic** | Vivado RTL Schematic |
+| **Version Control** | Git |
+| **Repository & Collaboration** | GitHub |
 
 ---
 
