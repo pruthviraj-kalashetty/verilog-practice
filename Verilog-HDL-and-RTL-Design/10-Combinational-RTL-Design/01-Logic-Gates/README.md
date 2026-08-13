@@ -41,16 +41,17 @@ By working through this module, you will be able to:
 ## 🌲 Directory Structure
 
 ```text
-01-Logic-Gates/
-├── README.md
+01-Logic-Gates
 │
 ├── 01-AND-Gate/
+│   ├── README.md
 │   ├── and_gate.v
 │   ├── and_gate_tb.v
 │   ├── rtl-schematic.png
 │   └── waveform.png
 │
 ├── 02-OR-Gate/
+│   ├── README.md
 │   ├── or_gate.v
 │   ├── or_gate_tb.v
 │   ├── rtl-schematic.png
