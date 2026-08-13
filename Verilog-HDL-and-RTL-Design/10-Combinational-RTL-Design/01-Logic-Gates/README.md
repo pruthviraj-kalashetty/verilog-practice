@@ -2,6 +2,8 @@
 
 [![Stage](https://img.shields.io/badge/Combinational--RTL--Design-blue.svg)](#)
 [![Focus](https://img.shields.io/badge/Focus-Verilog%20Logic%20Gates-orange.svg)](#)
+[![Simulation](https://img.shields.io/badge/Simulation-Vivado%20Simulator-red.svg)](#)
+[![Status](https://img.shields.io/badge/Status-In%20Progress-success.svg)](#)
 
 This module contains Verilog HDL implementations of fundamental digital logic gates. Each gate is designed using synthesizable RTL and verified using a dedicated Verilog testbench.
 
