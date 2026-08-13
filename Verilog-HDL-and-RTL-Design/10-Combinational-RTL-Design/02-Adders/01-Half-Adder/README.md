@@ -97,3 +97,41 @@ endmodule
 
 **Verification Result:** `4/4 TEST CASES PASSED`
 
+
+<table>
+  <tr>
+    <th colspan="2">Inputs</th>
+    <th colspan="2">Output</th>
+  </tr>
+  <tr>
+    <th>A</th>
+    <th>B</th>
+    <th>Sum</th>
+    <th>Carry</th>
+  </tr>
+  <tr>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td>0</td>
+    <td>1</td>
+    <td>1</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>0</td>
+    <td>1</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>1</td>
+    <td>0</td>
+    <td>1</td>
+  </tr>
+</table>
+
