@@ -94,6 +94,19 @@ By working through this module, you will be able to:
 
 ---
 
+| Category | Tool / Technology |
+|:---|:---|
+| HDL | Verilog |
+| RTL Style | Synthesizable RTL |
+| Editor | Visual Studio Code |
+| Simulation | Vivado Simulator |
+| RTL Analysis | Vivado |
+| Waveform Analysis | Vivado Waveform Viewer |
+| Version Control | Git |
+| Repository | GitHub |
+
+---
+
 ## 🛠️ Core Concepts Covered
 
 ### 1. Fundamental Logic Gates
