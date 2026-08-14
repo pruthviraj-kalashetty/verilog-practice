@@ -1,7 +1,8 @@
 # 02. Adders
 
-[![Stage](https://img.shields.io/badge/Stage-B--Verilog--Practice-blue.svg)](#)
-[![Focus](https://img.shields.io/badge/Focus-Verilog%20Adders-orange.svg)](#)
+[![Stage](https://img.shields.io/badge/Combinational--RTL--Design-blue.svg)](#)
+[![Focus](https://img.shields.io/badge/Focus-Verilog%20Adders%20Verilog-orange.svg)](#)
+[![Simulation](https://img.shields.io/badge/Simulation-Vivado%20Simulator-red.svg)](#)
 
 This module covers the fundamental binary adder circuits and their Verilog HDL implementations. It includes the Half Adder, Full Adder, and Full Adder constructed using two Half Adders, along with dedicated testbenches, RTL schematics, and simulation waveforms.
 
