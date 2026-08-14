@@ -1,4 +1,4 @@
-# 02. Adders
+# ◈ Adders
 
 [![Stage](https://img.shields.io/badge/Combinational--RTL--Design-blue.svg)](#)
 [![Focus](https://img.shields.io/badge/Focus-Verilog%20Adders%20Verilog-orange.svg)](#)
