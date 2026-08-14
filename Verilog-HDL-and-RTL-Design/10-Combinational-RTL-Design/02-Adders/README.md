@@ -31,7 +31,7 @@ By working through this module, you will be able to:
 | :--- | :--- |
 | **[`01-Half-Adder`](./01-Half-Adder/)** | Design and verification of a Half Adder for adding two single-bit binary inputs and generating Sum and Carry outputs. |
 | **[`02-Full-Adder`](./02-Full-Adder/)** | Design and verification of a Full Adder that adds two input bits and a Carry-in to generate Sum and Carry-out. |
-| **[`03-Full-Adder-Using-Half-Adder`](./03-Full-Adder-Using-Half-Adder/)** | Structural implementation of a Full Adder using two Half Adder modules and an OR operation. |
+| **[`03-Full-Adder-Using-Two-Half-Adder`](./03-Full-Adder-Using-Two-Half-Adder/)** | Structural implementation of a Full Adder using two Half Adder modules and an OR operation. |
 
 ---
 
