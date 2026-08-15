@@ -11,6 +11,6 @@ wire w1;
 
 assign difference = A ^ B;
 assign w1 = ~A;
-assign barrow = w1 & B ;
+assign borrow = w1 & B;
 
 endmodule
