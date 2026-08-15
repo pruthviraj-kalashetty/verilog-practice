@@ -123,10 +123,10 @@ endmodule
 
 # 🔷 **RTL Schematics**
 
-![Full Adder RTL Schematic](rtl-schematic.png)
+![Full Adder Using Two Half Adder RTL Schematic](rtl-schematic.png)
 
 # 📈 **Simulation Result**
-![Full Adder Waveform](waveform.png)
+![Full Adder Using Two Half Adder Waveform](waveform.png)
 
 # ◈ **Verification Summary**
 
