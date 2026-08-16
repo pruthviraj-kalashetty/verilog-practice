@@ -1,4 +1,4 @@
-# 03. Subtractors
+# ◈ Subtractors
 
 [![Stage](https://img.shields.io/badge/Combinational--RTL--Design-blue.svg)](#)
 [![Focus](https://img.shields.io/badge/Focus-Verilog%20Subtractor%20Verilog-orange.svg)](#)
@@ -29,33 +29,33 @@ By working through this module, you will be able to:
 
 | Module | Core Technical Focus |
 | :--- | :--- |
-| **[`01-Half-Subctractor`](./01-Half-Subctractor/)** | Design and verification of a Half Subtractor for subtracting two single-bit binary inputs and generating Difference and Borrow outputs. |
-| **[`02-Full-Subctractor`](./02-Full-Subctractor/)** | Design and verification of a Full Subtractor that subtracts two input bits along with a Borrow-in to generate Difference and Borrow-out. |
-| **[`03-Full-subctractor-Using-Half-subctractor`](./03-Full-subctractor-Using-Half-subctractor/)** | Structural implementation of a Full Subtractor using two Half Subtractor modules and an OR operation. |
+| **[`01-Half-Subtractor`](./01-Half-Subtractor/)** | Design and verification of a Half Subtractor for subtracting two single-bit binary inputs and generating Difference and Borrow outputs. |
+| **[`02-Full-Subtractor`](./02-Full-Subtractor/)** | Design and verification of a Full Subtractor that subtracts two input bits along with a Borrow-in to generate Difference and Borrow-out. |
+| **[`03-Full-subtractor-Using-Half-subtractor`](./03-Full-subtractor-Using-Two-Half-subttractor/)** | Structural implementation of a Full Subtractor using two Half Subtractor modules and an OR operation. |
 
 ---
 
 ## 🌲 Directory Structure
 
     03-Subctractor/
-    ├── 01-Half-Subctractor/
+    ├── 01-Half-Subtractor/
     │   ├── README.md
-    │   ├── half_subctractor.v
-    │   ├── half_subctractor_tb.v
+    │   ├── half_subtractor.v
+    │   ├── half_subtractor_tb.v
     │   ├── rtl-schematic.png
     │   └── waveform.png
     │
-    ├── 02-Full-Subctractor/
+    ├── 02-Full-Subtractor/
     │   ├── README.md
-    │   ├── full_subctractor.v
-    │   ├── full_subctractor_tb.v
+    │   ├── full_subtractor.v
+    │   ├── full_subtractor_tb.v
     │   ├── rtl-schematic.png
     │   └── waveform.png
     │
-    └── 03-Full-subctractor-Using-Half-subctractor/
+    └── 03-Full-subtractor-Using-Two-Half-subtractor/
         ├── README.md
-        ├── full-subctractor-using-two-half-subctractor.v
-        ├── full-Adder-Using-Two-Half-Adder_tb.v
+        ├── full-subtractor-using-two-half-subtractor.v
+        ├── full-Subtractor-Using-Two-Half-Subtractor_tb.v
         ├── rtl-schematic.png
         └── waveform.png
 
