@@ -30,6 +30,8 @@ endmodule
 
 ```
 
+# 📊 **Truth table**
+
 | **Inputs** | **Inputs** | **Inputs** | **Inputs** | **Inputs** | **Output** |
 |:---:|:---:|:---:|:---:|:---:|:---:|
 | **I0** | **I1** | **I2** | **I3** | **S1 S0** | **Y** |
