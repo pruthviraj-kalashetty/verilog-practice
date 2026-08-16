@@ -1,4 +1,4 @@
-module full_subtractor_using_Two_half_subtractor_tb;
+module full_subtractor_using_two_half_subtractor_tb;
      reg A;
      reg B;
      reg Bin;
@@ -6,7 +6,7 @@ module full_subtractor_using_Two_half_subtractor_tb;
      wire difference;
      wire borrow;
 
-     full_subtractor_using_half_subtractor DUT(
+     full_subtractor_using_two_half_subtractor DUT(
         .A(A),
         .B(B),
         .Bin(Bin),
@@ -16,8 +16,8 @@ module full_subtractor_using_Two_half_subtractor_tb;
      );
 
      initial begin
-        $dumpfile("full_subtractor_using_half_subtractor.vcd");
-        $dumpvars(0, full_subtractor_using_half_subtractor_tb);
+        $dumpfile("full_subtractor_using_two_half_subtractor.vcd");
+        $dumpvars(0, full_subtractor_using_two_half_subtractor_tb);
 
         A = 0;
         B = 0;
