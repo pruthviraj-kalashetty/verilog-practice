@@ -1,7 +1,7 @@
 # ◈ Multiplexers
 
 [![Stage](https://img.shields.io/badge/Combinational--RTL--Design-blue.svg)](#)
-[![Focus](https://img.shields.io/badge/Focus-Verilog%20Subtractor%20Verilog-orange.svg)](#)
+[![Focus](https://img.shields.io/badge/Focus-Verilog%20Multiplexers%20-orange.svg)](#)
 [![Simulation](https://img.shields.io/badge/Simulation-Vivado%20Simulator-red.svg)](#)
 
 This module covers the fundamental multiplexer circuits and their Verilog HDL implementations. It includes 2×1, 4×1, and 8×1 multiplexers, along with RTL designs, dedicated testbenches, RTL schematics, and simulation waveforms.
