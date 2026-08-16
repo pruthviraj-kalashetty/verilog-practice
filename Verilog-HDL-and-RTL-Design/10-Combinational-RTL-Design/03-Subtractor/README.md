@@ -31,7 +31,7 @@ By working through this module, you will be able to:
 | :--- | :--- |
 | **[`01-Half-Subtractor`](./01-Half-Subtractor/)** | Design and verification of a Half Subtractor for subtracting two single-bit binary inputs and generating Difference and Borrow outputs. |
 | **[`02-Full-Subtractor`](./02-Full-Subtractor/)** | Design and verification of a Full Subtractor that subtracts two input bits along with a Borrow-in to generate Difference and Borrow-out. |
-| **[`03-Full-subtractor-Using-Half-subtractor`](./03-Full-subtractor-Using-Two-Half-subttractor/)** | Structural implementation of a Full Subtractor using two Half Subtractor modules and an OR operation. |
+| **[`03-Full-subtractor-Using-Half-subtractor`](./03-Full-subtractor-Using-Two-Half-subtractor/)** | Structural implementation of a Full Subtractor using two Half Subtractor modules and an OR operation. |
 
 ---
 
