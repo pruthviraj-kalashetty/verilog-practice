@@ -29,9 +29,9 @@ By working through this module, you will be able to:
 
 | Module | Core Technical Focus |
 | :--- | :--- |
-| **[`01-Mux-2x1`](./01-Mux-2x1/)** | Design and verification of a 2×1 multiplexer using one select line to select one of two input signals. |
-| **[`02-Mux-4x1`](./02-Mux-4x1/)** | Design and verification of a 4×1 multiplexer using two select lines to select one of four input signals. |
-| **[`03-Mux-8x1`](./03-Mux-8x1/)** | Design and verification of an 8×1 multiplexer using three select lines to select one of eight input signals. |
+| **[`01-Mux-2x1`](./01- Mux-2x1/)** | Design and verification of a 2×1 multiplexer using one select line to select one of two input signals. |
+| **[`02-Mux-4x1`](./02- Mux-4x1/)** | Design and verification of a 4×1 multiplexer using two select lines to select one of four input signals. |
+| **[`03-Mux-8x1`](./03- Mux-8x1/)** | Design and verification of an 8×1 multiplexer using three select lines to select one of eight input signals. |
 
 ---
 
