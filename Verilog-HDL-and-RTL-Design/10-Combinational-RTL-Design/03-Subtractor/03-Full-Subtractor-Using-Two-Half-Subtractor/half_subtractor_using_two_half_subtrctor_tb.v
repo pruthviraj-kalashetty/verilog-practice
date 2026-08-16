@@ -1,4 +1,4 @@
-module full_subtractor_using_half_subtractor_tb;
+module full_subtractor_using_Two_half_subtractor_tb;
      reg A;
      reg B;
      reg Bin;
