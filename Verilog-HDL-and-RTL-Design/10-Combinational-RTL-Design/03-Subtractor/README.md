@@ -1,7 +1,8 @@
 # 03. Subtractors
 
-[![Stage](https://img.shields.io/badge/Stage-B--Verilog--Practice-blue.svg)](#)
-[![Focus](https://img.shields.io/badge/Focus-Verilog%20Subtractors-orange.svg)](#)
+[![Stage](https://img.shields.io/badge/Combinational--RTL--Design-blue.svg)](#)
+[![Focus](https://img.shields.io/badge/Focus-Verilog%20Subtractor%20Verilog-orange.svg)](#)
+[![Simulation](https://img.shields.io/badge/Simulation-Vivado%20Simulator-red.svg)](#)
 
 This module covers the fundamental binary subtractor circuits and their Verilog HDL implementations. It includes the Half Subtractor, Full Subtractor, and Full Subtractor constructed using two Half Subtractors, along with dedicated testbenches, RTL schematics, and simulation waveforms.
 
