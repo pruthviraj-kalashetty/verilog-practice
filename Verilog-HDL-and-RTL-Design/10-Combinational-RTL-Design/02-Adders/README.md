@@ -1,12 +1,21 @@
-# ◈ Adders
+# ◈ Binary Adders RTL Suite
 
-[![Stage](https://img.shields.io/badge/Combinational--RTL--Design-blue.svg)](#)
-[![Focus](https://img.shields.io/badge/Focus-verilog%20Adders%20-orange.svg)](#)
-[![Simulation](https://img.shields.io/badge/Simulation-Vivado%20Simulator-red.svg)](#)
+[![Stage](https://img.shields.io/badge/Stage-Combinational_RTL_Design-blue.svg?style=flat-square)](#)
+[![Focus](https://img.shields.io/badge/Focus-Verilog_Arithmetic_Circuits-orange.svg?style=flat-square)](#)
+[![Simulation](https://img.shields.io/badge/Simulator-AMD_Vivado-red.svg?style=flat-square&logo=xilinx)](#)
+[![License](https://img.shields.io/badge/License-MIT-green.svg?style=flat-square)](#)
 
-This module covers the fundamental binary adder circuits and their Verilog HDL implementations. It includes the Half Adder, Full Adder, and Full Adder constructed using two Half Adders, along with dedicated testbenches, RTL schematics, and simulation waveforms.
+This directory contains synthesizable Verilog HDL implementations, structural hierarchies, and dedicated verification testbenches for fundamental binary adders. It provides hands-on practice with basic arithmetic unit construction, module instantiation, hierarchical RTL design, and functional verification.
 
-The module provides practical experience in translating digital arithmetic concepts into synthesizable RTL and verifying the resulting hardware behavior through simulation.
+---
+
+## ⚡ Adders Quick Reference
+
+| Circuit | Inputs | Outputs | Boolean Equations | Structural/Logical Logic |
+| :--- | :---: | :---: | :--- | :--- |
+| **Half Adder** | $A, B$ | $Sum, Cout$ | $Sum = A \oplus B$<br>$Cout = A \cdot B$ | 2-input single-bit addition without carry-in. |
+| **Full Adder** | $A, B, Cin$ | $Sum, Cout$ | $Sum = A \oplus B \oplus Cin$<br>$Cout = (A \cdot B) + (Cin \cdot (A \oplus B))$ | 3-input single-bit addition with carry-in. |
+| **Structural FA** | $A, B, Cin$ | $Sum, Cout$ | $HA_1 = \text{Half\_Adder}(A, B)$<br>$HA_2 = \text{Half\_Adder}(HA_1.Sum, Cin)$ | Full Adder realized by instantiating two Half Adders and an OR gate. |
 
 ---
 
