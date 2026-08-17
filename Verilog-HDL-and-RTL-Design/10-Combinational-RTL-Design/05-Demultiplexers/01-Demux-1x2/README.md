@@ -91,10 +91,10 @@ endmodule
 
 # 🔷 **RTL Schematics**
 
-![demux_2to1 RTL Schematic](rtl-schematic.png)
+![demux_1to2 RTL Schematic](rtl-schematic.png)
 
 # 📈 **Simulation Result**
-![demux_2to1 Waveform](waveform.png)
+![demux_1to2 Waveform](waveform.png)
 
 # ◈ **Verification Summary**
 
