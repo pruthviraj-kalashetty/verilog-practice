@@ -1,12 +1,21 @@
-# ◈ Subtractors
+# ◈ Binary Subtractors RTL Suite
 
-[![Stage](https://img.shields.io/badge/Combinational--RTL--Design-blue.svg)](#)
-[![Focus](https://img.shields.io/badge/Focus-Verilog%20Subtractor%20-orange.svg)](#)
-[![Simulation](https://img.shields.io/badge/Simulation-Vivado%20Simulator-red.svg)](#)
+[![Stage](https://img.shields.io/badge/Stage-Combinational_RTL_Design-blue.svg?style=flat-square)](#)
+[![Focus](https://img.shields.io/badge/Focus-Verilog_Subtractor_Circuits-orange.svg?style=flat-square)](#)
+[![Simulation](https://img.shields.io/badge/Simulator-AMD_Vivado-red.svg?style=flat-square&logo=xilinx)](#)
+[![License](https://img.shields.io/badge/License-MIT-green.svg?style=flat-square)](#)
 
-This module covers the fundamental binary subtractor circuits and their Verilog HDL implementations. It includes the Half Subtractor, Full Subtractor, and Full Subtractor constructed using two Half Subtractors, along with dedicated testbenches, RTL schematics, and simulation waveforms.
+This directory contains synthesizable Verilog HDL implementations, structural hierarchies, and dedicated verification testbenches for fundamental binary subtractors. It provides hands-on practice with binary subtraction logic, bitwise borrow logic propagation, module instantiation, and functional RTL verification.
 
-The module provides practical experience in translating binary subtraction concepts into synthesizable RTL and verifying the resulting hardware behavior through simulation.
+---
+
+## ⚡ Subtractors Quick Reference
+
+| Circuit | Inputs | Outputs | Boolean Equations | Structural / Logical Functionality |
+| :--- | :---: | :---: | :--- | :--- |
+| **Half Subtractor** | $A, B$ | $Diff, Bout$ | $Diff = A \oplus B$<br>$Bout = \bar{A} \cdot B$ | Single-bit subtraction ($A - B$) without borrow-in. |
+| **Full Subtractor** | $A, B, Bin$ | $Diff, Bout$ | $Diff = A \oplus B \oplus Bin$<br>$Bout = (\bar{A} \cdot B) + (\overline{A \oplus B} \cdot Bin)$ | Single-bit subtraction ($A - B - Bin$) with borrow-in. |
+| **Structural FS** | $A, B, Bin$ | $Diff, Bout$ | $HS_1 = \text{Half\_Subtractor}(A, B)$<br>$HS_2 = \text{Half\_Subtractor}(HS_1.Diff, Bin)$ | Full Subtractor constructed by cascading two Half Subtractors and an OR gate. |
 
 ---
 
