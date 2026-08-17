@@ -1,12 +1,21 @@
-# ◈ Multiplexers
+# ◈ Multiplexers RTL Suite
 
-[![Stage](https://img.shields.io/badge/Combinational--RTL--Design-blue.svg)](#)
-[![Focus](https://img.shields.io/badge/Focus-Verilog%20Multiplexers%20-orange.svg)](#)
-[![Simulation](https://img.shields.io/badge/Simulation-Vivado%20Simulator-red.svg)](#)
+[![Stage](https://img.shields.io/badge/Stage-Combinational_RTL_Design-blue.svg?style=flat-square)](#)
+[![Focus](https://img.shields.io/badge/Focus-Verilog_Multiplexers-orange.svg?style=flat-square)](#)
+[![Simulation](https://img.shields.io/badge/Simulator-AMD_Vivado-red.svg?style=flat-square&logo=xilinx)](#)
+[![License](https://img.shields.io/badge/License-MIT-green.svg?style=flat-square)](#)
 
-This module covers the fundamental multiplexer circuits and their Verilog HDL implementations. It includes 2×1, 4×1, and 8×1 multiplexers, along with RTL designs, dedicated testbenches, RTL schematics, and simulation waveforms.
+This directory contains synthesizable Verilog HDL implementations, structural behavioral logic, and dedicated verification testbenches for fundamental multiplexers ($2 \times 1$, $4 \times 1$, and $8 \times 1$). It provides hands-on experience with data routing mechanisms, selection line logic, synthesizable Verilog construct selection (`case` statements, ternary operators, continuous assignments), and functional RTL verification.
 
-The module provides practical experience in understanding data selection, implementing multiplexers using synthesizable Verilog RTL, and verifying their functionality through simulation.
+---
+
+## ⚡ Multiplexers Quick Reference
+
+| Circuit | Inputs ($2^N$) | Select Lines ($N$) | Output ($Y$) | Boolean Expression / Hardware Logic |
+| :--- | :---: | :---: | :---: | :--- |
+| **2×1 MUX** | $I_0, I_1$ | $S_0$ | $Y$ | $Y = (\bar{S}_0 \cdot I_0) + (S_0 \cdot I_1)$ |
+| **4×1 MUX** | $I_0 \dots I_3$ | $S_1, S_0$ | $Y$ | $Y = (\bar{S}_1 \bar{S}_0 I_0) + (\bar{S}_1 S_0 I_1) + (S_1 \bar{S}_0 I_2) + (S_1 S_0 I_3)$ |
+| **8×1 MUX** | $I_0 \dots I_7$ | $S_2, S_1, S_0$ | $Y$ | $Y = \sum_{k=0}^{7} (m_k \cdot I_k)$ where $m_k$ is the $k$-th select minterm. |
 
 ---
 
