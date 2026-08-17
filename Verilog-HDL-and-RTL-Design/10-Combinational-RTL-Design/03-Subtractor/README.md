@@ -11,11 +11,11 @@ This directory contains synthesizable Verilog HDL implementations, structural hi
 
 ## ⚡ Subtractors Quick Reference
 
-| Circuit | Inputs | Outputs | Boolean Equations | Structural / Logical Functionality |
+| Circuit | Inputs | Outputs | Boolean Equations / Structural Logic | Description |
 | :--- | :---: | :---: | :--- | :--- |
 | **Half Subtractor** | $A, B$ | $Diff, Bout$ | $Diff = A \oplus B$<br>$Bout = \bar{A} \cdot B$ | Single-bit subtraction ($A - B$) without borrow-in. |
 | **Full Subtractor** | $A, B, Bin$ | $Diff, Bout$ | $Diff = A \oplus B \oplus Bin$<br>$Bout = (\bar{A} \cdot B) + (\overline{A \oplus B} \cdot Bin)$ | Single-bit subtraction ($A - B - Bin$) with borrow-in. |
-| **Structural FS** | $A, B, Bin$ | $Diff, Bout$ | $HS_1 = \text{Half\_Subtractor}(A, B)$<br>$HS_2 = \text{Half\_Subtractor}(HS_1.Diff, Bin)$ | Full Subtractor constructed by cascading two Half Subtractors and an OR gate. |
+| **Structural FS** | $A, B, Bin$ | $Diff, Bout$ | `HS_1 = Half_Subtractor(A, B)`<br>`HS_2 = Half_Subtractor(HS_1.Diff, Bin)` | Full Subtractor constructed by cascading two Half Subtractors and an OR gate. |
 
 ---
 
