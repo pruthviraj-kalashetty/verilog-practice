@@ -12,7 +12,7 @@ module demux_1to4_tb;
     .Y0(Y0),
     .Y1(Y1),
     .Y2(Y2),
-    .Y3(Y3),
+    .Y3(Y3)
 
    );
 
@@ -20,7 +20,7 @@ module demux_1to4_tb;
       $dumpfile("demux_1to4.vcd");
       $dumpvars(0, demux_1to4_tb);
 
-       // D = 0, S1S0 = 00 → Y0 = 0, Y1 = 0, Y2 = 0, Y3 = 0
+       // D = 0, S1S0 = 00 . Y0 = 0, Y1 = 0, Y2 = 0, Y3 = 0
 
         D = 0;
         S1 = 0;
@@ -28,7 +28,7 @@ module demux_1to4_tb;
 
         #10;
 
-        // D = 0, S1S0 = 01 → Y0 = 0, Y1 = 0, Y2 = 0, Y3 = 0
+        // D = 0, S1S0 = 01 . Y0 = 0, Y1 = 0, Y2 = 0, Y3 = 0
 
         D = 0;
         S1 = 0;
@@ -36,7 +36,7 @@ module demux_1to4_tb;
 
         #10;
 
-        // D = 0, S1S0 = 10 → Y0 = 0, Y1 = 0, Y2 = 0, Y3 = 0
+        // D = 0, S1S0 = 10 . Y0 = 0, Y1 = 0, Y2 = 0, Y3 = 0
 
         D = 0;
         S1 = 1;
@@ -44,7 +44,7 @@ module demux_1to4_tb;
 
         #10;
 
-        // D = 0, S1S0 = 11 → Y0 = 0, Y1 = 0, Y2 = 0, Y3 = 0
+        // D = 0, S1S0 = 11 . Y0 = 0, Y1 = 0, Y2 = 0, Y3 = 0
 
         D = 0;
         S1 = 1;
@@ -52,7 +52,7 @@ module demux_1to4_tb;
 
         #10;
 
-        // D = 1, S1S0 = 00 → D goes to Y0
+        // D = 1, S1S0 = 00 . D goes to Y0
 
         D = 1;
         S1 = 0;
@@ -60,7 +60,7 @@ module demux_1to4_tb;
 
         #10;
 
-        // D = 1, S1S0 = 01 → D goes to Y1
+        // D = 1, S1S0 = 01 . D goes to Y1
 
         D = 1;
         S1 = 0;
@@ -68,7 +68,7 @@ module demux_1to4_tb;
 
         #10;
 
-        // D = 1, S1S0 = 10 → D goes to Y2
+        // D = 1, S1S0 = 10 . D goes to Y2
 
         D = 1;
         S1 = 1;
@@ -76,7 +76,7 @@ module demux_1to4_tb;
 
         #10;
 
-        // D = 1, S1S0 = 11 → D goes to Y3
+        // D = 1, S1S0 = 11 . D goes to Y3
 
         D = 1;
         S1 = 1;
