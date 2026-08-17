@@ -1,4 +1,4 @@
-# ◈ 2-Input AND Gate (`and_gate`)
+# ◈ AND Gate (`and_gate`)
 
 ### Fundamental Logic Gate • Combinational RTL • Dataflow Modeling
 
