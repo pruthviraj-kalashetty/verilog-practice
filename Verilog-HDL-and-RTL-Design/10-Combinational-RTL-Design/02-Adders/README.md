@@ -11,6 +11,16 @@ This directory contains synthesizable Verilog HDL implementations, structural hi
 
 ## ⚡ Adders Quick Reference
 
+| Circuit | Inputs | Outputs | Boolean Equations / Structural Logic | Description |
+| :--- | :---: | :---: | :--- | :--- |
+| **Half Adder** | $A, B$ | $Sum, Cout$ | $Sum = A \oplus B$<br>$Cout = A \cdot B$ | 2-input single-bit addition without carry-in. |
+| **Full Adder** | $A, B, Cin$ | $Sum, Cout$ | $Sum = A \oplus B \oplus Cin$<br>$Cout = (A \cdot B) + (Cin \cdot (A \oplus B))$ | 3-input single-bit addition with carry-in. |
+| **Structural FA** | $A, B, Cin$ | $Sum, Cout$ | `HA_1 = Half_Adder(A, B)`<br>`HA_2 = Half_Adder(HA_1.Sum, Cin)` | Full Adder realized by instantiating two Half Adders and an OR gate. |
+
+---
+
+## ⚡ Adders Quick Reference
+
 | Circuit | Inputs | Outputs | Boolean Equations | Structural/Logical Logic |
 | :--- | :---: | :---: | :--- | :--- |
 | **Half Adder** | $A, B$ | $Sum, Cout$ | $Sum = A \oplus B$<br>$Cout = A \cdot B$ | 2-input single-bit addition without carry-in. |
