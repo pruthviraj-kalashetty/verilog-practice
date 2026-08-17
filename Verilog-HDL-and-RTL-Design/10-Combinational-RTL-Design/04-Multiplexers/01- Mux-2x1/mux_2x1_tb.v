@@ -74,4 +74,3 @@ module mux_2to1_tb;
     end
 
 endmodule        
-
