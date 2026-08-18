@@ -48,20 +48,20 @@ By working through this module, you will be able to:
 
     05-Demultiplexers/
     ├── 01-Demux-1x2/
-    │   ├── demux-1x2.v
-    │   ├── demux-1x2_tb.v
+    │   ├── demux_1x2.v
+    │   ├── demux_1x2_tb.v
     │   ├── rtl-schematic.png
     │   └── waveform.png
     │
     ├── 02-Demux-1x4/
-    │   ├── demux-1x4.v
-    │   ├── demux-1x4_tb.v
+    │   ├── demux_1x4.v
+    │   ├── demux_1x4_tb.v
     │   ├── rtl-schematic.png
     │   └── waveform.png
     │
     └── 03-Demux-1x8/
-        ├── demux-1x8.v
-        ├── demux-1x8_tb.v
+        ├── demux_1x8.v
+        ├── demux_1x8_tb.v
         ├── rtl-schematic.png
         └── waveform.png
 
