@@ -61,8 +61,8 @@ By working through this module, you will be able to:
     │   └── waveform.png
     │
     └── 03-Mux-8x1/
-        ├── mux-8x1.v
-        ├── mux-8x1_tb.v
+        ├── mux_8x1.v
+        ├── mux_8x1_tb.v
         ├── rtl-schematic.png
         └── waveform.png
 
