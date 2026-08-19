@@ -1,4 +1,4 @@
-# ◈ 2-to-4 Decoder (`decoder_2to4`)
+# ◈ Decoder (`decoder_2to4`)
 
 ### Combinational Circuit • Decoder • Dataflow Modeling
 
