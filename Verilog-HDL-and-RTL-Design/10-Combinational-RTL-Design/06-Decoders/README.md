@@ -1,7 +1,9 @@
-# 06. Decoders
+# ◈ Decoders
 
-[![Stage](https://img.shields.io/badge/Stage-B--Verilog--Practice-blue.svg)](#)
-[![Focus](https://img.shields.io/badge/Focus-Verilog%20Decoders-orange.svg)](#)
+[![Stage](https://img.shields.io/badge/Stage-Combinational_RTL_Design-blue.svg?style=flat-square)](#)
+[![Focus](https://img.shields.io/badge/Focus-Verilog_Decoder_Circuits-orange.svg?style=flat-square)](#)
+[![Simulation](https://img.shields.io/badge/Simulator-AMD_Vivado-red.svg?style=flat-square&logo=xilinx)](#)
+[![License](https://img.shields.io/badge/License-MIT-green.svg?style=flat-square)](#)
 
 This module covers the fundamental decoder circuits and their Verilog HDL implementations. It includes 2×4, 3×8, and 4×16 decoders, along with RTL designs, dedicated testbenches, RTL schematics, and simulation waveforms.
 
