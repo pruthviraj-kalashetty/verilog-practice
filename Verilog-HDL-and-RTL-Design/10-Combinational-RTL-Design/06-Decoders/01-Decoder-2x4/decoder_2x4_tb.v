@@ -1,4 +1,4 @@
-module decoder_2to4_tb.v;
+module decoder_2to4_tb;
 
     reg A, B;
     
