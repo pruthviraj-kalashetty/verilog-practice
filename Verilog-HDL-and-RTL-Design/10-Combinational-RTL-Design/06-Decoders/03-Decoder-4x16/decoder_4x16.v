@@ -24,7 +24,7 @@ always @(*) begin
      4'b1101: Y = 16'b0010000000000000;
      4'b1110: Y = 16'b0100000000000000;
      4'b1111: Y = 16'b1000000000000000;
-    end case
+     endcase
 
 end
 endmodule     
