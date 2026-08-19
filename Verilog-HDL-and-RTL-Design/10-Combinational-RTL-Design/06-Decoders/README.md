@@ -1,13 +1,21 @@
-# ◈ Decoders
+# ◈ Decoders RTL Suite
 
 [![Stage](https://img.shields.io/badge/Stage-Combinational_RTL_Design-blue.svg?style=flat-square)](#)
 [![Focus](https://img.shields.io/badge/Focus-Verilog_Decoder_Circuits-orange.svg?style=flat-square)](#)
 [![Simulation](https://img.shields.io/badge/Simulator-AMD_Vivado-red.svg?style=flat-square&logo=xilinx)](#)
 [![License](https://img.shields.io/badge/License-MIT-green.svg?style=flat-square)](#)
 
-This module covers the fundamental decoder circuits and their Verilog HDL implementations. It includes 2×4, 3×8, and 4×16 decoders, along with RTL designs, dedicated testbenches, RTL schematics, and simulation waveforms.
+This directory contains synthesizable Verilog HDL implementations, behavioral decoding logic, and dedicated verification testbenches for fundamental binary decoders ($2 \times 4$, $3 \times 8$, and $4 \times 16$). It provides hands-on experience with binary decoding mechanisms, minterm generation, synthesizable Verilog construct selection (`case` statements, bit-shift operators, continuous assignments), and functional RTL verification.
 
-The module provides practical experience in understanding binary decoding, implementing decoders using synthesizable Verilog RTL, and verifying their functionality through simulation.
+---
+
+## ⚡ Decoders Quick Reference
+
+| Circuit | Inputs ($N$) | Outputs ($2^N$) | Minterm Range | Hardware / Verilog Logic |
+| :--- | :---: | :---: | :---: | :--- |
+| **2×4 Decoder** | $A[1:0]$ | $Y[3:0]$ | $m_0 \dots m_3$ | $Y[k] = 1 \iff A = k$<br>`assign Y = 1'b1 << A;` |
+| **3×8 Decoder** | $A[2:0]$ | $Y[7:0]$ | $m_0 \dots m_7$ | $Y[k] = 1 \iff A = k$<br>Behavioral `case` or shift operator realization. |
+| **4×16 Decoder** | $A[3:0]$ | $Y[15:0]$ | $m_0 \dots m_{15}$ | $Y[k] = 1 \iff A = k$<br>Full binary-to-one-hot mapping matrix. |
 
 ---
 
