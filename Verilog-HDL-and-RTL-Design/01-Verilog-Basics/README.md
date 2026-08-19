@@ -1,3 +1,24 @@
+# ◈ Verilog Basics & RTL Fundamentals
+
+[![Stage](https://img.shields.io/badge/Stage-Verilog_Basics_&_RTL-blue.svg?style=flat-square)](#)
+[![Focus](https://img.shields.io/badge/Focus-Hardware_Description_Language-green.svg?style=flat-square)](#)
+[![License](https://img.shields.io/badge/License-MIT-green.svg?style=flat-square)](#)
+
+This module introduces Verilog Hardware Description Language (HDL), the industry-standard language used for digital hardware modeling, simulation, and register-transfer level (RTL) design. It covers syntax fundamentals, module structures, data types, operators, number representations, and parameterization required to build synthesizable digital circuits for FPGA and ASIC implementations.
+
+---
+
+## ⚡ Verilog Quick Reference
+
+| Construct / Concept | Key Syntax / Description | Role in RTL Design |
+| :--- | :--- | :--- |
+| **`wire` vs `reg`** | `wire` (combinational connectivity), `reg` (procedural assignment/storage) | Defines continuous combinational nets versus procedural variable storage. |
+| **Module Structure** | `module name(ports); ... endmodule` | Encapsulates hierarchical hardware blocks, ports, and internal logic. |
+| **Number Representation** | `<size>'<radix><value>` (e.g., `8'hFF`, `4'b1010`) | Specifies exact bit-widths and numerical bases for hardware literals. |
+| **Parameters** | `parameter WIDTH = 8;` | Enables generic, reusable, and scalable hardware module architectures. |
+
+---
+
 # ◈ Verilog Basics
 
 [![Stage](https://img.shields.io/badge/verilog--practice-blue.svg)](#)
