@@ -134,7 +134,7 @@ endmodule
 | `A0=1, A1=1, A2=0` | `Y0=0, Y1=0, Y2=0, Y3=0, Y4=0, Y5=0, Y6=1, Y7=0` | **PASS** |
 | `A0=1, A1=1, A2=1` | `Y0=0, Y1=0, Y2=0, Y3=0, Y4=0, Y5=0, Y6=0, Y7=1` | **PASS** |
 
-**Verification Result:** `4/4 TEST CASES PASSED`
+**Verification Result:** `8/8 TEST CASES PASSED`
 
 
 
