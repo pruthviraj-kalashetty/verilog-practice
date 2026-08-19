@@ -1,3 +1,15 @@
+# ◈ 2-to-4 Decoder (`decoder_2to4`)
+
+### Combinational Circuit • Decoder • Dataflow Modeling
+
+---
+
+## 📌 Module Description
+
+The **2-to-4 Decoder** is a combinational circuit that converts **2 input lines** into **4 output lines**, where exactly one output goes **HIGH (`1`)** for each valid input combination. Implemented using continuous assignment (`assign`) in dataflow abstraction.
+
+---
+
 # ◈ **Verilog RTL code** 
 
 ```verilog
