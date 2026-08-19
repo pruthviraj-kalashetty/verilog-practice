@@ -1,1 +1,20 @@
+module decoder_2to4(
 
+    input A,B,
+
+    output reg [3:0] Y
+
+);
+
+always @(*) begin
+
+    case ({A, B})
+
+       2'b00: Y = 4'0001;
+       2'b01: Y = 4'0010;
+       2'b10: Y = 4'0100;
+       2'b11: Y = 4'1000;
+    endcase
+end
+
+endmodule       
