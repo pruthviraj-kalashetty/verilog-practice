@@ -1,6 +1,6 @@
 module encoder_8to3(
     input [7:0] A,
-    output [2:0] Y
+    output reg [2:0] Y
 );
 
 always @(*) begin
