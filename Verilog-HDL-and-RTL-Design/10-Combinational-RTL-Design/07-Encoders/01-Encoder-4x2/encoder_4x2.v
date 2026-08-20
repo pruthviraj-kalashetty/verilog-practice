@@ -1,7 +1,7 @@
-module encoder_4to2.v(
+module encoder_4to2(
 
     input [3:0] A,
-    output [1:0] Y
+    output reg [1:0] Y
 
 );
 
