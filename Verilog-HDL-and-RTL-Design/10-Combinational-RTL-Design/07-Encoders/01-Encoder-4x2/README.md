@@ -91,10 +91,10 @@ endmodule
 
 # 🔷 **RTL Schematics**
 
-![decoder_2to4 RTL Schematic](rtl-schematic.png)
+![encoder_4to2 RTL Schematic](rtl-schematic.png)
 
 # 📈 **Simulation Result**
-![decoder_2to4 Waveform](waveform.png)
+![encoder_4to2 Waveform](waveform.png)
 
 # ◈ **Verification Summary**
 
