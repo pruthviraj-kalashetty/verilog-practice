@@ -1,12 +1,12 @@
-# ◈ 4-to-2 Encoder 
+# ◈ 1-Bit Comparator
 
-### Combinational Circuit • Encoder • Dataflow Modeling
+### Combinational Circuit • Comparator • Dataflow Modeling
 
 ---
 
 ## 📌 Module Description
 
-The **4-to-2 Encoder** is a combinational circuit that converts **4 input lines** into **2 output lines**, where the binary output represents the position of the active input. Implemented using continuous assignment (`assign`) in dataflow abstraction.
+The **1-Bit Comparator** is a combinational circuit that compares two 1-bit inputs and determines whether input `A` is **greater than**, **equal to**, or **less than** input `B`. Implemented using continuous assignment (`assign`) in dataflow abstraction.
 
 ---
 
@@ -14,25 +14,41 @@ The **4-to-2 Encoder** is a combinational circuit that converts **4 input lines*
 
 ```verilog
 
-module encoder_4to2(
+module one_bit_comparator(
 
-    input [3:0] A,
-    output reg [1:0] Y
+    input A, B,
+
+    output reg A_greater_B,
+    output reg A_equal_B,
+    output reg A_less_B
 
 );
 
 always @(*) begin
 
-    case (A)
+    if (A > B) begin
 
-        4'b0001: Y = 2'b00;
-        4'b0010: Y = 2'b01;
-        4'b0100: Y = 2'b10;
-        4'b1000: Y = 2'b11;
+        A_greater_B = 1;
+        A_equal_B = 0;
+        A_less_B = 0;
 
-        default: Y = 2'b00;
+    end
 
-    endcase
+    else if (A == B) begin
+
+        A_greater_B = 0;
+        A_equal_B = 1;
+        A_less_B = 0;
+
+    end
+
+    else begin
+
+        A_greater_B = 0;
+        A_equal_B = 0;
+        A_less_B = 1;
+
+    end
 
 end
 
@@ -42,59 +58,84 @@ endmodule
 
 # 📊 **Truth table**
 
-| **Inputs** | **Inputs** | **Inputs** | **Inputs** | **Output** | **Output** |
-|:---:|:---:|:---:|:---:|:---:|:---:|
-| **A0** | **A1** | **A2** | **A3** | **Y1** | **Y0** |
-| 1 | 0 | 0 | 0 | 0 | 0 |
-| 0 | 1 | 0 | 0 | 0 | 1 |
-| 0 | 0 | 1 | 0 | 1 | 0 |
-| 0 | 0 | 0 | 1 | **1** | **1** |
+| **Inputs** | **Inputs** | **Output** | **Output** | **Output** |
+|:---:|:---:|:---:|:---:|:---:|
+| **A** | **B** | **A > B** | **A == B** | **A < B** |
+| 0 | 0 | 0 | **1** | 0 |
+| 0 | 1 | 0 | 0 | **1** |
+| 1 | 0 | **1** | 0 | 0 |
+| 1 | 1 | 0 | **1** | 0 |
 
 # 🧪 **Testbench**
 
 ```verilog
 
-module encoder_4to2_tb;
+module one_bit_comparator_tb;
 
-    reg [3:0] A;
-    wire [1:0] Y;
+   reg A, B;
 
-    encoder_4to2 DUT(
-        .A(A),
-        .Y(Y)
-    );
+   wire A_greater_B;
+   wire A_equal_B;
+   wire A_less_B;
 
-    initial begin
+   one_bit_comparator DUT(
 
-        $dumpfile("encoder_4to2.vcd");
-        $dumpvars(0, encoder_4to2_tb);
+    .A(A),
+    .B(B),
+    .A_greater_B(A_greater_B),
+    .A_equal_B(A_equal_B),
+    .A_less_B(A_less_B)
+   
+   );
 
-        A = 4'b0001;
+   initial begin
+
+     $dumpfile("one_bit_comparator.vcd");
+     $dumpvars(0, one_bit_comparator_tb);
+
+     
+        // A = 0, B = 0  A = B
+
+        A = 0;
+        B = 0;
+
         #10;
 
-        A = 4'b0010;
+        // A = 0, B = 1  A < B
+
+        A = 0;
+        B = 1;
+
         #10;
 
-        A = 4'b0100;
+        // A = 1, B = 0  A > B
+
+        A = 1;
+        B = 0;
+
         #10;
 
-        A = 4'b1000;
+        // A = 1, B = 1  A = B
+
+        A = 1;
+        B = 1;
+
         #10;
 
         $finish;
 
     end
 
-endmodule              
+endmodule               
 
 ```
 
 # 🔷 **RTL Schematics**
 
-![encoder_4to2 RTL Schematic](rtl-schematic.png)
+![1-bit-comparator RTL Schematic](rtl-schematic.png)
 
 # 📈 **Simulation Result**
-![encoder_4to2 Waveform](waveform.png)
+![1-bit-comparator Waveform](waveform.png)
 
 # ◈ **Verification Summary**
 
