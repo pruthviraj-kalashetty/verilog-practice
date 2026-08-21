@@ -1,20 +1,23 @@
-module 2_bit_comparator_tb;
+module two_bit_comparator_tb;
    reg A0, A1, B0, B1;
 
    wire A_greater_B;
    wire A_equal_B;
    wire A_less_B;
 
-   2_bit_comparator DUT(
+   two_bit_comparator DUT(
     .A0(A0),
     .A1(A1),
     .B0(B0),
-    .B1(B1)
+    .B1(B1),
+    .A_greater_B(A_greater_B),
+    .A_equal_B(A_equal_B),
+    .A_less_B(A_less_B)
    );
 
    initial begin 
-   $dumpfile("1_bit_comparator");
-   $dumpvars(0, 1_bit_comparator_tb);
+   $dumpfile("two_bit_comparator");
+   $dumpvars(0, two_bit_comparator_tb);
 
    // A = 00, B = 00  A = B
         A1 = 0;
