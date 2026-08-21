@@ -1,4 +1,4 @@
-module 2_bit_comparator(
+module two_bit_comparator(
     input A0, A1, B0, B1,
     output reg A_greater_B,
     output reg A_equal_B,
