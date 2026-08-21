@@ -8,7 +8,7 @@ module four_bit_comparator(
 
 always @(*) begin
       
-    if ({A3, A2, A1, A0} > {B3, B2, B1, B0,}) begin
+    if ({A3, A2, A1, A0} > {B3, B2, B1, B0}) begin
 
          A_greater_B = 1;
          A_equal_B = 0;
