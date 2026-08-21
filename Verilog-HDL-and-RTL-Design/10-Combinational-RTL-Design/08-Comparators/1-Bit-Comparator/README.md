@@ -141,10 +141,10 @@ endmodule
 
 | **Test Case** | **Expected Output** | **Status** |
 |:---|:---:|:---:|
-| `A0=1, A1=0, A2=0, A3=0` | `Y1=0, Y0=0` | **PASS** |
-| `A0=0, A1=1, A2=0, A3=0` | `Y1=0, Y0=1` | **PASS** |
-| `A0=0, A1=0, A2=1, A3=0` | `Y1=1, Y0=0` | **PASS** |
-| `A0=0, A1=0, A2=0, A3=1` | `Y1=1, Y0=1` | **PASS** |
+| `A=0, B=0` | `A>B=0, A==B=1, A<B=0` | **PASS** |
+| `A=0, B=1` | `A>B=0, A==B=0, A<B=1` | **PASS** |
+| `A=1, B=0` | `A>B=1, A==B=0, A<B=0` | **PASS** |
+| `A=1, B=1` | `A>B=0, A==B=1, A<B=0` | **PASS** |
 
 **Verification Result:** `4/4 TEST CASES PASSED`
 
