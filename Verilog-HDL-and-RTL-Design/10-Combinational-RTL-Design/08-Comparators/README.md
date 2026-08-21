@@ -1,6 +1,4 @@
-# ◈ Comparators
-
-# 08. Digital Comparators & Magnitude Evaluation Circuits
+# ◈ Digital Comparators & Magnitude Evaluation Circuits
 
 [![Stage](https://img.shields.io/badge/Stage-Combinational_RTL_Design-blue.svg?style=flat-square)](#)
 [![Focus](https://img.shields.io/badge/Focus-Verilog_Comparator_Circuits-orange.svg?style=flat-square)](#)
