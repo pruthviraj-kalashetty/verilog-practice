@@ -9,7 +9,7 @@ module one_bit_comparator_tb;
    one_bit_comparator DUT(
 
     .A(A),
-    .B(A),
+    .B(B),
     .A_greater_B(A_greater_B),
     .A_equal_B(A_equal_B),
     .A_less_B(A_less_B)
