@@ -39,7 +39,7 @@ By working through this module, you will be able to:
 
 | Module | Core Technical Focus |
 | :--- | :--- |
-| **[01-SR-Latch](.01-SR-Latch/)** | Design and verification of an SR latch using synthesizable Verilog RTL, including set, reset, hold, and invalid conditions. |
+| **[01-SR-Latch](01-SR-Latch/)** | Design and verification of an SR latch using synthesizable Verilog RTL, including set, reset, hold, and invalid conditions. |
 | **[02-D-Latch](./01-Latches/02-D-Latch/)** | Design and verification of a D latch using synthesizable Verilog RTL for controlled single-bit data storage. |
 
 ---
