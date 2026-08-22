@@ -1,4 +1,4 @@
-# 11. Sequential RTL: Latches & Level-Sensitive Storage
+# ◈ Sequential RTL: Latches & Level-Sensitive Storage
 
 [![Stage](https://img.shields.io/badge/Stage-Sequential_RTL_Design-blue.svg?style=flat-square)](#)
 [![Focus](https://img.shields.io/badge/Focus-Verilog_Latches_&_Storage-orange.svg?style=flat-square)](#)
