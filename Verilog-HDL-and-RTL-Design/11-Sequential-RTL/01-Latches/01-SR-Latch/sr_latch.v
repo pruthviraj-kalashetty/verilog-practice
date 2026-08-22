@@ -5,7 +5,7 @@ module sr_latch(
 
 );
 
-    assign @(*) begin
+    always @(*) begin
       
       if (S)
         Q = 1'b1;
