@@ -106,12 +106,12 @@ endmodule
 
 | **Test Case** | **Expected Output** | **Status** |
 |:---|:---:|:---:|
-| `S=0, R=0` | `Q=Q(previous), Q̅=Q̅(previous)` | **PASS** |
+| `S=0, R=0` | `Q=Q(previous), Q̅=Q̅(previous)` | **FAIL** |
 | `S=0, R=1` | `Q=0, Q̅=1` | **PASS** |
 | `S=1, R=0` | `Q=1, Q̅=0` | **PASS** |
 | `S=1, R=1` | `Q=Invalid, Q̅=Invalid` | **PASS** |
 
-**Verification Result:** `4/4 TEST CASES PASSED`
+**Verification Result:** `3/4 TEST CASES PASSED`
 
 
 
