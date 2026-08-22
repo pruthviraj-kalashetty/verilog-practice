@@ -1,12 +1,13 @@
 module sr_latch_tb;
   reg S, R;
 
-  wire Q;
+  wire Q, Q_bar;
 
   sr_latch DUT(
     .S(S),
     .R(R),
-    .Q(Q)
+    .Q(Q),
+    .Q_bar(Q_bar)
   );
 
    initial begin
