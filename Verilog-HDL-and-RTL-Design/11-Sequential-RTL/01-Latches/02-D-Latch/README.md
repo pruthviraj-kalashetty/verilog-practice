@@ -1,4 +1,4 @@
-# ◈ D Latch (`d_latch`)
+# ◈ D Latch
 
 ### Sequential Circuit • Latch • Behavioral Modeling
 
