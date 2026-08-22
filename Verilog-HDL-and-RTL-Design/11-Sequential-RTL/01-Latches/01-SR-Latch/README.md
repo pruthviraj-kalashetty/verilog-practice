@@ -1,4 +1,4 @@
-# ◈ SR Latch (`sr_latch`)
+# ◈ SR Latch 
 
 ### Sequential Circuit • Latch • Behavioral Modeling
 
