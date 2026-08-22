@@ -6,7 +6,7 @@ module d_flip_flop(
 
 );
 
-assign Q_bar = ~Q
+assign Q_bar = ~Q;
 
   always @(posedge CLK) begin
     Q <= D;
