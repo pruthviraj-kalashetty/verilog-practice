@@ -27,17 +27,17 @@ module t_flip_flop_tb;
         $dumpfile("t_flip_flop.vcd");
         $dumpvars(0, t_flip_flop_tb);
 
-        // T = 1  TOGGLE
+        // T = 1 → TOGGLE
         T = 1;
 
         #20;
 
-        // T = 0  HOLD
+        // T = 0 → HOLD
         T = 0;
 
         #20;
 
-        // T = 1  TOGGLE
+        // T = 1 → TOGGLE
         T = 1;
 
         #20;

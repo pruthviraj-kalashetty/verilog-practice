@@ -1,6 +1,7 @@
 module t_flip_flop(
 
-    input T, CLK,
+    input T,
+    input CLK,
 
     output reg Q,
     output Q_bar
@@ -8,6 +9,9 @@ module t_flip_flop(
 );
 
 assign Q_bar = ~Q;
+
+initial
+    Q = 0;
 
 always @(posedge CLK) begin
 
