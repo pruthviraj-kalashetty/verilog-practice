@@ -44,6 +44,7 @@ end
 endmodule                            
                          
 ```
+# 📊 **Truth table**
 
 | **Inputs** | **Inputs** | **Inputs** | **Output** | **Output** |
 |:---:|:---:|:---:|:---:|:---:|
