@@ -1,4 +1,4 @@
-# ◈ T Flip-Flop (`t_flip_flop`)
+# ◈ T Flip-Flop 
 
 ### Sequential Circuit • Flip-Flop • Behavioral Modeling
 
