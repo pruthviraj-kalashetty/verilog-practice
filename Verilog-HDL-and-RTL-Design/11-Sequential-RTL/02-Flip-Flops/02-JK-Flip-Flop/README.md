@@ -1,4 +1,4 @@
-# ◈ JK Flip-Flop (`jk_flip_flop`)
+# ◈ JK Flip-Flop 
 
 ### Sequential Circuit • Flip-Flop • Behavioral Modeling
 
