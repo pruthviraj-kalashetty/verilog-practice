@@ -1,15 +1,19 @@
 module siso_tb;
-   reg CLK, clear, SI;
-   wire SO;
 
-   siso DUT(
-    .CKL(CLK),
+reg CLK;
+reg clear;
+reg SI;
+
+wire SO;
+
+siso DUT(
+    .CLK(CLK),
     .clear(clear),
-    .SI(SI).
+    .SI(SI),
     .SO(SO)
-   );
+);
 
-   initial begin
+initial begin
 
     $dumpfile("siso.vcd");
     $dumpvars(0, siso_tb);
@@ -46,4 +50,3 @@ end
 always #5 CLK = ~CLK;
 
 endmodule
-   
