@@ -1,10 +1,23 @@
-# ◈ Verilog Basics & RTL Fundamentals
+# ◈ Procedural Blocks in Verilog HDL
 
-[![Stage](https://img.shields.io/badge/Stage-Verilog_Basics_&_RTL-blue.svg?style=flat-square)](#)
-[![Focus](https://img.shields.io/badge/Focus-Hardware_Description_Language-green.svg?style=flat-square)](#)
+[![Stage](https://img.shields.io/badge/Stage-Procedural_Blocks-blue.svg?style=flat-square)](#)
+[![Focus](https://img.shields.io/badge/Focus-Verilog_RTL_Modeling-green.svg?style=flat-square)](#)
+[![Simulation](https://img.shields.io/badge/Simulator-AMD_Vivado-red.svg?style=flat-square&logo=xilinx)](#)
 [![License](https://img.shields.io/badge/License-MIT-green.svg?style=flat-square)](#)
 
-This module introduces Verilog Hardware Description Language (HDL), the industry-standard language used for digital hardware modeling, simulation, and register-transfer level (RTL) design. It covers syntax fundamentals, module structures, data types, operators, number representations, and parameterization required to build synthesizable digital circuits for FPGA and ASIC implementations.
+This module introduces procedural blocks in Verilog HDL, which describe the behavioral operation of digital hardware circuits. It covers continuous vs. procedural execution, `always` and `initial` constructs, sensitivity list evaluation, and the critical design rules governing blocking (`=`) and non-blocking (`<=`) assignment types.
+
+Mastering procedural blocks is essential for writing synthesizable RTL for both combinational logic and sequential state storage elements.
+
+---
+
+## ⚡ Procedural Assignment Quick Reference
+
+| Assignment Type | Operator | Typical Context | Execution Behavior | Target Hardware |
+| :--- | :---: | :--- | :--- | :--- |
+| **Blocking** | `=` | Combinational Logic (`always @(*)`) | Executes sequentially in line order; blocks subsequent statements. | Multiplexers, Decoders, ALUs |
+| **Non-Blocking** | `<=` | Sequential Logic (`always @(posedge clk)`) | Evaluates concurrently; schedules updates for the end of time step. | Registers, Flip-Flops, Pipelines |
+| **Continuous** | `assign` | Dataflow Logic (Outside procedural blocks) | Evaluates immediately upon any RHS net transition. | Logic Gates, Wire Busses |
 
 ---
 
