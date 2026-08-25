@@ -1,7 +1,9 @@
 # 10. Combinational RTL Design
 
-[![Stage](https://img.shields.io/badge/Stage-B--Verilog--Practice-blue.svg)](#)
-[![Focus](https://img.shields.io/badge/Focus-Verilog%20Combinational%20RTL-orange.svg)](#)
+
+[![Stage](https://img.shields.io/badge/Stage-Verilog_Basics_&_RTL-blue.svg?style=flat-square)](#)
+[![Focus](https://img.shields.io/badge/Focus-Hardware_Description_Language-green.svg?style=flat-square)](#)
+[![License](https://img.shields.io/badge/License-MIT-green.svg?style=flat-square)](#)
 
 This module covers the fundamental combinational digital circuits and their Verilog HDL implementations. It includes logic gates, adders, subtractors, multiplexers, demultiplexers, decoders, encoders, and comparators, along with RTL designs, dedicated testbenches, RTL schematics, and simulation waveforms.
 
