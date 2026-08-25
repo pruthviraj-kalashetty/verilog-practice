@@ -47,18 +47,18 @@ By working through this module, you will be able to:
 ## 🌲 Directory Structure
 ```text
 11-Sequential-RTL/
-├── 01-Latches/
-│   ├── 01-SR-Latch/
-│   │   ├── sr_latch.v
-│   │   ├── sr_latch_tb.v
-│   │   ├── rtl-schematic.png
-│   │   └── waveform.png
-│   │
-│   └── 02-D-Latch/
-│       ├── d_latch.v
-│       ├── d_latch_tb.v
-│       ├── rtl-schematic.png
-│       └── waveform.png
+└── 01-Latches/
+    ├── 01-SR-Latch/
+    │   ├── sr_latch.v
+    │   ├── sr_latch_tb.v
+    │   ├── rtl-schematic.png
+    │   └── waveform.png
+    │
+    └── 02-D-Latch/
+        ├── d_latch.v
+        ├── d_latch_tb.v
+        ├── rtl-schematic.png
+        └── waveform.png
 ```
 
 ---
