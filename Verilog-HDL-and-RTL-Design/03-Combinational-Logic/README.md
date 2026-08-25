@@ -1,11 +1,23 @@
-# ◈ Combinational Logic
+# ◈ Combinational Logic 
 
-[![Stage](https://img.shields.io/badge/verilog--practice-blue.svg)](#)
-[![Focus](https://img.shields.io/badge/Focus-Combinational%20Logic-green.svg)](#)
+[![Stage](https://img.shields.io/badge/Stage-Combinational_Logic-blue.svg?style=flat-square)](#)
+[![Focus](https://img.shields.io/badge/Focus-Verilog_RTL_Modeling-green.svg?style=flat-square)](#)
+[![Simulation](https://img.shields.io/badge/Simulator-AMD_Vivado-red.svg?style=flat-square&logo=xilinx)](#)
+[![License](https://img.shields.io/badge/License-MIT-green.svg?style=flat-square)](#)
 
-This module introduces the implementation of combinational logic circuits using Verilog HDL. It covers Boolean logic, continuous assignments, gate-level, dataflow, and behavioral modeling techniques, along with conditional and case statements used to describe combinational hardware.
+This module introduces the design and implementation of combinational logic circuits using Verilog HDL. It explores the three core modeling abstractions—Gate-Level, Dataflow, and Behavioral—along with continuous assignments (`assign`), conditional branching (`if-else`), and multi-way selection (`case`).
 
-These concepts form the foundation for writing synthesizable combinational RTL and implementing digital circuits such as logic gates, multiplexers, decoders, encoders, and arithmetic circuits using Verilog HDL.
+Combinational circuits are stateless, meaning their outputs are pure functions of their current inputs. Mastering these modeling techniques forms the foundation for building complex digital systems like ALUs, multiplexers, and decoders.
+
+---
+
+## ⚡ Abstraction Level Quick Reference
+
+| Abstraction Level | Primary Constructs | Syntax Style | Primary Hardware Target |
+| :--- | :--- | :--- | :--- |
+| **Gate-Level** | Primitive gates (`and`, `or`, `not`, `xor`) | Structural instantiations | Low-level netlists, custom logic blocks |
+| **Dataflow** | Continuous `assign`, bitwise operators | Expressive Boolean equations | Simple combinational circuits, buses |
+| **Behavioral** | `always @(*)`, `if-else`, `case` | Procedural logic blocks | Complex multiplexers, priority encoders, ALUs |
 
 ---
 
