@@ -46,7 +46,7 @@ By working through this module, you will be able to:
 | :--- | :--- |
 | **[01-Logic-Gates](./01-Logic-Gates/)** | Design and verification of fundamental AND, OR, NOT, NAND, NOR, XOR, and XNOR logic gates using synthesizable Verilog RTL. |
 | **[02-Adders](./02-Adders/)** | Design and verification of Half Adder, Full Adder, and Full Adder using two Half Adders for binary arithmetic operations. |
-| **[03-Subctractor](./03-Subctractor/)** | Design and verification of Half Subtractor, Full Subtractor, and Full Subtractor using two Half Subtractors for binary subtraction. |
+| **[03-Subctractor](./03-Subtractor/)** | Design and verification of Half Subtractor, Full Subtractor, and Full Subtractor using two Half Subtractors for binary subtraction. |
 | **[04-Multiplexers](./04-Multiplexers/)** | Design and verification of 2×1, 4×1, and 8×1 multiplexers for selecting one input from multiple data inputs. |
 | **[05-Demultiplexers](./05-Demultiplexers/)** | Design and verification of 1×2, 1×4, and 1×8 demultiplexers for routing a single input to one of multiple outputs. |
 | **[06-Decoders](./06-Decoders/)** | Design and verification of 2×4, 3×8, and 4×16 decoders for converting binary input codes into one-hot output selections. |
