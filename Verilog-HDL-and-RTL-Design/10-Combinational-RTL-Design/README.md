@@ -1,13 +1,25 @@
-# 10. Combinational RTL Design
+# ◈ Combinational RTL Design & Digital Building Blocks
 
-
-[![Stage](https://img.shields.io/badge/Stage-Verilog_Basics_&_RTL-blue.svg?style=flat-square)](#)
-[![Focus](https://img.shields.io/badge/Focus-Hardware_Description_Language-green.svg?style=flat-square)](#)
+[![Stage](https://img.shields.io/badge/Stage-Combinational_RTL_Design-blue.svg?style=flat-square)](#)
+[![Focus](https://img.shields.io/badge/Focus-Verilog_Combinational_Logic-green.svg?style=flat-square)](#)
+[![Simulation](https://img.shields.io/badge/Simulator-AMD_Vivado-red.svg?style=flat-square&logo=xilinx)](#)
 [![License](https://img.shields.io/badge/License-MIT-green.svg?style=flat-square)](#)
 
-This module covers the fundamental combinational digital circuits and their Verilog HDL implementations. It includes logic gates, adders, subtractors, multiplexers, demultiplexers, decoders, encoders, and comparators, along with RTL designs, dedicated testbenches, RTL schematics, and simulation waveforms.
+This module provides a comprehensive repository of fundamental combinational digital logic circuits and their synthesizable Verilog HDL implementations. It spans core logic gates, arithmetic blocks (adders, subtractors), data routing elements (multiplexers, demultiplexers), encoding/decoding modules, and binary magnitude comparators. Each design includes synthesizable RTL source code, self-checking testbenches, post-synthesis RTL schematics, and simulation waveforms.
 
-The module provides practical experience in understanding combinational logic, translating Boolean logic into synthesizable Verilog RTL, developing reusable digital building blocks, and verifying their functionality through simulation.
+---
+
+## ⚡ Combinational RTL Design Quick Reference
+
+| Module Category | Core Functionality | Primary Verilog Operators / Constructs | Output Characteristics |
+| :--- | :--- | :--- | :--- |
+| **Logic Gates** | Fundamental Boolean primitives | `assign`, `&`, `\|`, `~`, `^`, `~^` | Purely functional, memoryless bitwise logic. |
+| **Adders & Subtractors** | Binary addition & subtraction | `+`, `-`, or structural primitive instances | Sum/Diff, Carry-out/Borrow-out generation. |
+| **Multiplexers (MUX)** | Multi-to-one data selection | Continuous `? :` or procedural `case` / `if-else` | Routes one selected input to a single output. |
+| **Demultiplexers (DEMUX)**| One-to-multi data routing | Procedural `case` with enable masking | Routes a single input to one of $2^n$ outputs. |
+| **Decoders** | $n$-to-$2^n$ code translation | Bit-shift `1 << in` or explicit `case` | One-hot asserted output configuration. |
+| **Encoders** | $2^n$-to-$n$ active line encoding | Procedural `case` / conditional logic | Encodes active inputs into binary output codes. |
+| **Comparators** | Magnitude evaluation | Relational operators (`>`, `==`, `<`) | Asserts `A>B`, `A==B`, or `A<B` magnitude flags. |
 
 ---
 
