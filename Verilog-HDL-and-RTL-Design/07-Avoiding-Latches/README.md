@@ -1,4 +1,4 @@
-# 07. Latch Inference & Latch-Free RTL Coding
+# ◈ Latch Inference & Latch-Free RTL Coding
 
 [![Stage](https://img.shields.io/badge/Stage-Latch--Free_RTL-blue.svg?style=flat-square)](#)
 [![Focus](https://img.shields.io/badge/Focus-Avoiding_Latch_Inference-orange.svg?style=flat-square)](#)
