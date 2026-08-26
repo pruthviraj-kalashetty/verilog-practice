@@ -1,4 +1,4 @@
-# 05. Hierarchical Digital Design & Module Instantiation
+# ◈ Hierarchical Digital Design & Module Instantiation
 
 [![Stage](https://img.shields.io/badge/Stage-Hierarchical_Design-blue.svg?style=flat-square)](#)
 [![Focus](https://img.shields.io/badge/Focus-Module_Instantiation-orange.svg?style=flat-square)](#)
