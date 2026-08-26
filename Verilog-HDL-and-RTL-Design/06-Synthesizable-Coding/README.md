@@ -1,4 +1,4 @@
-# 06. Synthesizable Verilog RTL Coding & Design Guidelines
+# ◈ Synthesizable Verilog RTL Coding & Design Guidelines
 
 [![Stage](https://img.shields.io/badge/Stage-Synthesizable_RTL-blue.svg?style=flat-square)](#)
 [![Focus](https://img.shields.io/badge/Focus-RTL_Synthesis_&_Optimization-orange.svg?style=flat-square)](#)
