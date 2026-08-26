@@ -1,11 +1,25 @@
-# ◈ Sequential Logic
+# 04. Fundamentals of Sequential Logic 
 
-[![Stage](https://img.shields.io/badge/verilog--practice-blue.svg)](#)
-[![Focus](https://img.shields.io/badge/Focus-Sequential%20Logic-orange.svg)](#)
+[![Stage](https://img.shields.io/badge/Stage-Sequential_Logic_Fundamentals-blue.svg?style=flat-square)](#)
+[![Focus](https://img.shields.io/badge/Focus-Clocking_&_Resets-orange.svg?style=flat-square)](#)
+[![Simulation](https://img.shields.io/badge/Simulator-AMD_Vivado-red.svg?style=flat-square&logo=xilinx)](#)
+[![License](https://img.shields.io/badge/License-MIT-green.svg?style=flat-square)](#)
 
-This module introduces the fundamental concepts of sequential logic, where the behavior of a digital circuit depends on both its present inputs and stored state. It covers clock concepts, edge triggering, synchronous and asynchronous resets, and the fundamentals of memory elements.
+This module introduces the underlying mechanics of sequential digital logic, where output states depend on both current inputs and historical state memory. It covers clock generation dynamics, edge triggering (`posedge`/`negedge`), synchronous vs. asynchronous reset trees, and basic memory element behaviors.
 
-These concepts provide the foundation for understanding flip-flops, registers, counters, finite state machines, and sequential RTL design.
+Mastering timing references and reset strategies is critical for preventing clock-domain glitches, metastabilities, and race conditions in complex RTL systems.
+
+---
+
+## ⚡ Reset Architecture & Clocking Quick Reference
+
+| Parameter / Feature | Synchronous Reset | Asynchronous Reset |
+| :--- | :--- | :--- |
+| **Sensitivity List** | `@(posedge clk)` | `@(posedge clk or posedge rst)` |
+| **Trigger Event** | Evaluated only on active clock edge | Evaluated immediately upon `rst` assertion |
+| **Glitch Susceptibility** | High immunity to noise on reset line | Susceptible to false triggers from glitches |
+| **Timing Closure Impact** | Adds logic to data path ($D$-input) | Uses dedicated cell reset pins ($CLR$/$PRE$) |
+| **Reset Deassertion** | Synchronous by definition | Requires Reset Synchronizer to prevent metastability |
 
 ---
 
