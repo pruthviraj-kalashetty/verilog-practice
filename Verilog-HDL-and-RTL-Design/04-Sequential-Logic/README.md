@@ -1,4 +1,4 @@
-# 04. Fundamentals of Sequential Logic 
+# ◈ Fundamentals of Sequential Logic 
 
 [![Stage](https://img.shields.io/badge/Stage-Sequential_Logic_Fundamentals-blue.svg?style=flat-square)](#)
 [![Focus](https://img.shields.io/badge/Focus-Clocking_&_Resets-orange.svg?style=flat-square)](#)
