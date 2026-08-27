@@ -1,11 +1,24 @@
-# ◈ Hierarchical Design
+# ◈ Hierarchical Digital Design & Module Instantiation
 
-[![Stage](https://img.shields.io/badge/verilog--practice-blue.svg)](#)
-[![Focus](https://img.shields.io/badge/Focus-Hierarchical%20Design-orange.svg)](#)
+[![Stage](https://img.shields.io/badge/Stage-Hierarchical_Design-blue.svg?style=flat-square)](#)
+[![Focus](https://img.shields.io/badge/Focus-Module_Instantiation-orange.svg?style=flat-square)](#)
+[![Simulation](https://img.shields.io/badge/Simulator-AMD_Vivado-red.svg?style=flat-square&logo=xilinx)](#)
+[![License](https://img.shields.io/badge/License-MIT-green.svg?style=flat-square)](#)
 
-This module introduces hierarchical design in Verilog, where complex digital systems are developed by connecting smaller, reusable modules together. It covers module instantiation and the differences between structural and behavioral design approaches.
+This module introduces hierarchical methodology in Verilog HDL, where complex top-level digital systems are partitioned into smaller, modular, and reusable sub-blocks. It covers module instantiation strategies, explicit named port mapping versus ordered positional mapping, and structural versus behavioral modeling styles.
 
-Hierarchical design is an important concept in RTL development because it promotes modularity, reusability, readability, and scalable hardware design.
+Hierarchical design is fundamental to professional RTL engineering—enabling team-based parallel development, improving code readability, simplifying debugging, and facilitating scalable IP reuse across modern VLSI projects.
+
+---
+
+## ⚡ Hierarchical Modeling Quick Reference
+
+| Design Methodology | Core Construct / Technique | Primary Focus | Best Used For |
+| :--- | :--- | :--- | :--- |
+| **Structural Design** | Sub-module instantiations, net interconnections | Interconnections ("How components wire together") | Top-level system assembly, structural netlists |
+| **Behavioral Design** | Procedural blocks (`always`, `initial`), continuous `assign` | Functionality ("What hardware performs") | Sub-block internal logic, state machines, ALUs |
+| **Port Mapping (Named)** | `.port_name(signal_name)` | Explicit, robust mapping | Recommended standard for all synthesizable RTL |
+| **Port Mapping (Positional)** | `sub_module u1 (sigA, sigB, sigC)` | Order-dependent implicit mapping | Quick testbench wiring (error-prone in RTL) |
 
 ---
 

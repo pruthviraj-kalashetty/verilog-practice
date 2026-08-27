@@ -1,11 +1,26 @@
-# ◈ Synthesizable Coding
+# ◈ Synthesizable Verilog RTL Coding & Design Guidelines
 
-[![Stage](https://img.shields.io/badge/verilog--practice-blue.svg)](#)
-[![Focus](https://img.shields.io/badge/Focus-Synthesizable%20RTL%20Coding-orange.svg)](#)
+[![Stage](https://img.shields.io/badge/Stage-Synthesizable_RTL-blue.svg?style=flat-square)](#)
+[![Focus](https://img.shields.io/badge/Focus-RTL_Synthesis_&_Optimization-orange.svg?style=flat-square)](#)
+[![Simulation](https://img.shields.io/badge/Simulator-AMD_Vivado-red.svg?style=flat-square&logo=xilinx)](#)
+[![License](https://img.shields.io/badge/License-MIT-green.svg?style=flat-square)](#)
 
-This module introduces synthesizable Verilog coding practices used to describe hardware that can be converted from RTL into actual digital logic gates, flip-flops, and other hardware structures.
+This module introduces the rules and guidelines for writing synthesizable Verilog HDL. In digital design, logic synthesis translates Register-Transfer Level (RTL) code into physical gate-level netlists mapped to target ASIC technology libraries or FPGA Lookup Tables (LUTs) and flip-flops.
 
-It covers the difference between synthesizable and non-synthesizable constructs, practical RTL coding guidelines, common coding mistakes, and techniques for writing efficient and optimized Verilog code.
+Writing synthesis-friendly Verilog requires thinking in terms of physical hardware structures rather than procedural software loops. Master these guidelines to avoid simulation-synthesis mismatches, eliminate unintended latch inferences, and meet tight timing closure constraints.
+
+---
+
+## ⚡ Synthesis Construct Quick Reference
+
+| Category | Synthesizable RTL Constructs | Non-Synthesizable Constructs (Simulation Only) |
+| :--- | :--- | :--- |
+| **Procedural Blocks** | `always @(posedge clk)`, `always @(*)` | `initial`, `always` without sensitivity list |
+| **Delays & Timing** | Clock-driven state transitions | `#delay`, `wait()`, `fork...join` |
+| **Assignments** | Non-blocking (`<=`) for sequential, Blocking (`=`) for combinational | Continuous assignment to `reg`, Force / Release |
+| **Data Types** | `wire`, `reg`, `integer` (constants/loops) | `real`, `time`, `event` |
+| **System Tasks** | Bitwise `$clog2()` (elaboration time) | `$display`, `$finish`, `$dumpfile`, `$stop` |
+| **Control Flow** | Fully specified `if-else`, `case` | Infinite loops (`forever`), dynamic `while` loops |
 
 ---
 

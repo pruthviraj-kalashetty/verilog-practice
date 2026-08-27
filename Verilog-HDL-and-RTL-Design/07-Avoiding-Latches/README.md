@@ -1,12 +1,25 @@
+# ◈ Latch Inference & Latch-Free RTL Coding
 
-# ◈ Avoiding Latches
+[![Stage](https://img.shields.io/badge/Stage-Latch--Free_RTL-blue.svg?style=flat-square)](#)
+[![Focus](https://img.shields.io/badge/Focus-Avoiding_Latch_Inference-orange.svg?style=flat-square)](#)
+[![Simulation](https://img.shields.io/badge/Simulator-AMD_Vivado-red.svg?style=flat-square&logo=xilinx)](#)
+[![License](https://img.shields.io/badge/License-MIT-green.svg?style=flat-square)](#)
 
-[![Stage](https://img.shields.io/badge/verilog--practice-blue.svg)](#)
-[![Focus](https://img.shields.io/badge/Focus-Latch--Free%20RTL%20Coding-orange.svg)](#)
+This module introduces latch concepts, level-sensitive storage behavior, and how synthesis tools infer unintended transparent latches during RTL compilation. It covers the root causes of latch inference—such as missing `else` branches or incomplete `case` statements—and provides practical coding practices for writing predictable, latch-free combinational logic.
 
-This module introduces latches and explains how unintended latch inference can occur during RTL coding. It covers latch fundamentals, the conditions that cause synthesis tools to infer latches, and coding practices for designing predictable latch-free combinational logic.
+Eliminating unintended latches is critical in ASIC and FPGA engineering, as latches complicate Static Timing Analysis (STA), cause unexpected power consumption, create race conditions, and lead to serious simulation-synthesis mismatches.
 
-Understanding latch inference is important for writing reliable synthesizable RTL and avoiding unintended storage elements in digital designs.
+---
+
+## ⚡ Memory Storage Comparison & Quick Reference
+
+| Feature / Metric | Transparent Latch | D Flip-Flop (Register) | Latch-Free Combinational Logic |
+| :--- | :--- | :--- | :--- |
+| **Trigger Mechanism** | Level-Sensitive (`enable` HIGH/LOW) | Edge-Triggered (`posedge`/`negedge clk`) | Continuous evaluation (no memory) |
+| **Sensitivity List** | `@(enable or data)` | `@(posedge clk)` | `@(*)` |
+| **Synthesis Trigger** | Incomplete paths in combinational `always` | Clock edge declaration with assignment | Complete coverage for all input states |
+| **STA Complexity** | High (Time-borrowing, cycle checking) | Low (Setup/Hold checked at clock edge) | Pure delay path calculation |
+| **FPGA Resource Use** | Inefficient (uses LUT memory / latch modes) | Standard Logic Block Dedicated Flip-Flops | Pure Lookup Tables (LUTs) |
 
 ---
 
