@@ -1,8 +1,8 @@
-module async_4bit_up_counter_tb;
+module async_4bit_down_counter_tb;
    reg clk;
    wire [3:0] Q;
 
-   async_4bit_up_counter DUT(
+   async_4bit_down_counter DUT(
     .clk(clk),
     .Q(Q)
    );
@@ -15,8 +15,8 @@ initial begin
 end
 
 initial begin 
-  $dumpfile("async_4bit_up_counter.vcd");
-  $dumpvars(0, async_4bit_up_counter_tb);
+  $dumpfile("async_4bit_down_counter.vcd");
+  $dumpvars(0, async_4bit_down_counter_tb);
 
   #200;
 
