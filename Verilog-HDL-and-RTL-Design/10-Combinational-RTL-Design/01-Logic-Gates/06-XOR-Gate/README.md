@@ -1,3 +1,15 @@
+# ◈ XOR Gate (`xor_gate`)
+
+### Fundamental Logic Gate • Combinational RTL • Dataflow Modeling
+
+---
+
+## 📌 Module Description
+
+The **2-Input XOR Gate** is a basic combinational circuit where the output `Y` goes **HIGH (`1`)** when the inputs `A` and `B` are **different** and goes **LOW (`0`)** when both inputs are the same. Implemented using continuous assignment (`assign`) in dataflow abstraction.
+
+---
+
 # ◈ **Verilog RTL code** 
 
 ```verilog
