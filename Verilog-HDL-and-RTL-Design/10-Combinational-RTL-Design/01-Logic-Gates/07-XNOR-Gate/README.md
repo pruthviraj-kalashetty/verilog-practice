@@ -1,3 +1,15 @@
+# ◈ XNOR Gate (`xnor_gate`)
+
+### Fundamental Logic Gate • Combinational RTL • Dataflow Modeling
+
+---
+
+## 📌 Module Description
+
+The **2-Input XNOR Gate** is a basic combinational circuit where the output `Y` goes **HIGH (`1`)** when the inputs `A` and `B` are **the same** and goes **LOW (`0`)** when the inputs are different. Implemented using continuous assignment (`assign`) in dataflow abstraction.
+
+---
+
 # ◈ **Verilog RTL code** 
 
 ```verilog
