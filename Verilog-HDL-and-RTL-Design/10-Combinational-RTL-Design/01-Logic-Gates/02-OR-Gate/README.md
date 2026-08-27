@@ -1,3 +1,15 @@
+# ◈ OR Gate (`or_gate`)
+
+### Fundamental Logic Gate • Combinational RTL • Dataflow Modeling
+
+---
+
+## 📌 Module Description
+
+The **2-Input OR Gate** is a basic combinational circuit where the output `Y` goes **HIGH (`1`)** if at least one of the inputs `A` or `B` is **HIGH (`1`)**. Implemented using continuous assignment (`assign`) in dataflow abstraction.
+
+---
+
 # ◈ **Verilog RTL code** 
 
 ```verilog
