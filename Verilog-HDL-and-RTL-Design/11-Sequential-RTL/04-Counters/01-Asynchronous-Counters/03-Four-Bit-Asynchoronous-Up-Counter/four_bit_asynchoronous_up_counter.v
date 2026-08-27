@@ -19,7 +19,7 @@ always @(negedge Q[1]) begin
    Q[2] <= ~Q[2];
 end
 
-always @(negedge clk Q[2]) begin
+always @(negedge Q[2]) begin
    Q[3] <= ~Q[3];
 end
 
