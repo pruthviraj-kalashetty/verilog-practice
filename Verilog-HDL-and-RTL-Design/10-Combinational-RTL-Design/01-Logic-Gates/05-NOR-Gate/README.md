@@ -1,3 +1,15 @@
+# ◈ NOR Gate (`nor_gate`)
+
+### Fundamental Logic Gate • Combinational RTL • Dataflow Modeling
+
+---
+
+## 📌 Module Description
+
+The **2-Input NOR Gate** is a basic combinational circuit where the output `Y` goes **HIGH (`1`)** only when both inputs `A` and `B` are **LOW (`0`)**; otherwise, the output remains **LOW (`0`)**. Implemented using continuous assignment (`assign`) in dataflow abstraction.
+
+---
+
 # ◈ **Verilog RTL code** 
 
 ```verilog
