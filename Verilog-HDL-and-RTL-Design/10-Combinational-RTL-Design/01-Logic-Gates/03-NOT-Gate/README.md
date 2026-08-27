@@ -1,3 +1,15 @@
+# ◈ NOT Gate (`not_gate`)
+
+### Fundamental Logic Gate • Combinational RTL • Dataflow Modeling
+
+---
+
+## 📌 Module Description
+
+The **NOT Gate** is a basic combinational circuit where the output `Y` is the **logical inverse** of the input `A`, producing **HIGH (`1`)** when `A` is LOW (`0`) and **LOW (`0`)** when `A` is HIGH (`1`). Implemented using continuous assignment (`assign`) in dataflow abstraction.
+
+---
+
 # ◈ **Verilog RTL code** 
 
 ```verilog
