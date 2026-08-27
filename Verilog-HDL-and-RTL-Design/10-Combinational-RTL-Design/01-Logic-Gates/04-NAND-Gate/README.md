@@ -1,3 +1,15 @@
+# ◈ NAND Gate (`nand_gate`)
+
+### Fundamental Logic Gate • Combinational RTL • Dataflow Modeling
+
+---
+
+## 📌 Module Description
+
+The **2-Input NAND Gate** is a basic combinational circuit where the output `Y` goes **LOW (`0`)** only when both inputs `A` and `B` are **HIGH (`1`)**; otherwise, the output remains **HIGH (`1`)**. Implemented using continuous assignment (`assign`) in dataflow abstraction.
+
+---
+
 # ◈ **Verilog RTL code** 
 
 ```verilog
