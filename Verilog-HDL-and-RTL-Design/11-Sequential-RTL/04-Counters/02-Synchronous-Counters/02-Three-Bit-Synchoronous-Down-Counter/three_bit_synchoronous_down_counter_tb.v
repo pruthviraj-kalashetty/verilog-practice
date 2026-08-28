@@ -8,8 +8,6 @@ sync_3bit_down_counter DUT(
     .Q(Q)
 );
 
-// Clock
-
 initial begin
     clk = 0;
     forever #5 clk <= ~clk;
@@ -20,7 +18,6 @@ initial begin
     $dumpvars(0, sync_3bit_down_counter_tb);
 
     #100;
-
     $finish;
 end
 
