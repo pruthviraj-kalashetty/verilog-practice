@@ -1,8 +1,8 @@
-module sync_3bit_up_counter_tb;
+module sync_3bit_down_counter_tb;
   reg clk;
   wire [2:0] Q;
 
-  sync_3bit_up_counter DUT(
+  sync_3bit_down_counter DUT(
     .clk(clk),
     .Q(Q)
   );
@@ -13,8 +13,8 @@ module sync_3bit_up_counter_tb;
   end
 
   initial begin
-    $dumpfile("sync_3bit_up_counter.vcd");
-    $dumpvars(0, sync_3bit_up_counter_tb);
+    $dumpfile("sync_3bit_down_counter.vcd");
+    $dumpvars(0, sync_3bit_down_counter_tb);
 
     #100;
     $finish;
