@@ -4,12 +4,11 @@ module sync_3bit_down_counter(
 );
 
 initial begin
-   Q = 3'b111;
+    Q = 3'b111;
 end
 
 always @(posedge clk) begin
-   Q <= Q + 1;
+    Q <= Q - 1;
 end
 
 endmodule
-
