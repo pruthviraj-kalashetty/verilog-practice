@@ -1,4 +1,4 @@
-# ◈ Full Adder 
+# ◈ Half Adder (`half_adder`)
 
 ### Combinational Circuit • Arithmetic Circuit • Dataflow Modeling
 
@@ -6,7 +6,7 @@
 
 ## 📌 Module Description
 
-The **Full Adder** is a combinational arithmetic circuit that performs the addition of **three 1-bit inputs**—`A`, `B`, and `Cin`—and produces a **Sum (`S`)** and **Carry-Out (`Cout`)**. Implemented using continuous assignment (`assign`) in dataflow abstraction.
+The **Half Adder** is a combinational arithmetic circuit that performs the addition of **two 1-bit inputs**—`A` and `B`—and produces a **Sum (`S`)** and **Carry-Out (`Cout`)**. Implemented using continuous assignment (`assign`) in dataflow abstraction.
 
 ---
 
