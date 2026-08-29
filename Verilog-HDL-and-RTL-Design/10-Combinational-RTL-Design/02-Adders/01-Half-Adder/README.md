@@ -1,4 +1,4 @@
-# ◈ Half Adder (`half_adder`)
+# ◈ Half Adder 
 
 ### Combinational Circuit • Arithmetic Circuit • Dataflow Modeling
 
