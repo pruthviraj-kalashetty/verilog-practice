@@ -155,7 +155,7 @@ endmodule
 | `P3P2P1P0=1110, Shift 4 CLK` | `Data Out=1110` | **PASS** |
 | `P3P2P1P0=1111, Shift 4 CLK` | `Data Out=1111` | **PASS** |
 
-**Verification Result:** `2/2 TEST CASES PASSED`
+**Verification Result:** `16/16 TEST CASES PASSED`
 
 
 
