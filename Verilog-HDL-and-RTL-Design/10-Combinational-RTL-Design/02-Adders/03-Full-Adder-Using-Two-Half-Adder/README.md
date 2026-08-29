@@ -1,3 +1,15 @@
+# ◈ Full Adder Using Two Half Adders 
+
+### Combinational Circuit • Hierarchical Design • Structural Modeling
+
+---
+
+## 📌 Module Description
+
+The **Full Adder Using Two Half Adders** is a combinational arithmetic circuit that performs the addition of **three 1-bit inputs**—`A`, `B`, and `Cin`—by cascading **two Half Adders** and an OR gate to produce the **Sum (`S`)** and **Carry-Out (`Cout`)** outputs. Implemented using module instantiation in structural abstraction.
+
+---
+
 # ◈ **Verilog RTL code** 
 
 ```verilog
