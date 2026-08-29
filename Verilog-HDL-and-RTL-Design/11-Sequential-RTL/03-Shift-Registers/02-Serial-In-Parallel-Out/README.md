@@ -1,4 +1,4 @@
-# ◈ Serial-In Parallel-Out (`sipo_shift_register`)
+# ◈ Serial-In Parallel-Out 
 
 ### Sequential Circuit • Shift Register • Behavioral Modeling
 
