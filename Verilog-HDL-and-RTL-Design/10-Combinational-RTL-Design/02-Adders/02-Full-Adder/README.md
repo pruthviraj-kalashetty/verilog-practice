@@ -1,3 +1,15 @@
+# ◈ Full Adder
+
+### Combinational Circuit • Arithmetic Circuit • Dataflow Modeling
+
+---
+
+## 📌 Module Description
+
+The **Full Adder** is a combinational arithmetic circuit that performs the addition of **three 1-bit inputs**—`A`, `B`, and `Cin`—and produces a **Sum (`S`)** and **Carry-Out (`Cout`)**. Implemented using continuous assignment (`assign`) in dataflow abstraction.
+
+---
+
 # ◈ **Verilog RTL code** 
 
 ```verilog
