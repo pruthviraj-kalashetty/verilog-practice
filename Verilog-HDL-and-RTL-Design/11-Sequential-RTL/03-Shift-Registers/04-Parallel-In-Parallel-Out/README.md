@@ -1,4 +1,4 @@
-# ◈ Parallel-In Serial-Out 
+# ◈ Parallel-In Parallel-Out 
 
 ### Sequential Circuit • Shift Register • Behavioral Modeling
 
@@ -6,7 +6,7 @@
 
 ## 📌 Module Description
 
-The **Parallel-In Serial-Out (PISO) Shift Register** is a sequential circuit that loads multiple data bits **in parallel** and shifts them out **serially** through a single output on each active clock edge. Implemented using procedural statements in behavioral abstraction.
+The **Parallel-In Parallel-Out (PIPO) Shift Register** is a sequential circuit that loads multiple data bits **in parallel** and transfers the stored data to the parallel outputs simultaneously on each active clock edge. Implemented using procedural statements in behavioral abstraction.
 
 ---
 
