@@ -1,4 +1,4 @@
-# ◈ Verilog Synchronous Counters & Sequential State Machines
+# ◈ Verilog Synchronous Counters 
 
 [![Stage](https://img.shields.io/badge/Stage-Sequential_Logic-blue.svg?style=flat-square)](#)
 [![Focus](https://img.shields.io/badge/Focus-Synchronous_Counter_RTL-orange.svg?style=flat-square)](#)
