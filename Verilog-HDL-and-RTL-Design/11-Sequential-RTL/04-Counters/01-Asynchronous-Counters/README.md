@@ -45,10 +45,10 @@ By working through this module, you will be able to:
 
 | Module | Core Technical Focus |
 | :--------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------- |
-| **[01-Three-Bit-Asynchoronous-Up-Counter](./01-Asynchronous-Counters/01-Three-Bit-Asynchoronous-Up-Counter/)** | Design and verification of a 3-bit asynchronous up counter that progresses through binary counting states using cascaded flip-flops. |
-| **[02-Three-Bit-Asynchoronous-Down-Counter](./01-Asynchronous-Counters/02-Three-Bit-Asynchoronous-Down-Counter/)** | Design and verification of a 3-bit asynchronous down counter that progresses through binary states in descending order. |
-| **[03-Four-Bit-Asynchoronous-Up-Counter](./01-Asynchronous-Counters/03-Four-Bit-Asynchoronous-Up-Counter/)** | Design and verification of a 4-bit asynchronous up counter that generates a 16-state binary counting sequence. |
-| **[04-Four-Bit-Asynchoronous-Down-Counter](./01-Asynchronous-Counters/04-Four-Bit-Asynchoronous-Down-Counter/)** | Design and verification of a 4-bit asynchronous down counter that generates a 16-state descending binary counting sequence. |
+| **[01-Three-Bit-Asynchoronous-Up-Counter](./01-Three-Bit-Asynchoronous-Up-Counter/)** | Design and verification of a 3-bit asynchronous up counter that progresses through binary counting states using cascaded flip-flops. |
+| **[02-Three-Bit-Asynchoronous-Down-Counter](./02-Three-Bit-Asynchoronous-Down-Counter/)** | Design and verification of a 3-bit asynchronous down counter that progresses through binary states in descending order. |
+| **[03-Four-Bit-Asynchoronous-Up-Counter](./03-Four-Bit-Asynchoronous-Up-Counter/)** | Design and verification of a 4-bit asynchronous up counter that generates a 16-state binary counting sequence. |
+| **[04-Four-Bit-Asynchoronous-Down-Counter](./04-Four-Bit-Asynchoronous-Down-Counter/)** | Design and verification of a 4-bit asynchronous down counter that generates a 16-state descending binary counting sequence. |
 
 ---
 
