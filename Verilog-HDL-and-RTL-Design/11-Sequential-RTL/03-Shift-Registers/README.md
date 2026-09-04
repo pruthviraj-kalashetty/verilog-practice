@@ -95,6 +95,7 @@ The basic relationship is:
 
 **Input Data → Flip-Flop Chain → Shifted Data → Output**
 
+
 ### 2. Sequential Data Storage
 
 Understand how flip-flops provide storage for individual bits of data and how multiple flip-flops can be connected together to form a multi-bit register.
@@ -107,6 +108,7 @@ For an N-bit shift register:
 
 The stored data changes according to the defined clocking behavior.
 
+
 ### 3. Clock-Controlled Data Movement
 
 Understand how the clock signal controls when data is shifted or loaded into the register.
@@ -117,6 +119,7 @@ The basic relationship is:
 
 **Clock Edge → Data Transfer → Updated Register State**
 
+
 ### 4. Shift Operation
 
 Understand how binary data moves from one flip-flop to the next during each active clock edge.
@@ -126,6 +129,7 @@ For example, in a 4-bit shift register:
 **Serial Input → FF3 → FF2 → FF1 → FF0 → Serial Output**
 
 Each active clock edge moves the stored data by one register position.
+
 
 ### 5. Serial-In-Serial-Out (SISO)
 
@@ -141,6 +145,7 @@ Key concepts include:
 - Bit-by-bit data movement
 - Sequential data transfer
 
+
 ### 6. Serial-In-Parallel-Out (SIPO)
 
 Study the operation of a Serial-In-Parallel-Out shift register in which data is entered serially and becomes available simultaneously at multiple parallel outputs.
@@ -154,6 +159,7 @@ Key concepts include:
 - Sequential shifting
 - Serial-to-parallel conversion
 - Multi-bit data storage
+
 
 ### 7. Parallel-In-Serial-Out (PISO)
 
@@ -169,6 +175,7 @@ Key concepts include:
 - Sequential shifting
 - Parallel-to-serial conversion
 
+
 ### 8. Parallel-In-Parallel-Out (PIPO)
 
 Study the operation of a Parallel-In-Parallel-Out shift register in which multiple data bits are loaded simultaneously and transferred to parallel outputs.
@@ -182,6 +189,7 @@ Key concepts include:
 - Synchronous data storage
 - Parallel data transfer
 - Multi-bit register operation
+
 
 ### 9. Serial and Parallel Data Transfer
 
@@ -204,6 +212,7 @@ The four shift-register configurations combine these two data-transfer methods:
 | **PISO** | Parallel | Serial | Parallel-to-serial conversion |
 | **PIPO** | Parallel | Parallel | Parallel data storage and transfer |
 
+
 ### 10. Flip-Flop Chain
 
 Understand how multiple flip-flops can be connected in sequence to create a shift register.
@@ -216,6 +225,7 @@ For a 4-bit shift register:
 
 The output of one stage becomes the input of the next stage.
 
+
 ### 11. Register State
 
 Understand the concept of the current register state and how it changes after each active clock edge.
@@ -227,6 +237,7 @@ For example:
 **After Clock Edge → Updated Register State**
 
 This concept provides a foundation for understanding larger sequential RTL designs and state-based digital systems.
+
 
 ### 12. Non-Blocking Assignment
 
@@ -241,6 +252,7 @@ Example:
     end
 
 This represents a clocked storage element.
+
 
 ### 13. Verilog RTL Implementation
 
@@ -257,6 +269,7 @@ Key concepts include:
 - Shift operations
 - Sequential RTL coding
 - Register-based storage
+
 
 ### 14. Testbench Development
 
@@ -277,6 +290,7 @@ Testbenches should verify:
 - Register state
 - Correct data propagation
 
+
 ### 15. Simulation and Waveform Analysis
 
 Analyze simulation waveforms to understand how binary data moves through the register on each clock edge.
@@ -293,6 +307,7 @@ The waveform analysis includes:
 - Data propagation
 - Clock-to-clock behavior
 
+
 ### 16. RTL Schematic Analysis
 
 Analyze the generated RTL schematic to understand how the Verilog description is represented as connected sequential hardware.
@@ -300,6 +315,7 @@ Analyze the generated RTL schematic to understand how the Verilog description is
 This establishes the connection between:
 
 **Verilog Code → RTL Structure → Flip-Flops → Hardware Logic**
+
 
 ### 17. Synthesizable Sequential RTL
 
@@ -313,6 +329,7 @@ Important RTL practices include:
 - Avoid unintended combinational behavior.
 - Maintain consistent clocking methodology.
 - Clearly define data-loading and shifting behavior.
+
 
 ### 18. Data Conversion
 
@@ -328,6 +345,7 @@ Understand how shift registers are used for data-format conversion.
 
 These structures are important in communication interfaces and digital system datapaths.
 
+
 ### 19. Shift Register Timing
 
 Understand how data movement occurs with respect to clock edges.
@@ -337,6 +355,7 @@ A typical sequence is:
 **Input Applied → Clock Edge → Register Updates → Data Shifts → Output Changes**
 
 The relationship between the clock and register state is fundamental to sequential RTL design.
+
 
 ### 20. Applications of Shift Registers
 
