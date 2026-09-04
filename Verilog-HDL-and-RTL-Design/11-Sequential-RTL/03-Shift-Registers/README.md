@@ -1,4 +1,4 @@
-# 09. Shift Registers
+# Shift Registers
 
 [![Stage](https://img.shields.io/badge/Stage-B--Verilog--Practice-blue.svg)](#)
 [![Focus](https://img.shields.io/badge/Focus-Verilog%20Shift%20Registers-orange.svg)](#)
