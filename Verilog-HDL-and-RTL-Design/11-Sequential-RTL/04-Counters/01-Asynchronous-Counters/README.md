@@ -1,4 +1,4 @@
-# 10. Verilog Asynchronous (Ripple) Counters
+# ◈ Verilog Asynchronous (Ripple) Counters
 
 [![Stage](https://img.shields.io/badge/Stage-Sequential_Logic-blue.svg?style=flat-square)](#)
 [![Focus](https://img.shields.io/badge/Focus-Ripple_Counter_RTL-orange.svg?style=flat-square)](#)
