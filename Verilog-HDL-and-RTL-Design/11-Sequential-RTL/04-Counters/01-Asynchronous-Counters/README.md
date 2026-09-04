@@ -1,14 +1,27 @@
-# 09. Asynchronous Counters
+# 10. Verilog Asynchronous (Ripple) Counters
 
-[![Stage](https://img.shields.io/badge/Stage-B--Verilog--Practice-blue.svg)](#)
-[![Focus](https://img.shields.io/badge/Focus-Verilog%20Asynchronous%20Counters-orange.svg)](#)
+[![Stage](https://img.shields.io/badge/Stage-Sequential_Logic-blue.svg?style=flat-square)](#)
+[![Focus](https://img.shields.io/badge/Focus-Ripple_Counter_RTL-orange.svg?style=flat-square)](#)
+[![Simulation](https://img.shields.io/badge/Simulator-AMD_Vivado-red.svg?style=flat-square&logo=xilinx)](#)
+[![License](https://img.shields.io/badge/License-MIT-green.svg?style=flat-square)](#)
 
-This module covers the fundamental asynchronous counter circuits and their Verilog HDL implementations. It includes 3-bit and 4-bit asynchronous up and down counters, along with RTL designs, dedicated testbenches, RTL schematics, and simulation waveforms.
+This module introduces the design, modeling, and verification of Asynchronous (Ripple) Counters in Verilog HDL. Unlike synchronous counters where a global clock triggers every register simultaneously, asynchronous counters cascade flip-flops such that the output of one stage serves as the clock trigger for the next stage.
 
-The module provides practical experience in understanding ripple-counter operation, sequential state transitions, flip-flop-based counter design, synthesizable Verilog RTL, and functional verification through simulation.
+While ripple counters are simple and require minimal logic gates, their cumulative propagation delay limits maximum operating frequency and can introduce output glitches. This module covers 3-bit and 4-bit Up and Down ripple counters, structural RTL modeling, testbenches, and waveform analysis.
 
 ---
 
+## ⚡ Asynchronous vs. Synchronous Counter Comparison
+
+| Parameter | Asynchronous (Ripple) Counter | Synchronous Counter |
+| :--- | :--- | :--- |
+| **Clock Distribution** | Cascaded ($Q_n$ clocks $FF_{n+1}$) | Parallel global clock to all Flip-Flops |
+| **Total Propagation Delay** | Cumulative ($N \times t_{pd}$) | Fixed single-stage delay ($t_{pd}$) |
+| **Maximum Clock Frequency** | Decreases as bit count ($N$) grows | High, independent of bit count ($N$) |
+| **Output Glitches / Hazards** | High during multi-bit transitions | Low / None (all bits switch together) |
+| **STA & FPGA Design Suitability** | Poor (gated clocks cause timing violation warnings) | Preferred standard for FPGA/ASIC design |
+
+---
 ## 🎯 Learning Objectives
 
 By working through this module, you will be able to:
