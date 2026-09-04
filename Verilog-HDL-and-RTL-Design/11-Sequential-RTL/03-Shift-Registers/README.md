@@ -1,11 +1,24 @@
-# Shift Registers
+# ◈ Verilog Shift Registers & Data Conversion Topologies
 
-[![Stage](https://img.shields.io/badge/Stage-B--Verilog--Practice-blue.svg)](#)
-[![Focus](https://img.shields.io/badge/Focus-Verilog%20Shift%20Registers-orange.svg)](#)
+[![Stage](https://img.shields.io/badge/Stage-Sequential_Logic-blue.svg?style=flat-square)](#)
+[![Focus](https://img.shields.io/badge/Focus-Shift_Register_RTL-orange.svg?style=flat-square)](#)
+[![Simulation](https://img.shields.io/badge/Simulator-AMD_Vivado-red.svg?style=flat-square&logo=xilinx)](#)
+[![License](https://img.shields.io/badge/License-MIT-green.svg?style=flat-square)](#)
 
-This module covers the fundamental shift register circuits and their Verilog HDL implementations. It includes Serial-In-Serial-Out (SISO), Serial-In-Parallel-Out (SIPO), Parallel-In-Serial-Out (PISO), and Parallel-In-Parallel-Out (PIPO) shift registers, along with RTL designs, dedicated testbenches, RTL schematics, and simulation waveforms.
+This module explores shift register architectures and their Verilog HDL implementations. Shift registers are foundational sequential circuits constructed from cascaded flip-flops, enabling bit-level data movement, storage, dynamic delay generation, and format conversion.
 
-The module provides practical experience in understanding sequential data storage and data movement, implementing shift registers using synthesizable Verilog RTL, and verifying their functionality through simulation.
+The module provides synthesizable RTL implementations, self-checking testbenches, and structural waveform analyses for four core shift register configurations: Serial-In-Serial-Out (SISO), Serial-In-Parallel-Out (SIPO), Parallel-In-Serial-Out (PISO), and Parallel-In-Parallel-Out (PIPO).
+
+---
+
+## ⚡ Shift Register Topologies Quick Reference
+
+| Configuration | Data Input | Data Output | Conversion Type | Latency (4-bit) | Primary Application |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **SISO** | Serial (1 bit/clk) | Serial (1 bit/clk) | Delay / Pipe | 4 Clock Cycles | Time delays, digital signal filtering |
+| **SIPO** | Serial (1 bit/clk) | Parallel (N bits) | Deserializer | 4 Clock Cycles | Serial-to-parallel conversion (UART RX) |
+| **PISO** | Parallel (N bits) | Serial (1 bit/clk) | Serializer | 1 Load + 4 Shifts | Parallel-to-serial conversion (UART TX) |
+| **PIPO** | Parallel (N bits) | Parallel (N bits) | Direct Register | 1 Clock Cycle | Pipeline staging, multi-bit storage |
 
 ---
 
