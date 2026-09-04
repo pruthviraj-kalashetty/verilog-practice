@@ -51,7 +51,7 @@ By working through this module, you will be able to:
 | :--- | :--- |
 | **[01-Asynchronous-Counters](./01-Asynchronous-Counters/)** | Design and verification of asynchronous or ripple counters, including 3-bit and 4-bit up and down counters. |
 | **[02-Synchronous-Counters](./02-Synchronous-Counters/)** | Design and verification of synchronous counters, including 3-bit and 4-bit up and down counters using a common clock. |
-| **[03-Ring-Counter](./03-Ring-Counter.md)** | Study and implementation of a ring counter in which a single active state circulates through a sequence of flip-flops. |
+| **[03-Ring-Counter](./03-Ring-Counter)** | Study and implementation of a ring counter in which a single active state circulates through a sequence of flip-flops. |
 
 ---
 
