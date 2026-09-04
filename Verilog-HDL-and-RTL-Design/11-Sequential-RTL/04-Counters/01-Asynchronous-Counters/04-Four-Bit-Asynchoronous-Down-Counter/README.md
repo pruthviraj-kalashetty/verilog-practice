@@ -1,4 +1,4 @@
-# ◈ 4-Bit Asynchronous Down Counter (`4_bit_asynchronous_down_counter`)
+# ◈ 4-Bit Asynchronous Down Counter 
 
 ### Sequential Circuit • Counter • Behavioral Modeling
 
