@@ -1,4 +1,4 @@
-# ◈ Verilog Shift Registers & Data Conversion Topologies
+# ◈ Verilog Shift Registers
 
 [![Stage](https://img.shields.io/badge/Stage-Sequential_Logic-blue.svg?style=flat-square)](#)
 [![Focus](https://img.shields.io/badge/Focus-Shift_Register_RTL-orange.svg?style=flat-square)](#)
