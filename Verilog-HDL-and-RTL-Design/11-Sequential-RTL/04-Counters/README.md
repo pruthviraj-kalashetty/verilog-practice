@@ -108,7 +108,7 @@ By working through this module, you will be able to:
 │       ├── rtl-schematic.png
 │       └── waveform.png
 │
-└── 03-Ring-Counter.md
+└── 03-Ring-Counter
         ├── ring_counter.v
         ├── ring_counter_tb.v
         ├── rtl-schematic.png
