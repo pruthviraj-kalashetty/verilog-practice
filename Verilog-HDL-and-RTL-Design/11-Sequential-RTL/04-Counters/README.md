@@ -56,7 +56,7 @@ By working through this module, you will be able to:
 ---
 
 ## 🌲 Directory Structure
-
+```
 04-Counters/
 ├── 01-Asynchronous-Counters/
 │   ├── 01-Three-Bit-Asynchoronous-Up-Counter/
@@ -109,6 +109,7 @@ By working through this module, you will be able to:
 │       └── waveform.png
 │
 └── 03-Ring-Counter.md
+```
 
 ---
 
