@@ -1,4 +1,4 @@
-# ◈ Sequential RTL Design & Storage Elements
+# ◈ Sequential RTL
 
 [![Stage](https://img.shields.io/badge/Stage-Sequential_Logic-blue.svg?style=flat-square)](#)
 [![Focus](https://img.shields.io/badge/Focus-Storage_Elements_&_State_Machines-orange.svg?style=flat-square)](#)
