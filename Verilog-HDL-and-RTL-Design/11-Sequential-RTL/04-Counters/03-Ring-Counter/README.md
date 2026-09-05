@@ -93,4 +93,4 @@ endmodule
 | `3rd Clock Pulse` | `Q3Q2Q1Q0=0001` | **PASS** |
 | `4th Clock Pulse` | `Q3Q2Q1Q0=1000` | **PASS** |
 
-**Verification Result:** `16/16 TEST CASES PASSED`
+**Verification Result:** `5/5 TEST CASES PASSED`
