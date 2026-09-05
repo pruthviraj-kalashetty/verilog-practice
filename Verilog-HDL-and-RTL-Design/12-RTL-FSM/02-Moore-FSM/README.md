@@ -121,10 +121,9 @@ endmodule
 
 | **Test Case** | **Expected Output** | **Status** |
 |:---|:---:|:---:|
-| `Initial State` | `Q3Q2Q1Q0=1000` | **PASS** |
-| `1st Clock Pulse` | `Q3Q2Q1Q0=0100` | **PASS** |
-| `2nd Clock Pulse` | `Q3Q2Q1Q0=0010` | **PASS** |
-| `3rd Clock Pulse` | `Q3Q2Q1Q0=0001` | **PASS** |
-| `4th Clock Pulse` | `Q3Q2Q1Q0=1000` | **PASS** |
+| `Current State=S0, x=0` | `Next State=S0, y=0` | **PASS** |
+| `Current State=S0, x=1` | `Next State=S1, y=0` | **PASS** |
+| `Current State=S1, x=0` | `Next State=S0, y=1` | **PASS** |
+| `Current State=S1, x=1` | `Next State=S1, y=1` | **PASS** |
 
-**Verification Result:** `16/16 TEST CASES PASSED`
+**Verification Result:** `4/4 TEST CASES PASSED`
