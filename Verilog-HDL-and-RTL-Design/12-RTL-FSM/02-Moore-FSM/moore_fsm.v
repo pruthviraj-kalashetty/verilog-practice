@@ -5,20 +5,20 @@ module moore_fsm(
 );
 
 reg state;
-reg next state;
+reg next_state;
 
 // State 
 always @(posedge clk) begin
-   state <= next state;
+   state <= next_state;
 end
 
 // Next State
 always @(*) begin
-   if (state == 0) begin //state = S0
+   if (state == 0) begin 
       if(x == 0)
          next_state = 0;
       else
-         next_state = 1;   // Next State = S1
+         next_state = 1; 
     end
     else begin
       if (x == 0)
