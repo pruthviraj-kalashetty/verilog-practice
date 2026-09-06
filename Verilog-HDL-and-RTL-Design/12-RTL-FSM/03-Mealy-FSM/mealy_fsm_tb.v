@@ -1,10 +1,10 @@
-module moore_fsm_tb;
+module mealy_fsm_tb;
   reg clk;
   reg x;
 
   wire y;
 
-   moore_fsm DUT(
+   mealy_fsm DUT(
     .clk(clk),
     .x(x),
     .y(y)
@@ -16,8 +16,8 @@ initial begin
 end
 
 initial begin
-  $dumpfile("moore_fsm.vcd");
-  $dumpvars(0, moore_fsm_tb);
+  $dumpfile("mealy_fsm.vcd");
+  $dumpvars(0, mealy_fsm_tb);
 
 end
 
