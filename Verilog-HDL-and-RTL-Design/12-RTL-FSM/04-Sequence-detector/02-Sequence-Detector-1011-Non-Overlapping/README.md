@@ -1,4 +1,4 @@
-# ◈ Sequence Detector 1011 Overlapping 
+# ◈ Sequence Detector 1011 Non-Overlapping 
 
 ### Sequential Circuit • Finite State Machine • Behavioral Modeling
 
@@ -6,7 +6,7 @@
 
 ## 📌 Module Description
 
-The **1011 Overlapping Sequence Detector** is a sequential circuit that detects the input sequence **`1011`** and generates an output **HIGH (`1`)** whenever the sequence is detected, while allowing overlapping occurrences by retaining the relevant portion of the detected sequence. Implemented using procedural statements in behavioral abstraction.
+The **1011 Non-Overlapping Sequence Detector** is a sequential circuit that detects the input sequence **`1011`** and generates an output **HIGH (`1`)** whenever the sequence is detected, while resetting the detection process after a complete sequence to prevent overlapping occurrences. Implemented using procedural statements in behavioral abstraction.
 
 ---
 
@@ -91,8 +91,8 @@ endmodule
 | S2 | 1 | S2 | 0 |
 | S3 | 0 | S0 | 0 |
 | S3 | 1 | S4 | 0 |
-| S4 | 0 | S1 | 1 |
-| S4 | 1 | S2 | 1 |
+| S4 | 0 | S0 | 0 |
+| S4 | 1 | S0 | 1 |
 
 # 🧪 **Testbench**
 
