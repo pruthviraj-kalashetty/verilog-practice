@@ -1,11 +1,15 @@
 module sequence_detector_1011_non_overlap(
     input clk,
     input x,
-    output y
+    output reg y
 );
 
 reg [2:0] state;
 reg [2:0] next_state;
+
+initial begin
+    state = 3'b000;
+end
 
 always @(posedge clk) begin
   state <= next_state;
@@ -49,12 +53,13 @@ always @(*) begin
 end
 
 always @(*) begin
-  if (state == 3'b100)
-     y = 1;
-  else  
-     y = 0;
+    if (state == 3'b100)
+        y = 1;
+    else
+        y = 0;
 end
-endmodule 
+
+endmodule
 
 
   
