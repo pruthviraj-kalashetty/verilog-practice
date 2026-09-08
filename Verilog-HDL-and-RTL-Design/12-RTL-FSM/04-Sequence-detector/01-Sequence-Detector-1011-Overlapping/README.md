@@ -93,13 +93,13 @@ endmodule
 
 ```verilog
 
-module sequnece_detector_1011_overlap_tb;
+module sequence_detector_1011_overlap_tb;
    reg clk;
    reg x;
 
    wire y;
 
-   sequnece_detector_1011_overlap DUT(
+   sequence_detector_1011_overlap DUT(
     .clk(clk),
     .x(x),
     .y(y)
@@ -111,8 +111,8 @@ initial begin
 end 
 
 initial begin
-   $dumpfile("sequnece_detector_1011_overlap.vcd");
-   $dumpvars(0, sequnece_detector_1011_overlap_tb);
+   $dumpfile("sequence_detector_1011_overlap.vcd");
+   $dumpvars(0, sequence_detector_1011_overlap_tb);
 end
 
 initial begin
@@ -126,7 +126,7 @@ initial begin
   $finish;
 end     
 
-endmodule                                        
+endmodule
 
 ```
 
