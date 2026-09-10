@@ -55,16 +55,16 @@ By working through this module, you will be able to:
 ---
 
 ## 🌲 Directory Structure
-
+```
 01-FSM-Fundamentals/
-├── 01-State-and-Next-State/
+├── 01-State-and-Next-State.md
 │
-├── 02-State-Diagram-to-RTL/
+├── 02-State-Diagram-to-RTL.md
 │
-├── 03-State-Transition-Table/
+├── 03-State-Transition-Table.md
 │
-└── 04-FSM-Verilog-Structure/
-
+└── 04-FSM-Verilog-Structure.md
+```
 ---
 
 ## 🛠️ Core Concepts Covered
