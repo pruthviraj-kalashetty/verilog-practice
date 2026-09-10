@@ -47,7 +47,7 @@ By working through this module, you will be able to:
 | Module | Core Technical Focus |
 | :--- | :--- |
 | **[01-Sequence-Detector-1011-Overlapping](./01-Sequence-Detector-1011-Overlapping/)** | Design and verification of an FSM-based overlapping sequence detector for detecting the binary pattern 1011. |
-| **[02-Sequence-Detector-1101-Non-Overlapping](./02-Sequence-Detector-1011-Non-Overlapping/)** | Design and verification of an FSM-based non-overlapping sequence detector for detecting a specified binary pattern. |
+| **[02-Sequence-Detector-1011-Non-Overlapping](./02-Sequence-Detector-1011-Non-Overlapping/)** | Design and verification of an FSM-based non-overlapping sequence detector for detecting a specified binary pattern. |
 
 ---
 
