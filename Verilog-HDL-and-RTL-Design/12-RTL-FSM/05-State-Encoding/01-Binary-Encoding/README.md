@@ -71,16 +71,16 @@ endmodule
 
 # 📊 **Truth table**
 
-| **Current State** | **Input x** | **Next State** | **Output y** |    |
-| :---------------: | :---------: | :------------: | :----------: | -- |
-|      S0 (00)      |      0      |    S0 (00)     |       0      |    |
-|      S0 (00)      |      1      |    S1 (01)     |       0      |    |
-|      S1 (01)      |      0      |    S2 (10)     |       0      |    |
-|      S1 (01)      |      1      |    S1 (01)     |       0      |    |
-|      S2 (10)      |      0      |    S0 (00)     |       0      |    |
-|      S2 (10)      |      1      |    S3 (11)     |       0      |    |
-|      S3 (11)      |      0      |    S2 (10)     |       1      |    |
-|      S3 (11)      |      1      |    S0 (00)     |       1      |    |
+| **Current State** | **Input x** | **Next State** | **Output y** | 
+| :---------------: | :---------: | :------------: | :----------: | 
+|      S0 (00)      |      0      |    S0 (00)     |       0      | 
+|      S0 (00)      |      1      |    S1 (01)     |       0      |    
+|      S1 (01)      |      0      |    S2 (10)     |       0      |    
+|      S1 (01)      |      1      |    S1 (01)     |       0      |    
+|      S2 (10)      |      0      |    S0 (00)     |       0      |    
+|      S2 (10)      |      1      |    S3 (11)     |       0      |    
+|      S3 (11)      |      0      |    S2 (10)     |       1      |    
+|      S3 (11)      |      1      |    S0 (00)     |       1      |    
 
 # 🧪 **Testbench**
 
@@ -136,16 +136,14 @@ endmodule
 
 | **Test Case** | **Expected Output** | **Status** |
 |:---|:---:|:---:|
-| `Current State=S0, x=0` | `Next State=S0, y=0` | **PASS** |
-| `Current State=S0, x=1` | `Next State=S1, y=0` | **PASS** |
-| `Current State=S1, x=0` | `Next State=S0, y=0` | **PASS** |
-| `Current State=S1, x=1` | `Next State=S2, y=0` | **PASS** |
-| `Current State=S2, x=0` | `Next State=S3, y=0` | **PASS** |
-| `Current State=S2, x=1` | `Next State=S2, y=0` | **PASS** |
-| `Current State=S3, x=0` | `Next State=S0, y=0` | **PASS** |
-| `Current State=S3, x=1` | `Next State=S4, y=0` | **PASS** |
-| `Current State=S4, x=0` | `Next State=S1, y=1` | **PASS** |
-| `Current State=S4, x=1` | `Next State=S2, y=1` | **PASS** |
+| `Current State=S0 (00), x=0` | `Next State=S0 (00), y=0` | **PASS** |
+| `Current State=S0 (00), x=1` | `Next State=S1 (01), y=0` | **PASS** |
+| `Current State=S1 (01), x=0` | `Next State=S2 (10), y=0` | **PASS** |
+| `Current State=S1 (01), x=1` | `Next State=S1 (01), y=0` | **PASS** |
+| `Current State=S2 (10), x=0` | `Next State=S0 (00), y=0` | **PASS** |
+| `Current State=S2 (10), x=1` | `Next State=S3 (11), y=0` | **PASS** |
+| `Current State=S3 (11), x=0` | `Next State=S2 (10), y=1` | **PASS** |
+| `Current State=S3 (11), x=1` | `Next State=S0 (00), y=1` | **PASS** |
 
-**Verification Result:** `10/10 TEST CASES PASSED`
+**Verification Result:** `8/8 TEST CASES PASSED`
 
