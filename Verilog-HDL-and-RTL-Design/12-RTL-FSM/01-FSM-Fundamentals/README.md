@@ -47,10 +47,10 @@ By working through this module, you will be able to:
 
 | Module | Core Technical Focus |
 | :--- | :--- |
-| **[01-State-and-Next-State](./01-State-and-Next-State.md/)** | Understand current-state and next-state concepts and how sequential state transitions occur in an FSM. |
-| **[02-State-Diagram-to-RTL](./02-State-Diagram-to-RTL.md/)** | Learn how to translate an FSM state diagram into a synthesizable Verilog RTL implementation. |
-| **[03-State-Transition-Table](./03-State-Transition-Table.md/)** | Construct and analyze state transition tables describing FSM state changes for different input conditions. |
-| **[04-FSM-Verilog-Structure](./04-FSM-Verilog-Structure.md/)** | Understand the standard Verilog RTL structure used to implement FSM state memory, next-state logic, and output logic. |
+| **[01-State-and-Next-State.md](./01-State-and-Next-State.md/)** | Understand current-state and next-state concepts and how sequential state transitions occur in an FSM. |
+| **[02-State-Diagram-to-RTL.md](./02-State-Diagram-to-RTL.md/)** | Learn how to translate an FSM state diagram into a synthesizable Verilog RTL implementation. |
+| **[03-State-Transition-Table.md](./03-State-Transition-Table.md/)** | Construct and analyze state transition tables describing FSM state changes for different input conditions. |
+| **[04-FSM-Verilog-Structure.md](./04-FSM-Verilog-Structure.md/)** | Understand the standard Verilog RTL structure used to implement FSM state memory, next-state logic, and output logic. |
 
 ---
 
