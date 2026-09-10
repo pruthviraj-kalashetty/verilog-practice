@@ -1,4 +1,4 @@
-# 04. Sequence Detectors
+# ◈ Sequence Detectors
 
 [![Stage](https://img.shields.io/badge/Stage-Pattern_Detection-blue.svg?style=flat-square)](#)
 [![Focus](https://img.shields.io/badge/Focus-Overlapping_vs_Non--Overlapping-orange.svg?style=flat-square)](#)
@@ -46,21 +46,21 @@ By working through this module, you will be able to:
 
 | Module | Core Technical Focus |
 | :--- | :--- |
-| **[01-Sequence-Detector-1011-overlapping](./01-Sequence-Detector-1011-overlapping/)** | Design and verification of an FSM-based overlapping sequence detector for detecting the binary pattern 1011. |
-| **[02-Sequence-Detector-1101-non-overlapping](./02-Sequence-Detector-1101-non-overlapping/)** | Design and verification of an FSM-based non-overlapping sequence detector for detecting a specified binary pattern. |
+| **[01-Sequence-Detector-1011-overlapping](./01-Sequence-Detector-1011-Overlapping/)** | Design and verification of an FSM-based overlapping sequence detector for detecting the binary pattern 1011. |
+| **[02-Sequence-Detector-1101-non-overlapping](./02-Sequence-Detector-1101-Non-Overlapping/)** | Design and verification of an FSM-based non-overlapping sequence detector for detecting a specified binary pattern. |
 
 ---
 
 ## 🌲 Directory Structure
 ```
 04-Sequence-detector/
-├── 01-Sequence-Detector-1011-overlapping/
+├── 01-Sequence-Detector-1011-Overlapping/
 │   ├── sequence_detector_1011_overlap.v
 │   ├── sequence_detector_1011_overlap_tb.v
 │   ├── rtl-schematic.png
 │   └── waveform.png
 │
-└── 02-Sequence-Detector-1101-non-overlapping/
+└── 02-Sequence-Detector-1101-Non-Overlapping/
     ├── sequence_detector_1011_non_overlap.v
     ├── sequence_detector_1011_non_overlap_tb.v
     ├── rtl-schematic.png
