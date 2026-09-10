@@ -1,4 +1,4 @@
-# ◈ Binary Encoding 
+# ◈ One-Hot Encoding
 
 ### Finite State Machine • State Encoding • Behavioral Modeling
 
@@ -6,7 +6,7 @@
 
 ## 📌 Module Description
 
-**Binary Encoding** in an FSM is a state encoding technique where each state is assigned a unique **binary code (`0` and `1`)**, allowing the FSM to represent and identify its states using a set of flip-flops. Implemented using binary state encoding in behavioral abstraction.
+**One-Hot Encoding** in an FSM is a state encoding technique where each state is assigned a unique **bit position**, with only one bit set to **HIGH (`1`)** at a time while all other state bits remain **LOW (`0`)**. Implemented using one-hot state encoding in behavioral abstraction.
 
 ---
 
@@ -14,17 +14,17 @@
 
 ```verilog
 
-module binary_encoding(
+module one_hot_encoding(
     input clk,
     input x,
     output reg y
 );
 
-reg [1:0] state;
-reg [1:0] next_state;
+reg [3:0] state;
+reg [3:0] next_state;
 
 initial begin
-    state = 2'b00;
+    state = 4'b0001;
 end
 
 always @(posedge clk) begin
@@ -32,34 +32,34 @@ always @(posedge clk) begin
 end
 
 always @(*) begin
-    if (state == 2'b00) begin
+    if (state == 4'b0001) begin
         if (x == 0)
-            next_state = 2'b00;
+            next_state = 4'b0001;
         else
-            next_state = 2'b01;
+            next_state = 4'b0010;
     end
-    else if (state == 2'b01) begin
+    else if (state == 4'b0010) begin
         if (x == 0)
-            next_state = 2'b10;
+            next_state = 4'b0100;
         else
-            next_state = 2'b01;
+            next_state = 4'b0010;
     end
-    else if (state == 2'b10) begin
+    else if (state == 4'b0100) begin
         if (x == 0)
-            next_state = 2'b00;
+            next_state = 4'b0001;
         else
-            next_state = 2'b11;
+            next_state = 4'b1000;
     end
     else begin
         if (x == 0)
-            next_state = 2'b10;
+            next_state = 4'b0100;
         else
-            next_state = 2'b00;
+            next_state = 4'b0001;
     end
 end
 
 always @(*) begin
-    if (state == 2'b11)
+    if (state == 4'b1000)
         y = 1;
     else
         y = 0;
@@ -71,28 +71,28 @@ endmodule
 
 # 📊 **Truth table**
 
-| **Current State** | **Input x** | **Next State** | **Output y** | 
+| **Current State** | **Input x** | **Next State** | **Output y** |    
 | :---------------: | :---------: | :------------: | :----------: | 
-|      S0 (00)      |      0      |    S0 (00)     |       0      | 
-|      S0 (00)      |      1      |    S1 (01)     |       0      |    
-|      S1 (01)      |      0      |    S2 (10)     |       0      |    
-|      S1 (01)      |      1      |    S1 (01)     |       0      |    
-|      S2 (10)      |      0      |    S0 (00)     |       0      |    
-|      S2 (10)      |      1      |    S3 (11)     |       0      |    
-|      S3 (11)      |      0      |    S2 (10)     |       1      |    
-|      S3 (11)      |      1      |    S0 (00)     |       1      |    
+|      S0 (0001)    |      0      |    S0 (0001)   |       0      |    
+|      S0 (0001)    |      1      |    S1 (0010)   |       0      |    
+|      S1 (0010)    |      0      |    S2 (0100)   |       0      |    
+|      S1 (0010)    |      1      |    S1 (0010)   |       0      |    
+|      S2 (0100)    |      0      |    S0 (0001)   |       0      |    
+|      S2 (0100)    |      1      |    S3 (1000)   |       0      |    
+|      S3 (1000)    |      0      |    S2 (0100)   |       1      |    
+|      S3 (1000)    |      1      |    S0 (0001)   |       1      |       
 
 # 🧪 **Testbench**
 
 ```verilog
 
-module binary_encoding_tb;
+module one_hot_encoding_tb;
 
 reg clk;
 reg x;
 wire y;
 
-binary_encoding DUT(
+one_hot_encoding DUT(
     .clk(clk),
     .x(x),
     .y(y)
@@ -104,8 +104,8 @@ initial begin
 end
 
 initial begin
-    $dumpfile("binary_encoding.vcd");
-    $dumpvars(0, binary_encoding_tb);
+    $dumpfile("one_hot_encoding.vcd");
+    $dumpvars(0, one_hot_encoding_tb);
 end
 
 initial begin
@@ -127,23 +127,23 @@ endmodule
 
 # 🔷 **RTL Schematics**
 
-![Binary-Encoding RTL Schematic](rtl-schematic.png)
+![One-Hot-Encoding RTL Schematic](rtl-schematic.png)
 
 # 📈 **Simulation Result**
-![Binary-encoding waveform](waveform.png)
+![One-Hot-Encoding waveform](waveform.png)
 
 # ◈ **Verification Summary**
 
 | **Test Case** | **Expected Output** | **Status** |
 |:---|:---:|:---:|
-| `Current State=S0 (00), x=0` | `Next State=S0 (00), y=0` | **PASS** |
-| `Current State=S0 (00), x=1` | `Next State=S1 (01), y=0` | **PASS** |
-| `Current State=S1 (01), x=0` | `Next State=S2 (10), y=0` | **PASS** |
-| `Current State=S1 (01), x=1` | `Next State=S1 (01), y=0` | **PASS** |
-| `Current State=S2 (10), x=0` | `Next State=S0 (00), y=0` | **PASS** |
-| `Current State=S2 (10), x=1` | `Next State=S3 (11), y=0` | **PASS** |
-| `Current State=S3 (11), x=0` | `Next State=S2 (10), y=1` | **PASS** |
-| `Current State=S3 (11), x=1` | `Next State=S0 (00), y=1` | **PASS** |
+| `Current State=S0 (0001), x=0` | `Next State=S0 (0001), y=0` | **PASS** |
+| `Current State=S0 (0001), x=1` | `Next State=S1 (0010), y=0` | **PASS** |
+| `Current State=S1 (0010), x=0` | `Next State=S2 (0100), y=0` | **PASS** |
+| `Current State=S1 (0010), x=1` | `Next State=S1 (0010), y=0` | **PASS** |
+| `Current State=S2 (0100), x=0` | `Next State=S0 (0001), y=0` | **PASS** |
+| `Current State=S2 (0100), x=1` | `Next State=S3 (1000), y=0` | **PASS** |
+| `Current State=S3 (1000), x=0` | `Next State=S2 (0100), y=1` | **PASS** |
+| `Current State=S3 (1000), x=1` | `Next State=S0 (0001), y=1` | **PASS** |
 
 **Verification Result:** `8/8 TEST CASES PASSED`
 
