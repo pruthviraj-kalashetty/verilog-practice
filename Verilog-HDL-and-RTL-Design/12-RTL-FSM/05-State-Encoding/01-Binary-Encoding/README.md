@@ -1,4 +1,4 @@
-# ◈ Binary Encoding (`binary_encoding`)
+# ◈ Binary Encoding 
 
 ### Finite State Machine • State Encoding • Behavioral Modeling
 
