@@ -597,29 +597,18 @@ This repository serves as a hands-on implementation foundation for **Verilog HDL
 
 # 🎯 Skills Developed✔
 
--Verilog HDL Syntax & Modeling
--Synthesizable RTL Coding Principles
-
--Combinational Circuit Design in Verilog
-
-
--Sequential RTL Implementation
-
--Latch Avoidance Strategies
-
--Testbench Development & Stimulus Generation
-
--Simulation & Waveform Debugging
-
--Finite State Machine (FSM) Implementation
-
--State Encoding Optimization
-
--Multi-Process FSM Coding Patterns
-
--Hardware Synthesis Readiness
-
--RTL Verification Fundamentals
+- Verilog HDL Syntax & Modeling
+- Synthesizable RTL Coding Principles
+- Combinational Circuit Design in Verilog
+- Sequential RTL Implementation
+- Latch Avoidance Strategies
+- Testbench Development & Stimulus Generation
+- Simulation & Waveform Debugging
+- Finite State Machine (FSM) Implementation
+- State Encoding Optimization
+- Multi-Process FSM Coding Patterns
+- Hardware Synthesis Readiness
+- RTL Verification Fundamentals
 
 --- 
 
