@@ -1,52 +1,44 @@
-module gray_encoding(
+module two_process_fsm(
     input clk,
     input x,
     output reg y
 );
 
-reg [1:0] state;
-reg [1:0] next_state;
+reg state;
+reg next_state;
 
 initial begin
-    state = 2'b00;
+    state = 0;
 end
 
+// Process 1: State Register
 always @(posedge clk) begin
     state <= next_state;
 end
 
+// Process 2: Next-State + Output Logic
 always @(*) begin
-    if (state == 2'b00) begin
+
+    // Next-State Logic
+    if (state == 0) begin
         if (x == 0)
-            next_state = 2'b00;
+            next_state = 0;
         else
-            next_state = 2'b01;
-    end
-    else if (state == 2'b01) begin
-        if (x == 0)
-            next_state = 2'b11;
-        else
-            next_state = 2'b01;
-    end
-    else if (state == 2'b11) begin
-        if (x == 0)
-            next_state = 2'b00;
-        else
-            next_state = 2'b10;
+            next_state = 1;
     end
     else begin
         if (x == 0)
-            next_state = 2'b11;
+            next_state = 0;
         else
-            next_state = 2'b00;
+            next_state = 1;
     end
-end
 
-always @(*) begin
-    if (state == 2'b10)
+    // Output Logic
+    if (state == 1)
         y = 1;
     else
         y = 0;
+
 end
 
 endmodule
