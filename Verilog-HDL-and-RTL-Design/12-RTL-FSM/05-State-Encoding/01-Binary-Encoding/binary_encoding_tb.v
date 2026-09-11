@@ -22,7 +22,6 @@ end
 
 initial begin
     x = 0;
-
     #10 x = 1;
     #10 x = 0;
     #10 x = 1;
@@ -34,4 +33,3 @@ initial begin
 end
 
 endmodule
-
