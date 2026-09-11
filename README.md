@@ -21,6 +21,7 @@
 ## 🛠️ Tools Used
   <p>
   <img src="https://skillicons.dev/icons?i=github,git,vscode,linux"/>
+  <img src="https://img.shields.io/badge/Vivado-FF1010?style=for-the-badge&logo=amd&logoColor=white" />
   </p>
 
 ---
