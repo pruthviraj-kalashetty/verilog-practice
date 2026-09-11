@@ -52,7 +52,7 @@ By working through this module, you will be able to:
 ---
 
 ## 🌲 Directory Structure
-
+```
 06-FSM-RTL-Design-Patterns/
 ├── 01-Two-Process-FSM/
 │   ├── two_process_fsm.v
@@ -65,7 +65,7 @@ By working through this module, you will be able to:
     ├── three_process_fsm _ tb.v
     ├── rtl-schematic.png
     └── waveform.png
-
+```
 ---
 
 ## 🛠️ Core Concepts Covered
