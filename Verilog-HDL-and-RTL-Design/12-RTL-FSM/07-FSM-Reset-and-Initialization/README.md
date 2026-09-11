@@ -50,7 +50,7 @@ By working through this module, you will be able to:
 | **[02-Asynchronous-Reset](./02-Asynchronous-Reset/)** | Design and verification of an FSM using asynchronous reset, where the FSM state can be reset independently of the clock edge. |
 
 ---
-
+```
 ## 🌲 Directory Structure
 
 07-FSM-Reset-and-Initialization/
@@ -65,7 +65,7 @@ By working through this module, you will be able to:
     ├── three_process_fsm _tb.v
     ├── rtl-schematic.png
     └── waveform.png
-
+```
 ---
 
 ## 🛠️ Core Concepts Covered
