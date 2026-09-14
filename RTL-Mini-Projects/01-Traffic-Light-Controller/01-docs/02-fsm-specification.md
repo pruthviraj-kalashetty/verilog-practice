@@ -31,7 +31,7 @@ NS_GREEN → NS_YELLOW → ALL_RED_1 → EW_GREEN → EW_YELLOW → ALL_RED_2
                          ALL_RED_TIME elapsed
 ```
 
-More precisely:
+### State Transition Table
 
 | Current state | Duration parameter | Next state after duration expires |
 |---|---|---|
@@ -42,17 +42,26 @@ More precisely:
 | `EW_YELLOW` | `YELLOW_TIME` | `ALL_RED_2` |
 | `ALL_RED_2` | `ALL_RED_TIME` | `NS_GREEN` |
 
-## 4. Counter operation
+## 4. Counter Operation
 
-`count` is cleared whenever the FSM enters a new state. While the FSM remains in a state, it increments once per rising clock edge.
+The internal `count` register tracks the elapsed clock cycles in the active FSM state.
 
-For a phase whose duration is `D` cycles:
+For a phase with a configured duration of `D` cycles:
 
-1. The state is entered with `count = 0`.
-2. It remains active while `count < D - 1`.
-3. When `count == D - 1` at a rising edge, the FSM moves to the next state and clears `count` to `0`.
+1. The FSM enters the new state with `count = 0`.
+2. The state remains active while `count < D - 1`.
+3. When `count == D - 1` at a rising clock edge, the FSM transitions to the next state.
+4. The counter is cleared to `0` when the new state is entered.
 
-This makes the state active for exactly `D` sampled clock cycles. All duration parameters must therefore be at least `1`.
+Therefore, a state configured with `D` cycles remains active for exactly `D` sampled clock cycles.
+
+All duration parameters shall be positive integers:
+
+    GREEN_CYCLES   >= 1
+    YELLOW_CYCLES  >= 1
+    ALL_RED_CYCLES >= 1
+
+The timing parameters are expressed in clock cycles rather than physical seconds.
 
 ## 5. Reset and recovery behavior
 
@@ -63,6 +72,20 @@ This makes the state active for exactly `D` sampled clock cycles. All duration p
 
 The reset state is intentionally deterministic: it provides a known starting point for simulation and hardware bring-up. In a deployed intersection controller, a conservative all-red reset state could instead be selected if required by system-level safety policy.
 
+### Reset Sequence
+
+    reset = 1
+        │
+        ▼
+    Next rising edge of clk
+        │
+        ├── state = NS_GREEN
+        ├── count = 0
+        ├── NS = GREEN
+        └── EW = RED
+
+Because the reset is synchronous, asserting `reset` between clock edges does not immediately change the registered FSM state.
+
 ## 6. Output-decoding rules
 
 | FSM state class | NS output | EW output |
@@ -72,13 +95,23 @@ The reset state is intentionally deterministic: it provides a known starting poi
 | EW right-of-way (`EW_GREEN`, `EW_YELLOW`) | Red | Green or yellow, respectively |
 | Invalid state | Red | Red |
 
-Light encoding is one-hot:
+### Light Encoding
 
-```verilog
-RED    = 3'b100;
-YELLOW = 3'b010;
-GREEN  = 3'b001;
-```
+The traffic-light outputs use one-hot encoding:
+
+    RED    = 3'b100
+    YELLOW = 3'b010
+    GREEN  = 3'b001
+
+Therefore:
+
+    north_south = GREEN  → NS has right-of-way
+    north_south = YELLOW → NS is preparing to stop
+    north_south = RED    → NS must stop
+
+    east_west = GREEN    → EW has right-of-way
+    east_west = YELLOW   → EW is preparing to stop
+    east_west = RED      → EW must stop
 
 ## 7. Safety invariants
 
@@ -90,7 +123,11 @@ NOT (north_south == YELLOW AND east_west == YELLOW)
 NOT (north_south != RED    AND east_west != RED)
 ```
 
-Additionally, the only valid change from one traffic flow having right-of-way to the other is through an all-red state.
+In simpler terms:
+
+- NS and EW shall never be green simultaneously.
+- NS and EW shall never be yellow simultaneously.
+- Both traffic flows shall not simultaneously display a non-red indication.
 
 ## 8. Implementation mapping
 
@@ -100,4 +137,11 @@ The RTL separates its responsibilities into two logical sections:
 - **Combinational output logic:** decodes `state` into the `north_south` and `east_west` lamp outputs.
 
 This mapping produces a synthesizable design and lets the testbench observe each phase independently.
+
+## 09. Related Engineering Documentation
+
+- [Requirements and Design](./requirements-and-design.md)
+- [Verification Summary](./verification-summary.md)
+- [Design Decisions & Trade-offs](./design-decisions.md)
+- [Project README](../README.md)
 
