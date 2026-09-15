@@ -92,29 +92,15 @@ The design is implemented as a 6-state Moore finite-state machine. Light outputs
 
 * **Invalid States (`3'b110`, `3'b111`):** Default recovery transitions immediately to `ALL_RED_TO_NS` with both outputs forced to `RED` (`3'b100`).
   
-## 7. Design approach
 
-The design uses a Moore FSM with six states. Outputs depend only on the current state, avoiding output glitches caused by changes to the counter. A synchronous counter records elapsed cycles in the active state. When that counter reaches the duration for the current phase, the FSM moves to the next state and clears the counter. Reset is evaluated only at a rising clock edge, consistent with the single-clock synchronous architecture.
-
-| State | NS output | EW output | Exit condition |
-|---|---|---|---|
-| `NS_GREEN` | Green | Red | `GREEN_TIME` cycles elapsed |
-| `NS_YELLOW` | Yellow | Red | `YELLOW_TIME` cycles elapsed |
-| `ALL_RED_1` | Red | Red | `ALL_RED_TIME` cycles elapsed |
-| `EW_GREEN` | Red | Green | `GREEN_TIME` cycles elapsed |
-| `EW_YELLOW` | Red | Yellow | `YELLOW_TIME` cycles elapsed |
-| `ALL_RED_2` | Red | Red | `ALL_RED_TIME` cycles elapsed |
-
-The next-state path is strictly circular, which makes normal operation deterministic and straightforward to verify.
-
-## 8. Timing assumptions
+## 7. Timing assumptions
 
 - All time values are expressed in **clock cycles**, not seconds.
 - The external system is responsible for selecting a clock frequency and converting real-world seconds to parameter values. For example, with a 1 Hz clock, `GREEN_TIME = 30` means a 30-second green phase.
 - `GREEN_TIME`, `YELLOW_TIME`, and `ALL_RED_TIME` must be positive integers.
 - Version 1 gives NS and EW equal green durations. Independent `NS_GREEN_TIME` and `EW_GREEN_TIME` parameters may be introduced later if the junction needs unequal timings.
 
-## 9. Verification acceptance criteria
+## 8. Verification acceptance criteria
 
 The testbench must demonstrate all of the following:
 
@@ -125,11 +111,11 @@ The testbench must demonstrate all of the following:
 5. No sampled clock cycle has green on both NS and EW.
 6. The FSM repeats from `ALL_RED_2` back to `NS_GREEN`.
 
-## 10. Future enhancement path
+## 9. Future enhancement path
 
 Future revisions can add request inputs and additional states while preserving the safety rule that conflicting flows are never permitted together. Suitable next additions are pedestrian phases, sensor-triggered green extensions, independent NS/EW green durations, and an emergency all-red override.
 
-## 11. Related Engineering Documentation
+## 10. Related Engineering Documentation
 
 
 - [FSM Specification](./fsm-specification.md)
