@@ -42,9 +42,9 @@ These features can be added as later versions without changing the basic safety 
 |---|---|
 | FR-01 | After reset, NS must be green and EW must be red. |
 | FR-02 | The controller must follow this repeating order: NS green → NS yellow → all red → EW green → EW yellow → all red → NS green. |
-| FR-03 | A green interval must last `GREEN_TIME` clock cycles. |
-| FR-04 | A yellow interval must last `YELLOW_TIME` clock cycles. |
-| FR-05 | Each all-red clearance interval must last `ALL_RED_TIME` clock cycles. |
+| FR-03 | A green interval must last `GREEN_CYCLE` clock cycles. |
+| FR-04 | A yellow interval must last `YELLOW_CYCLE` clock cycles. |
+| FR-05 | Each all-red clearance interval must last `ALL_RED_CYCLE` clock cycles. |
 | FR-06 | During either green or yellow interval, the other traffic flow must remain red. |
 | FR-07 | During an all-red interval, both traffic flows must be red. |
 | FR-08 | The timing parameters must be compile-time Verilog parameters, allowing different timing plans without changing the FSM logic. |
