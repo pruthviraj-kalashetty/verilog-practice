@@ -138,7 +138,7 @@ The RTL separates its responsibilities into two logical sections:
 
 This mapping produces a synthesizable design and lets the testbench observe each phase independently.
 
-## 09. Related Engineering Documentation
+## 9. Related Engineering Documentation
 
 - [Requirements and Design](./requirements-and-design.md)
 - [Verification Summary](./verification-summary.md)
