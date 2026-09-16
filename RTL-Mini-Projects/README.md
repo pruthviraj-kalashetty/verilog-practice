@@ -50,6 +50,7 @@
 
 <br>
 
+<a href="./03-rtl-tb/traffic_light_controller_tb.v">
 <img src="https://img.shields.io/badge/OPEN%20TESTBENCH-→-F0883E?style=flat-square">
 
 </a>
