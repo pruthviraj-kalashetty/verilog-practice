@@ -31,6 +31,10 @@ This project implements a fully synthesizable **Traffic-Light Controller in Veri
 Quick interface overview. Full details are available in
 [Requirements & Design](./01-docs/01-requirements-and-design.md).
 
+> [!NOTE]
+> **Quick Interface Overview**
+> Full architectural details, FSM specifications, and trade-offs are available in the [Requirements & Design](./01-docs/01-requirements-and-design.md) document.
+
 | Port | Direction | Width | Description |
 | :--- | :--- | :--- | :--- |
 | `clk` | Input | 1 | Master system clock |
