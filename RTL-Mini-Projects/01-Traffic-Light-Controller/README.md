@@ -254,7 +254,9 @@ pedestrian crossing, emergency priority, or multi-intersection control.
 - **Fixed state sequence:** Keeps the initial design focused on fundamental
   FSM-based RTL implementation.
 
-See [Design Decisions & Trade-offs](./01-docs/04-design-decisions.md) for details.
+> [!NOTE]
+> **Design Decisions & Trade-offs**
+> Comprehensive architectural choices, rationale, and trade-offs are detailed in the [Design Decisions & Trade-offs](./01-docs/04-design-decisions.md) document.
 
 ## 🚀 Future Improvements
 
