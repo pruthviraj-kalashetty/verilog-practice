@@ -71,6 +71,16 @@ The RTL implementation follows strict synthesizable coding standards:
 The Verilog RTL and testbench are available in
 [rtl-tb/](./03-rtl-tb).
 
+## 📂 Quick Navigation
+
+Click the buttons below to view the source files and testbench directly:
+
+[![RTL & Testbench Folder](https://img.shields.io/badge/📁_View_RTL_Folder-03--rtl--tb-blue?style=for-the-badge&logo=git&logoColor=white)](./03-rtl-tb)
+
+[![Verilog RTL Source](https://img.shields.io/badge/📄_traffic__light__controller.v-Design_File-green?style=for-the-badge&logo=verilog&logoColor=white)](./03-rtl-tb/traffic_light_controller.v)
+
+[![Testbench Source](https://img.shields.io/badge/🧪_traffic__light__controller__tb.v-Testbench_File-orange?style=for-the-badge&logo=verilog&logoColor=white)](./03-rtl-tb/traffic_light_controller_tb.v)
+
 ## 🧪 Verification Strategy
 
 The dedicated testbench is used to verify:
