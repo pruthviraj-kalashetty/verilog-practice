@@ -73,28 +73,28 @@ The Verilog RTL and testbench are available in
 
 <br>
 
-<table align="center" width="100%" cellpadding="0" cellspacing="0" border="0" style="background: #0d1117; border: 1.5px solid #30363d; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.5);">
+<table align="center" width="100%" cellpadding="0" cellspacing="0" border="0" style="background: #0d1117; border-radius: 12px; overflow: hidden; border: 1.5px solid #30363d;">
   <tr>
     <!-- RTL Design Card -->
-    <td align="center" width="50%" style="padding: 15px; border-right: 1.5px solid #30363d; background: linear-gradient(145deg, #0d1117 0%, #161b22 100%);">
-      <a href="./03-rtl-tb/traffic_light/traffic_light_controller.v" style="text-decoration: none; display: block;">
+    <td align="center" width="50%" style="padding: 18px; background-color: #161b22; border-right: 1px solid #30363d;">
+      <a href="./03-rtl-tb/traffic_light/traffic_light_controller.v" style="text-decoration: none; display: block; width: 100%;">
         <img src="https://img.shields.io/badge/RTL%20DESIGN-58A6FF?style=flat-square&logo=verilog&logoColor=white" alt="RTL Badge"><br><br>
-        <img src="https://img.icons8.com/fluency/48/document.png" width="40" alt="Document Icon"><br><br>
-        <span style="font-size: 15px; font-weight: bold; color: #58a6ff; font-family: -apple-system, BlinkMacSystemFont, sans-serif;">Traffic Light RTL</span><br>
-        <span style="font-size: 12px; color: #8b949e;">Synthesizable Verilog Code</span><br><br>
-        <code style="font-size: 11px; color: #58a6ff; background: #010409; padding: 3px 6px; border-radius: 4px; border: 1px solid #30363d;">traffic_light_controller.v</code><br><br>
+        <img src="https://img.icons8.com/fluency/48/document.png" width="38" alt="Document Icon"><br><br>
+        <span style="font-size: 15px; font-weight: bold; color: #58a6ff; font-family: sans-serif;">Traffic Light RTL</span><br>
+        <span style="font-size: 11px; color: #8b949e; font-family: sans-serif;">Synthesizable Verilog Code</span><br><br>
+        <code style="font-size: 11px; color: #58a6ff; background: #0d1117; padding: 4px 8px; border-radius: 4px; border: 1px solid #30363d;">traffic_light_controller.v</code><br><br>
         <img src="https://img.shields.io/badge/OPEN%20FILE-→-1F6FEB?style=flat-square" alt="Open Link">
       </a>
     </td>
 
     <!-- Testbench Card -->
-    <td align="center" width="50%" style="padding: 15px; background: linear-gradient(145deg, #0d1117 0%, #161b22 100%);">
-      <a href="./03-rtl-tb/traffic_light/traffic_light_controller_tb.v" style="text-decoration: none; display: block;">
+    <td align="center" width="50%" style="padding: 18px; background-color: #161b22;">
+      <a href="./03-rtl-tb/traffic_light/traffic_light_controller_tb.v" style="text-decoration: none; display: block; width: 100%;">
         <img src="https://img.shields.io/badge/VERIFICATION-F0883E?style=flat-square&logo=verilog&logoColor=white" alt="TB Badge"><br><br>
-        <img src="https://img.icons8.com/fluency/48/test-tube.png" width="40" alt="Testbench Icon"><br><br>
-        <span style="font-size: 15px; font-weight: bold; color: #f0883e; font-family: -apple-system, BlinkMacSystemFont, sans-serif;">Traffic Light TB</span><br>
-        <span style="font-size: 12px; color: #8b949e;">Simulation & Waveform Test</span><br><br>
-        <code style="font-size: 11px; color: #f0883e; background: #010409; padding: 3px 6px; border-radius: 4px; border: 1px solid #30363d;">traffic_light_controller_tb.v</code><br><br>
+        <img src="https://img.icons8.com/fluency/48/test-tube.png" width="38" alt="Testbench Icon"><br><br>
+        <span style="font-size: 15px; font-weight: bold; color: #f0883e; font-family: sans-serif;">Traffic Light TB</span><br>
+        <span style="font-size: 11px; color: #8b949e; font-family: sans-serif;">Simulation & Waveform Test</span><br><br>
+        <code style="font-size: 11px; color: #f0883e; background: #0d1117; padding: 4px 8px; border-radius: 4px; border: 1px solid #30363d;">traffic_light_controller_tb.v</code><br><br>
         <img src="https://img.shields.io/badge/OPEN%20FILE-→-F0883E?style=flat-square" alt="Open Link">
       </a>
     </td>
