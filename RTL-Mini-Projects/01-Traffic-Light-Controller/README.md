@@ -40,7 +40,7 @@ corresponding output.
 ## 🔌 Interface Specifications
 
 Quick interface overview. Full details are available in
-[Requirements & Design](./docs/requirements-and-design.md).
+[Requirements & Design](./01-docs/01-requirements-and-design.md).
 
 | Port | Direction | Width | Description |
 | :--- | :--- | :--- | :--- |
@@ -55,18 +55,18 @@ The controller consists of a state register, next-state logic, and output
 logic. The FSM changes state on the active clock edge and generates the
 corresponding traffic-light output based on the current state.
 
-![Block Diagram](./architecture/block-diagram.png)
+![Block Diagram](./02-architecture/01-block-diagram.png)
 
 ### FSM State Diagram
 
-![State Diagram](./architecture/state-diagram.png)
+![State Diagram](./02-architecture/02-state-diagram.png)
 
 ### Timing Flow
 
-![Timing Flow](./architecture/timing-flow.png)
+![Timing Flow](./02-architecture/03-timing-flow.png)
 
 Detailed FSM behavior is documented in
-[FSM Specification](./docs/fsm-specification.md).
+[FSM Specification](./01-docs/02-fsm-specification.md).
 
 
 ## 💻 RTL Implementation
@@ -80,7 +80,7 @@ The RTL implementation follows strict synthesizable coding standards:
 - Parameterized state dwell times (`RED_CYCLES`, `GREEN_CYCLES`, `YELLOW_CYCLES`)
 
 The Verilog RTL and testbench are available in
-[rtl-tb/](./rtl-tb).
+[rtl-tb/](./03-rtl-tb).
 
 ## 🧪 Verification Strategy
 
@@ -94,30 +94,30 @@ The dedicated testbench is used to verify:
 - Self-checking assertion checks with automated `$error` tracking and summary reporting
 
 Detailed verification planning and results are documented in
-[Verification Summary](./docs/verification-summary.md).
+[Verification Summary](./01-docs/03-verification-summary.md).
 
 ## 📈 Simulation Evidence
 
 ### Waveform
 
-![Waveform](./rtl-tb/waveform.png)
+![Waveform](./03-rtl-tb/waveform.png)
 
 The waveform is analyzed to compare the expected FSM behavior with the actual
 simulation output.
 
 ### RTL Schematic
 
-![RTL Schematic](./rtl-tb/rtl-schematic.png)
+![RTL Schematic](./03-rtl-tb/rtl-schematic.png)
 
 The RTL schematic provides a hardware-oriented view of the structures inferred
 from the Verilog RTL.
 
 ## 📚 Documentation
 
-- [Requirements & Design](./docs/requirements-and-design.md)
-- [FSM Specification](./docs/fsm-specification.md)
-- [Verification Summary](./docs/verification-summary.md)
-- [Design Decisions & Trade-offs](./docs/design-decisions.md)
+- [Requirements & Design](./01-docs/01-requirements-and-design.md)
+- [FSM Specification](./01-docs/02-fsm-specification.md)
+- [Verification Summary](./01-docs/03-verification-summary.md)
+- [Design Decisions & Trade-offs](./01-docs/04-design-decisions.md)
 
 ## 🧪 Verification & Simulation Results
 
@@ -201,7 +201,7 @@ pedestrian crossing, emergency priority, or multi-intersection control.
 - **Fixed state sequence:** Keeps the initial design focused on fundamental
   FSM-based RTL implementation.
 
-See [Design Decisions & Trade-offs](./docs/design-decisions.md) for details.
+See [Design Decisions & Trade-offs](./01-docs/04-design-decisions.md) for details.
 
 ## 🚀 Future Improvements
 
