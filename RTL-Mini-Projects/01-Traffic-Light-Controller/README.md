@@ -35,6 +35,13 @@ Quick interface overview. Full details are available in
 > **Quick Interface Overview**
 > Full architectural details, FSM specifications, and trade-offs are available in the [Requirements & Design](./01-docs/01-requirements-and-design.md) document.
 
+
+{
+  "interface_overview": "Quick reference link",
+  "documentation": "./01-docs/01-requirements-and-design.md",
+  "status": "active"
+}
+
 | Port | Direction | Width | Description |
 | :--- | :--- | :--- | :--- |
 | `clk` | Input | 1 | Master system clock |
