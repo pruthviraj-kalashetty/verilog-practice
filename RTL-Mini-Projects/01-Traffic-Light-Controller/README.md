@@ -73,20 +73,20 @@ The Verilog RTL and testbench are available in
 
 <br>
 
-<table align="center" width="100%">
+<table align="center" width="100%" cellpadding="0" cellspacing="0" border="0" style="background: #090d16; border: 2px solid #1f6feb; border-radius: 12px; overflow: hidden; box-shadow: 0 0 20px rgba(31, 111, 235, 0.3);">
   <tr>
-    <td align="center" width="50%" style="background-color: #0d1117; border: 1px solid #30363d; border-radius: 8px; padding: 20px;">
-      <a href="./03-rtl-tb/traffic_light_controller.v" style="text-decoration: none; color: #58a6ff; display: block;">
-        <h2 style="margin: 0 0 10px 0; font-size: 24px;">📄</h2>
-        <h3 style="margin: 0 0 5px 0; color: #58a6ff; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">RTL Design Source</h3>
-        <p style="margin: 0; color: #8b949e; font-size: 14px; font-family: monospace;">traffic_light_controller.v</p>
+    <td align="center" width="50%" style="padding: 25px; border-right: 2px solid #1f6feb; background: linear-gradient(135deg, #0d1117 0%, #161b22 100%);">
+      <a href="./03-rtl-tb/traffic_light_controller.v" style="text-decoration: none; display: block; width: 100%; height: 100%;">
+        <div style="font-size: 32px; margin-bottom: 10px;">📄</div>
+        <div style="font-size: 18px; font-weight: bold; color: #58a6ff; font-family: sans-serif; margin-bottom: 5px; text-shadow: 0 0 8px rgba(88, 166, 255, 0.4);">RTL Design Source</div>
+        <div style="font-size: 13px; color: #8b949e; font-family: monospace; background: #010409; padding: 4px 8px; border-radius: 4px; display: inline-block; border: 1px solid #30363d;">traffic_light_controller.v</div>
       </a>
     </td>
-    <td align="center" width="50%" style="background-color: #0d1117; border: 1px solid #30363d; border-radius: 8px; padding: 20px;">
-      <a href="./03-rtl-tb/traffic_light_controller_tb.v" style="text-decoration: none; color: #58a6ff; display: block;">
-        <h2 style="margin: 0 0 10px 0; font-size: 24px;">🧪</h2>
-        <h3 style="margin: 0 0 5px 0; color: #58a6ff; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">Testbench File</h3>
-        <p style="margin: 0; color: #8b949e; font-size: 14px; font-family: monospace;">traffic_light_controller_tb.v</p>
+    <td align="center" width="50%" style="padding: 25px; background: linear-gradient(135deg, #0d1117 0%, #161b22 100%);">
+      <a href="./03-rtl-tb/traffic_light_controller_tb.v" style="text-decoration: none; display: block; width: 100%; height: 100%;">
+        <div style="font-size: 32px; margin-bottom: 10px;">🧪</div>
+        <div style="font-size: 18px; font-weight: bold; color: #f0883e; font-family: sans-serif; margin-bottom: 5px; text-shadow: 0 0 8px rgba(240, 136, 62, 0.4);">Testbench File</div>
+        <div style="font-size: 13px; color: #8b949e; font-family: monospace; background: #010409; padding: 4px 8px; border-radius: 4px; display: inline-block; border: 1px solid #30363d;">traffic_light_controller_tb.v</div>
       </a>
     </td>
   </tr>
