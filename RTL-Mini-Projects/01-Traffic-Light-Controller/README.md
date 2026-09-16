@@ -73,85 +73,66 @@ The Verilog RTL and testbench are available in
 
 <br>
 
-<table align="center" width="100%" cellpadding="0" cellspacing="0" border="0">
-  <tr>
-    <td align="center" width="50%" bgcolor="#161b22" style="border:1px solid #30363d;">
+<table align="center">
+<tr>
 
-      <a href="./03-rtl-tb/traffic_light/traffic_light_controller.v">
+<td align="center" width="50%">
 
-        <br>
+<a href="./03-rtl-tb/traffic_light/traffic_light_controller.v">
 
-        <img src="https://img.shields.io/badge/RTL%20DESIGN-SOURCE-58A6FF?style=for-the-badge&logo=verilog&logoColor=white">
+<img src="https://img.shields.io/badge/RTL%20DESIGN%20SOURCE-58A6FF?style=for-the-badge&logo=verilog&logoColor=white">
 
-        <br><br>
+<br><br>
 
-        <font size="6">📄</font>
+<img src="https://img.icons8.com/fluency/96/document.png" width="55">
 
-        <br>
+<br>
 
-        <font size="4"><b>Traffic Light RTL</b></font>
+### Traffic Light RTL
 
-        <br>
+**Synthesizable Verilog RTL**
 
-        <font color="#8B949E">
-          Synthesizable Verilog RTL
-        </font>
+`traffic_light_controller.v`
 
-        <br><br>
+<br>
 
-        <code>traffic_light_controller.v</code>
+<img src="https://img.shields.io/badge/OPEN%20RTL-→-1F6FEB?style=flat-square">
 
-        <br><br>
+</a>
 
-        <img src="https://img.shields.io/badge/View%20RTL-→-1F6FEB?style=flat-square">
+</td>
 
-        <br><br>
+<td align="center" width="50%">
 
-      </a>
+<a href="./03-rtl-tb/traffic_light/traffic_light_controller_tb.v">
 
-    </td>
+<img src="https://img.shields.io/badge/VERIFICATION%20TESTBENCH-F0883E?style=for-the-badge&logo=verilog&logoColor=white">
 
-    <td width="2"></td>
+<br><br>
 
-    <td align="center" width="50%" bgcolor="#161b22" style="border:1px solid #30363d;">
+<img src="https://img.icons8.com/fluency/96/test-tube.png" width="55">
 
-      <a href="./03-rtl-tb/traffic_light/traffic_light_controller_tb.v">
+<br>
 
-        <br>
+### Traffic Light Testbench
 
-        <img src="https://img.shields.io/badge/VERIFICATION-TESTBENCH-F0883E?style=for-the-badge&logo=verilog&logoColor=white">
+**Simulation & Verification**
 
-        <br><br>
+`traffic_light_controller_tb.v`
 
-        <font size="6">🧪</font>
+<br>
 
-        <br>
+<img src="https://img.shields.io/badge/OPEN%20TESTBENCH-→-F0883E?style=flat-square">
 
-        <font size="4"><b>Traffic Light Testbench</b></font>
+</a>
 
-        <br>
+</td>
 
-        <font color="#8B949E">
-          Simulation &amp; Verification
-        </font>
-
-        <br><br>
-
-        <code>traffic_light_controller_tb.v</code>
-
-        <br><br>
-
-        <img src="https://img.shields.io/badge/View%20Testbench-→-F0883E?style=flat-square">
-
-        <br><br>
-
-      </a>
-
-    </td>
-  </tr>
+</tr>
 </table>
 
 <br>
+
 ## 🧪 Verification Strategy
 
 The dedicated testbench is used to verify:
