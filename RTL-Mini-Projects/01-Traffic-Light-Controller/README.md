@@ -145,8 +145,9 @@ The dedicated testbench is used to verify:
 - Extended endurance testing (50+ continuous cycles) verifying terminal recovery and zero deadlock
 - Self-checking assertion checks with automated `$error` tracking and summary reporting
 
-Detailed verification planning and results are documented in
-[Verification Summary](./01-docs/03-verification-summary.md).
+> [!NOTE]
+> **Detailed Verification Plan**
+> Comprehensive verification planning and test results are documented in the [Verification Summary](./01-docs/03-verification-summary.md).
 
 ## 📈 Simulation Evidence
 
