@@ -1,64 +1,92 @@
 <br>
 
-<table align="center">
-<tr>
+<table align="center" width="100%">
+  <tr>
 
-<td align="center" width="50%">
+    <!-- RTL DESIGN CARD -->
+    <td align="center" width="50%" style="padding: 25px;">
 
-<a href="./03-rtl-tb/traffic_light_controller.v">
+      <a href="./03-rtl-tb/traffic_light_controller.v">
 
-<img src="https://img.shields.io/badge/RTL%20DESIGN%20SOURCE-58A6FF?style=for-the-badge&logo=verilog&logoColor=white">
+        <img
+          src="https://img.shields.io/badge/RTL%20DESIGN%20SOURCE-58A6FF?style=for-the-badge&logo=verilog&logoColor=white"
+          alt="RTL Design Source"
+        >
 
-<br><br>
+        <br><br>
 
-<img src="https://img.icons8.com/fluency/96/document.png" width="55">
+        <img
+          src="https://img.icons8.com/fluency/96/document.png"
+          width="60"
+          alt="RTL Source"
+        >
 
-<br>
+        <br><br>
 
-### Traffic Light RTL
+        <strong>Traffic Light RTL</strong>
 
-**Synthesizable Verilog RTL**
+        <br><br>
 
-`traffic_light_controller.v`
+        <sub>Synthesizable Verilog RTL</sub>
 
-<br>
-<a href="./03-rtl-tb/traffic_light_controller.v">
-<img src="https://img.shields.io/badge/OPEN%20RTL-→-1F6FEB?style=flat-square">
-<br><br> 
-  
-</a>
+        <br><br>
 
-</td>
+        <code>traffic_light_controller.v</code>
 
-<td align="center" width="50%">
+        <br><br>
 
-<a href="./03-rtl-tb/traffic_light_controller_tb.v">
+        <img
+          src="https://img.shields.io/badge/OPEN%20RTL-%E2%86%92-1F6FEB?style=flat-square"
+          alt="Open RTL"
+        >
 
-<img src="https://img.shields.io/badge/VERIFICATION%20TESTBENCH-F0883E?style=for-the-badge&logo=verilog&logoColor=white">
+      </a>
 
-<br><br>
+    </td>
 
-<img src="https://img.icons8.com/fluency/96/test-tube.png" width="55">
 
-<br>
+    <!-- TESTBENCH CARD -->
+    <td align="center" width="50%" style="padding: 25px;">
 
-### Traffic Light Testbench
+      <a href="./03-rtl-tb/traffic_light_controller_tb.v">
 
-**Simulation & Verification**
+        <img
+          src="https://img.shields.io/badge/VERIFICATION%20TESTBENCH-F0883E?style=for-the-badge&logo=verilog&logoColor=white"
+          alt="Verification Testbench"
+        >
 
-`traffic_light_controller_tb.v`
+        <br><br>
 
-<br>
-<a href="./03-rtl-tb/traffic_light_controller_tb.v">
-<img src="https://img.shields.io/badge/OPEN%20TESTBENCH-→-F0883E?style=flat-square">
+        <img
+          src="https://img.icons8.com/fluency/96/test-tube.png"
+          width="60"
+          alt="Testbench"
+        >
 
-<br><br> 
+        <br><br>
 
-</a>
+        <strong>Traffic Light Testbench</strong>
 
-</td>
+        <br><br>
 
-</tr>
+        <sub>Simulation &amp; Verification</sub>
+
+        <br><br>
+
+        <code>traffic_light_controller_tb.v</code>
+
+        <br><br>
+
+        <img
+          src="https://img.shields.io/badge/OPEN%20TESTBENCH-%E2%86%92-F0883E?style=flat-square"
+          alt="Open Testbench"
+        >
+
+      </a>
+
+    </td>
+
+  </tr>
 </table>
 
 <br>
