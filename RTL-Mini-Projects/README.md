@@ -21,11 +21,10 @@
 
 `traffic_light_controller.v`
 
-<br><br>
+<br>
+<a href="./03-rtl-tb/traffic_light_controller.v">
 
 <img src="https://img.shields.io/badge/OPEN%20RTL-→-1F6FEB?style=flat-square">
-
-<br>
 
 </a>
 
