@@ -135,18 +135,18 @@ from the Verilog RTL.
     │
     ├── README.md
     │
-    ├── docs/
-    │   ├── requirements-and-design.md
-    │   ├── fsm-specification.md
-    │   ├── verification-summary.md
-    │   └── design-decisions.md
+    ├── 01-docs/
+    │   ├── 01-requirements-and-design.md
+    │   ├── 02-fsm-specification.md
+    │   ├── 03-verification-summary.md
+    │   └── 04-design-decisions.md
     │
-    ├── architecture/
-    │   ├── block-diagram.png
-    │   ├── state-diagram.png
-    │   └── timing-flow.png
+    ├── 02-architecture/
+    │   ├── 01-block-diagram.png
+    │   ├── 02-state-diagram.png
+    │   └── 03timing-flow.png
     │
-    └── rtl-tb/
+    └── 03-rtl-tb/
         ├── README.md
         ├── traffic_light_controller.v
         ├── traffic_light_controller_tb.v
