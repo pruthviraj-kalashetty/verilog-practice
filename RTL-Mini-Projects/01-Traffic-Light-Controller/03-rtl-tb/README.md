@@ -240,6 +240,22 @@ end
 endmodule
 ```
 
+# Simulation and Verification Process
+
+Behavioral simulation for the Traffic Light Controller is executed using **Icarus Verilog** (`iverilog`), followed by waveform inspection and debugging in **GTKWave**. This verification pipeline ensures that the Finite State Machine (FSM), timing counters, and output light encoders meet all functional requirements prior to FPGA synthesis.
+
+---
+
+## 🛠️ Step-by-Step Simulation Workflow
+
+Follow the commands below to compile the source files, execute the simulation runtime, and visualize the output waveforms:
+
+### 1. Compile the RTL and Testbench
+Combine the main design module and the verification testbench into a compiled simulation executable using `iverilog`.
+
+```bash
+iverilog -o traffic_light_controller_sim traffic_light_controller.v traffic_light_controller_tb.v
+```
 # 🔷 **RTL Schematics**
 
 ![mealy-FSM RTL Schematic](rtl-schematic.png)
