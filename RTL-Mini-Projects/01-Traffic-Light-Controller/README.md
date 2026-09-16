@@ -11,31 +11,20 @@
 
 ---
 
-## 📌 One-Line Summary
+## 📋 Introduction
 
-A synthesizable Verilog RTL traffic-light controller implemented using a
-3-state Moore FSM with synchronous reset and clock-driven state transitions.
+Modern embedded systems and digital controllers rely heavily on robust sequential logic to manage timed operations reliably. A prime example of this is a traffic-light controller, which governs the safe flow of intersection traffic by transitioning systematically through a pre-determined sequence of signal states. 
 
-## 📌 Overview
+This project implements a fully synthesizable **Traffic-Light Controller in Verilog HDL** utilizing a **3-state Moore Finite State Machine (FSM)** architecture. In a Moore machine, outputs are strictly a function of the current state, ensuring deterministic behavior and glitch-free signal transitions. Designed for industrial synthesis and FPGA/ASIC deployment, the architecture features a clean separation of state memory, next-state logic, and output decoding.
 
-The Traffic Light Controller is a synthesizable Verilog RTL project that
-implements a predefined traffic-light sequence using a Moore Finite State
-Machine (FSM). The project demonstrates FSM-based control, synchronous reset,
-timed state transitions, RTL coding, testbench development, simulation, and
-waveform analysis.
+---
 
-## 🎯 Problem Statement
+## 📌 Project Summary
 
-Design a digital traffic-light controller that generates the appropriate
-Red, Yellow, and Green signals according to a predefined sequence. The
-controller must operate synchronously with the system clock and return to a
-known initial state when reset is asserted.
-
-## 🎯 Objective
-
-Design and verify a synchronous traffic-light controller using a Moore FSM,
-where each FSM state represents a traffic-light condition and determines the
-corresponding output.
+* **Architecture:** 3-state Moore Finite State Machine (FSM)
+* **Design Language:** Verilog RTL (IEEE 1364-2005 compatible)
+* **Control Features:** Synchronous active reset, edge-triggered clocking, and timed state progression
+* **Verification Scope:** Self-checking testbench, functional simulation, and waveform timing analysis
 
 ## 🔌 Interface Specifications
 
