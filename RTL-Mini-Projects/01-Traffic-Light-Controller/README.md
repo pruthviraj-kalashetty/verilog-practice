@@ -71,15 +71,28 @@ The RTL implementation follows strict synthesizable coding standards:
 The Verilog RTL and testbench are available in
 [rtl-tb/](./03-rtl-tb).
 
-## 📂 Quick Navigation
+<br>
 
-Click the buttons below to view the source files and testbench directly:
+<table align="center" width="100%">
+  <tr>
+    <td align="center" width="50%" style="background-color: #0d1117; border: 1px solid #30363d; border-radius: 8px; padding: 20px;">
+      <a href="./03-rtl-tb/traffic_light_controller.v" style="text-decoration: none; color: #58a6ff; display: block;">
+        <h2 style="margin: 0 0 10px 0; font-size: 24px;">📄</h2>
+        <h3 style="margin: 0 0 5px 0; color: #58a6ff; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">RTL Design Source</h3>
+        <p style="margin: 0; color: #8b949e; font-size: 14px; font-family: monospace;">traffic_light_controller.v</p>
+      </a>
+    </td>
+    <td align="center" width="50%" style="background-color: #0d1117; border: 1px solid #30363d; border-radius: 8px; padding: 20px;">
+      <a href="./03-rtl-tb/traffic_light_controller_tb.v" style="text-decoration: none; color: #58a6ff; display: block;">
+        <h2 style="margin: 0 0 10px 0; font-size: 24px;">🧪</h2>
+        <h3 style="margin: 0 0 5px 0; color: #58a6ff; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">Testbench File</h3>
+        <p style="margin: 0; color: #8b949e; font-size: 14px; font-family: monospace;">traffic_light_controller_tb.v</p>
+      </a>
+    </td>
+  </tr>
+</table>
 
-[![RTL & Testbench Folder](https://img.shields.io/badge/📁_View_RTL_Folder-03--rtl--tb-blue?style=for-the-badge&logo=git&logoColor=white)](./03-rtl-tb)
-
-[![Verilog RTL Source](https://img.shields.io/badge/📄_traffic__light__controller.v-Design_File-green?style=for-the-badge&logo=verilog&logoColor=white)](./03-rtl-tb/traffic_light_controller.v)
-
-[![Testbench Source](https://img.shields.io/badge/🧪_traffic__light__controller__tb.v-Testbench_File-orange?style=for-the-badge&logo=verilog&logoColor=white)](./03-rtl-tb/traffic_light_controller_tb.v)
+<br>
 
 ## 🧪 Verification Strategy
 
