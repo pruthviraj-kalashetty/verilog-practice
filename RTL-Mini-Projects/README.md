@@ -22,9 +22,10 @@
 `traffic_light_controller.v`
 
 <br>
-
+<a href="./03-rtl-tb/traffic_light_controller.v">
 <img src="https://img.shields.io/badge/OPEN%20RTL-→-1F6FEB?style=flat-square">
-
+<br><br> 
+  
 </a>
 
 </td>
@@ -47,13 +48,13 @@
 
 `traffic_light_controller_tb.v`
 
-<br><br>
+<br>
 
 <img src="https://img.shields.io/badge/OPEN%20TESTBENCH-→-F0883E?style=flat-square">
 
-<br>
+</a>
 
-
+</td>
 
 </tr>
 </table>
