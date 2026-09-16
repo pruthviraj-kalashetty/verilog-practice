@@ -75,78 +75,83 @@ The Verilog RTL and testbench are available in
 
 <table align="center" width="100%" cellpadding="0" cellspacing="0" border="0">
   <tr>
+    <td align="center" width="50%" bgcolor="#161b22" style="border:1px solid #30363d;">
 
-    <!-- RTL DESIGN CARD -->
-    <td align="center" width="50%" style="padding: 12px;">
       <a href="./03-rtl-tb/traffic_light/traffic_light_controller.v">
-        <table width="100%" cellpadding="0" cellspacing="0" border="0">
-          <tr>
-            <td align="center" style="padding: 22px; border: 1px solid #30363d; border-radius: 10px; background-color: #0d1117;">
 
-              <div style="font-size: 30px;">⚙️</div>
+        <br>
 
-              <br>
+        <img src="https://img.shields.io/badge/RTL%20DESIGN-SOURCE-58A6FF?style=for-the-badge&logo=verilog&logoColor=white">
 
-              <div>
-                <strong style="font-size: 18px;">RTL Design Source</strong>
-              </div>
+        <br><br>
 
-              <br>
+        <font size="6">📄</font>
 
-              <div>
-                <code>traffic_light_controller.v</code>
-              </div>
+        <br>
 
-              <br>
+        <font size="4"><b>Traffic Light RTL</b></font>
 
-              <div style="font-size: 13px;">
-                Synthesizable RTL implementation
-              </div>
+        <br>
 
-            </td>
-          </tr>
-        </table>
+        <font color="#8B949E">
+          Synthesizable Verilog RTL
+        </font>
+
+        <br><br>
+
+        <code>traffic_light_controller.v</code>
+
+        <br><br>
+
+        <img src="https://img.shields.io/badge/View%20RTL-→-1F6FEB?style=flat-square">
+
+        <br><br>
+
       </a>
+
     </td>
 
-    <!-- TESTBENCH CARD -->
-    <td align="center" width="50%" style="padding: 12px;">
+    <td width="2"></td>
+
+    <td align="center" width="50%" bgcolor="#161b22" style="border:1px solid #30363d;">
+
       <a href="./03-rtl-tb/traffic_light/traffic_light_controller_tb.v">
-        <table width="100%" cellpadding="0" cellspacing="0" border="0">
-          <tr>
-            <td align="center" style="padding: 22px; border: 1px solid #30363d; border-radius: 10px; background-color: #0d1117;">
 
-              <div style="font-size: 30px;">🧪</div>
+        <br>
 
-              <br>
+        <img src="https://img.shields.io/badge/VERIFICATION-TESTBENCH-F0883E?style=for-the-badge&logo=verilog&logoColor=white">
 
-              <div>
-                <strong style="font-size: 18px;">RTL Testbench</strong>
-              </div>
+        <br><br>
 
-              <br>
+        <font size="6">🧪</font>
 
-              <div>
-                <code>traffic_light_controller_tb.v</code>
-              </div>
+        <br>
 
-              <br>
+        <font size="4"><b>Traffic Light Testbench</b></font>
 
-              <div style="font-size: 13px;">
-                Simulation and functional verification
-              </div>
+        <br>
 
-            </td>
-          </tr>
-        </table>
+        <font color="#8B949E">
+          Simulation &amp; Verification
+        </font>
+
+        <br><br>
+
+        <code>traffic_light_controller_tb.v</code>
+
+        <br><br>
+
+        <img src="https://img.shields.io/badge/View%20Testbench-→-F0883E?style=flat-square">
+
+        <br><br>
+
       </a>
-    </td>
 
+    </td>
   </tr>
 </table>
 
 <br>
-
 ## 🧪 Verification Strategy
 
 The dedicated testbench is used to verify:
