@@ -53,5 +53,7 @@ Now that you have real results: briefly state what the waveform and RTL
 schematic actually confirm — e.g., "The waveform confirms glitch-free 
 output transitions at each state change, validating the Moore FSM choice 
 in Section 1." Link to your existing images rather than duplicating them:
+
 ![Waveform](../03-rtl-tb/waveform.png)
-![RTL Schematic](..03-/rtl-tb/rtl-schematic.png)
+
+![RTL Schematic](..03-rtl-tb/rtl-schematic.png)
