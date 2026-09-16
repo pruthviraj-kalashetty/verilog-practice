@@ -78,7 +78,7 @@ The Verilog RTL and testbench are available in
 
 <td align="center" width="50%">
 
-<a href="./03-rtl-tb/traffic_light/traffic_light_controller.v">
+<a href="./03-rtl-tb/traffic_light_controller.v">
 
 <img src="https://img.shields.io/badge/RTL%20DESIGN%20SOURCE-58A6FF?style=for-the-badge&logo=verilog&logoColor=white">
 
@@ -104,7 +104,7 @@ The Verilog RTL and testbench are available in
 
 <td align="center" width="50%">
 
-<a href="./03-rtl-tb/traffic_light/traffic_light_controller_tb.v">
+<a href="./03-rtl-tb/traffic_light_controller_tb.v">
 
 <img src="https://img.shields.io/badge/VERIFICATION%20TESTBENCH-F0883E?style=for-the-badge&logo=verilog&logoColor=white">
 
