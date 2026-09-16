@@ -73,22 +73,75 @@ The Verilog RTL and testbench are available in
 
 <br>
 
-<table align="center" width="100%" cellpadding="0" cellspacing="0" border="0" style="background: #090d16; border: 2px solid #1f6feb; border-radius: 12px; overflow: hidden; box-shadow: 0 0 20px rgba(31, 111, 235, 0.3);">
+<table align="center" width="100%" cellpadding="0" cellspacing="0" border="0">
   <tr>
-    <td align="center" width="50%" style="padding: 25px; border-right: 2px solid #1f6feb; background: linear-gradient(135deg, #0d1117 0%, #161b22 100%);">
-      <a href="./03-rtl-tb/traffic_light_controller.v" style="text-decoration: none; display: block; width: 100%; height: 100%;">
-        <div style="font-size: 32px; margin-bottom: 10px;">📄</div>
-        <div style="font-size: 18px; font-weight: bold; color: #58a6ff; font-family: sans-serif; margin-bottom: 5px; text-shadow: 0 0 8px rgba(88, 166, 255, 0.4);">RTL Design Source</div>
-        <div style="font-size: 13px; color: #8b949e; font-family: monospace; background: #010409; padding: 4px 8px; border-radius: 4px; display: inline-block; border: 1px solid #30363d;">traffic_light_controller.v</div>
+
+    <!-- RTL DESIGN CARD -->
+    <td align="center" width="50%" style="padding: 12px;">
+      <a href="./03-rtl-tb/traffic_light/traffic_light_controller.v">
+        <table width="100%" cellpadding="0" cellspacing="0" border="0">
+          <tr>
+            <td align="center" style="padding: 22px; border: 1px solid #30363d; border-radius: 10px; background-color: #0d1117;">
+
+              <div style="font-size: 30px;">⚙️</div>
+
+              <br>
+
+              <div>
+                <strong style="font-size: 18px;">RTL Design Source</strong>
+              </div>
+
+              <br>
+
+              <div>
+                <code>traffic_light_controller.v</code>
+              </div>
+
+              <br>
+
+              <div style="font-size: 13px;">
+                Synthesizable RTL implementation
+              </div>
+
+            </td>
+          </tr>
+        </table>
       </a>
     </td>
-    <td align="center" width="50%" style="padding: 25px; background: linear-gradient(135deg, #0d1117 0%, #161b22 100%);">
-      <a href="./03-rtl-tb/traffic_light_controller_tb.v" style="text-decoration: none; display: block; width: 100%; height: 100%;">
-        <div style="font-size: 32px; margin-bottom: 10px;">🧪</div>
-        <div style="font-size: 18px; font-weight: bold; color: #f0883e; font-family: sans-serif; margin-bottom: 5px; text-shadow: 0 0 8px rgba(240, 136, 62, 0.4);">Testbench File</div>
-        <div style="font-size: 13px; color: #8b949e; font-family: monospace; background: #010409; padding: 4px 8px; border-radius: 4px; display: inline-block; border: 1px solid #30363d;">traffic_light_controller_tb.v</div>
+
+    <!-- TESTBENCH CARD -->
+    <td align="center" width="50%" style="padding: 12px;">
+      <a href="./03-rtl-tb/traffic_light/traffic_light_controller_tb.v">
+        <table width="100%" cellpadding="0" cellspacing="0" border="0">
+          <tr>
+            <td align="center" style="padding: 22px; border: 1px solid #30363d; border-radius: 10px; background-color: #0d1117;">
+
+              <div style="font-size: 30px;">🧪</div>
+
+              <br>
+
+              <div>
+                <strong style="font-size: 18px;">RTL Testbench</strong>
+              </div>
+
+              <br>
+
+              <div>
+                <code>traffic_light_controller_tb.v</code>
+              </div>
+
+              <br>
+
+              <div style="font-size: 13px;">
+                Simulation and functional verification
+              </div>
+
+            </td>
+          </tr>
+        </table>
       </a>
     </td>
+
   </tr>
 </table>
 
