@@ -58,6 +58,9 @@ corresponding traffic-light output based on the current state.
 Detailed FSM behavior is documented in
 [FSM Specification](./01-docs/02-fsm-specification.md).
 
+> [!NOTE]
+> **Detailed FSM Behavior**
+> Complete architectural and state-transition details are documented in the [FSM Specification](./01-docs/02-fsm-specification.md).
 
 ## 💻 RTL Implementation
 
