@@ -1,4 +1,5 @@
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0D1117,50:161B22,100:238636&height=120&section=header&text=TRAFFIC%20LIGHT%20CONTROLLER&fontSize=28&fontColor=FFFFFF&animation=fadeIn&fontAlignY=65"/>
+<div align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0D1117,50:161B22,100:238636&height=120&section=header&text=TRAFFIC%20LIGHT%20CONTROLLER&fontSize=28&fontColor=FFFFFF&animation=fadeIn&fontAlignY=65"/>
 <br>
 
 ### Moore FSM • Timed State Transitions • Synthesizable RTL
