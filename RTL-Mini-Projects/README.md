@@ -4,8 +4,6 @@
 
 <br>
 
-<br>
-
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:020617,25:0F172A,50:1E3A8A,75:0F766E,100:14532D&height=100&section=footer&animation=twinkling"/>
 
 </div>
