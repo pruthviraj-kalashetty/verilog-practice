@@ -6,28 +6,56 @@
 
 ---
 
-## 📋 Introduction
+<br>
 
 <div align="center">
 
-<img src="./assets/traffic-light-animation.gif" width="180">
+## ⚡ RTL & VERIFICATION
 
-<br>
+<img src="./assets/rtl-flow-animation.gif" width="650">
 
-**🚦 Moore FSM • Timed State Transitions • Synthesizable Verilog RTL**
+<br><br>
 
-</div>
+<a href="./03-rtl-tb/traffic_light_controller.v">
+<img src="https://img.shields.io/badge/%E2%96%B6%20RTL%20DESIGN%20SOURCE-58A6FF?style=for-the-badge&logo=verilog&logoColor=white">
+</a>
 
-Modern digital systems use sequential logic and finite state machines to control operations that must follow a defined sequence of events. A traffic-light controller is a practical example, where the controller continuously manages signal states and transitions between them according to a defined timing sequence.
+&nbsp;&nbsp;&nbsp;
 
-This project implements a **synthesizable Traffic-Light Controller in Verilog HDL** using a **3-state Moore Finite State Machine (FSM)** architecture. The outputs depend only on the current FSM state, providing predictable and well-defined signal behavior. The design separates **state memory, next-state logic, and output logic**, following a structured RTL design approach suitable for simulation and synthesis.
+<a href="./03-rtl-tb/traffic_light_controller_tb.v">
+<img src="https://img.shields.io/badge/%E2%96%B6%20VERIFICATION%20TESTBENCH-F0883E?style=for-the-badge&logo=verilog&logoColor=white">
+</a>
 
-<div align="center">
+<br><br>
 
-<img src="./assets/fsm-animation.gif" width="520">
+<img src="./assets/rtl-code-animation.gif" width="300">
 
-<br>
+### 🧩 Traffic Light RTL
 
-`STATE → TRANSITION → STATE → TRANSITION → STATE`
+**Synthesizable Verilog RTL**
+
+`traffic_light_controller.v`
+
+<a href="./03-rtl-tb/traffic_light_controller.v">
+<img src="https://img.shields.io/badge/OPEN%20RTL-→-1F6FEB?style=flat-square">
+</a>
+
+<br><br>
+
+<img src="./assets/testbench-animation.gif" width="300">
+
+### 🧪 Verification Testbench
+
+**Simulation & Verification**
+
+`traffic_light_controller_tb.v`
+
+<a href="./03-rtl-tb/traffic_light_controller_tb.v">
+<img src="https://img.shields.io/badge/OPEN%20TESTBENCH-→-F0883E?style=flat-square">
+</a>
+
+<br><br>
+
+<img src="./assets/fsm-wave-animation.gif" width="600">
 
 </div>
