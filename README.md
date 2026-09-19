@@ -52,7 +52,7 @@ This repository serves as a hands-on implementation foundation for **Verilog HDL
 * **Parameterization:** Local Constants (`localparam`) vs. Reconfigurable Parameters (`parameter`).
 </details>
 
-<details open>
+<details close>
 <summary><b>2️⃣ Procedural Blocks & Control Flow</b></summary>
 
 * **Execution Blocks:** `initial` vs. `always` Execution Semantics, Sensitivity Lists, Combinationally Complete `always @*`.
