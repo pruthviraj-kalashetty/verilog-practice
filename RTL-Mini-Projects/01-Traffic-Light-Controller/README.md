@@ -2,7 +2,7 @@
 
 <br>
 
-
+### Moore FSM • Timed State Transitions • Synthesizable RTL
 
 <p>
   <img src="https://img.shields.io/badge/%E2%97%88%20TYPE-MOORE%20FSM-0F172A?style=for-the-badge&labelColor=020617&color=3B82F6"/>
