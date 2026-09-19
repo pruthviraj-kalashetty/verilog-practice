@@ -1,5 +1,7 @@
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0D1117,50:161B22,100:238636&height=120&section=header&text=TRAFFIC%20LIGHT%20CONTROLLER&fontSize=28&fontColor=FFFFFF&animation=fadeIn&fontAlignY=65"/>
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0D1117,50:161B22,100:238636&height=120&section=header&text=TRAFFIC%20LIGHT%20CONTROLLER&fontSize=28&fontColor=FFFFFF&animation=fadeIn&fontAlignY=65"/>
+
 <br>
 
 ### Moore FSM • Timed State Transitions • Synthesizable RTL
@@ -10,7 +12,8 @@
   <img src="https://img.shields.io/badge/%E2%97%88%20RTL-VERILOG-0F172A?style=for-the-badge&labelColor=020617&color=8B5CF6"/>
   <img src="https://img.shields.io/badge/%E2%97%88%20VERIFICATION-IN%20PROGRESS-0F172A?style=for-the-badge&labelColor=020617&color=F59E0B"/>
 </p>
-<br>
+
+</div>
 ---
 
 ## 📋 Introduction
