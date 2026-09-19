@@ -92,7 +92,9 @@ This repository serves as a hands-on implementation foundation for **Verilog HDL
 **Repository - 02**
 
 ├── Verilog-HDL-and-RTL-Design
-│   ├── [01]-Verilog-Basics
+        <details open>
+│   ├── <summary><b> [01]-Verilog-Basics
+       </details>
 │   │   ├── What-is-HDL.md
 │   │   ├── HDL-vs-Software.md
 │   │   ├── Introduction-to-Verilog.md
