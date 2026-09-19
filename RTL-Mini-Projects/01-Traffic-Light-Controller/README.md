@@ -2,9 +2,6 @@
 
 <br>
 
-
-# ⚡ TRAFFIC LIGHT CONTROLLER
-
 ### Moore FSM • Timed State Transitions • Synthesizable RTL
 
 <p>
