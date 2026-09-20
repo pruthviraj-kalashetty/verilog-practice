@@ -256,6 +256,18 @@ Combine the main design module and the verification testbench into a compiled si
 ```bash
 iverilog -o traffic_light_controller_sim traffic_light_controller.v traffic_light_controller_tb.v
 ```
+
+### 2. Run the Simulation
+Execute the compiled simulation using vvp to generate the waveform dump file.
+
+```bash
+vvp traffic_light_controller_sim
+```
+### 3. Open the Waveform
+Open the generated waveform file using GTKWave.
+```bash
+gtkwave traffic_light_controller.vcd
+```
 # 🔷 **RTL Schematics**
 
 ![mealy-FSM RTL Schematic](rtl-schematic.png)
