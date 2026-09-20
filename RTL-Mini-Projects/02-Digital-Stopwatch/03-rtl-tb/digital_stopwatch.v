@@ -1,4 +1,4 @@
-module digital_stopwatch(
+module digital_stopwatch #(
     parameter integer SUBSEC_CYCLES = 100,
     parameter integer MAX_MINUTES = 100
 )(

@@ -30,9 +30,17 @@ module digital_stopwatch_tb;
       $dumpfile("digital_stopwatch.vcd");
       $dumpvars(0, digital_stopwatch_tb);
   end
-  
+
   // Stop simulation
   initial begin 
+    reset = 1'b1;
+    start = 1'b0;
+
+    #10;
+
+    reset = 1'b0;
+    start = 1'b1;
+    
       #100;
       $finish;
   end
