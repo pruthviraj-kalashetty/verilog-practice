@@ -20,7 +20,7 @@ The counter sequence is:
 
 `Subseconds → Seconds → Minutes`
 
-![Digital Stopwatch State Diagram](02-state-diagram.png)
+![Digital Stopwatch 02-counter-hierarchy.png](02-counter-hierarchy.png)
 
 ---
 
