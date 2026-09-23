@@ -1,4 +1,4 @@
-# ◈ Full Subtractor Using Two Half Subtractors (`full_subtractor_using_two_half_subtractors`)
+# ◈ Full Subtractor Using Two Half Subtractors 
 
 ### Combinational Circuit • Hierarchical Design • Structural Modeling
 
