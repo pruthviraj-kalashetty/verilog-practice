@@ -1,3 +1,13 @@
+# ◈ Half Subtractor (`half_subtractor`)
+
+### Combinational Circuit • Arithmetic Circuit • Dataflow Modeling
+
+---
+
+## 📌 Module Description
+
+The **Half Subtractor** is a combinational arithmetic circuit that performs the subtraction of **two 1-bit inputs**—`A` and `B`—and produces a **Difference (`D`)** and **Borrow (`Bout`)**. Implemented using continuous assignment (`assign`) in dataflow abstraction.
+
 # ◈ **Verilog RTL code** 
 
 ```verilog
