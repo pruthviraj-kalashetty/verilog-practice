@@ -1,3 +1,15 @@
+# ◈ Full Subtractor
+
+### Combinational Circuit • Arithmetic Circuit • Dataflow Modeling
+
+---
+
+## 📌 Module Description
+
+The **Full Subtractor** is a combinational arithmetic circuit that performs the subtraction of **three 1-bit inputs**—`A`, `B`, and `Bin`—and produces a **Difference (`D`)** and **Borrow-Out (`Bout`)**. Implemented using continuous assignment (`assign`) in dataflow abstraction.
+
+---
+
 # ◈ **Verilog RTL code** 
 
 ```verilog
