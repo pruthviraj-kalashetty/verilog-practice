@@ -1,4 +1,16 @@
-# ◈ **Verilog RTL code** 
+# ◈ Full Subtractor Using Two Half Subtractors (`full_subtractor_using_two_half_subtractors`)
+
+### Combinational Circuit • Hierarchical Design • Structural Modeling
+
+---
+
+## 📌 Module Description
+
+The **Full Subtractor Using Two Half Subtractors** is a combinational arithmetic circuit that performs the subtraction of **three 1-bit inputs**—`A`, `B`, and `Bin`—by cascading **two Half Subtractors** and an OR gate to produce the **Difference (`D`)** and **Borrow-Out (`Bout`)** outputs. Implemented using module instantiation in structural abstraction.
+
+---
+
+# ◈ **Verilog RTL code**
 
 ```verilog
 
