@@ -1,3 +1,15 @@
+# ◈ 2-to-1 Multiplexer
+
+### Combinational Circuit • Multiplexer • Dataflow Modeling
+
+---
+
+## 📌 Module Description
+
+The **2-to-1 Multiplexer** is a combinational circuit that selects one of **two input signals**, `I0` or `I1`, based on the **Select (`S`)** input and forwards the selected signal to the output `Y`. Implemented using continuous assignment (`assign`) in dataflow abstraction.
+
+---
+
 # ◈ **Verilog RTL code** 
 
 ```verilog
