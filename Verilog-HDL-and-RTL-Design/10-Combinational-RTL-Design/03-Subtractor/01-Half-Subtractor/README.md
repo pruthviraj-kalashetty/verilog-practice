@@ -1,4 +1,4 @@
-# ◈ Half Subtractor (`half_subtractor`)
+# ◈ Half Subtractor 
 
 ### Combinational Circuit • Arithmetic Circuit • Dataflow Modeling
 
