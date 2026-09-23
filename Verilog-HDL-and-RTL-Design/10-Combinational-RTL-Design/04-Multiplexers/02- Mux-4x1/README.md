@@ -1,3 +1,15 @@
+# ◈ 4-to-1 Multiplexer (`mux_4to1`)
+
+### Combinational Circuit • Multiplexer • Dataflow Modeling
+
+---
+
+## 📌 Module Description
+
+The **4-to-1 Multiplexer** is a combinational circuit that selects one of **four input signals**, `I0`, `I1`, `I2`, or `I3`, based on the **2-bit Select (`S1:S0`)** input and forwards the selected signal to the output `Y`. Implemented using continuous assignment (`assign`) in dataflow abstraction.
+
+---
+
 # ◈ **Verilog RTL code** 
 
 ```verilog
