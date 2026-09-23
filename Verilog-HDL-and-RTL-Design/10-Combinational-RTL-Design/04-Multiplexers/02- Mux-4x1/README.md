@@ -1,4 +1,4 @@
-# ◈ 4-to-1 Multiplexer (`mux_4to1`)
+# ◈ 4-to-1 Multiplexer 
 
 ### Combinational Circuit • Multiplexer • Dataflow Modeling
 
