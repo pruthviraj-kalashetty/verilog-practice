@@ -1,3 +1,15 @@
+# ◈ 8-to-1 Multiplexer (`mux_8to1`)
+
+### Combinational Circuit • Multiplexer • Dataflow Modeling
+
+---
+
+## 📌 Module Description
+
+The **8-to-1 Multiplexer** is a combinational circuit that selects one of **eight input signals**, `I0` to `I7`, based on the **3-bit Select (`S2:S0`)** input and forwards the selected signal to the output `Y`. Implemented using continuous assignment (`assign`) in dataflow abstraction.
+
+---
+
 # ◈ **Verilog RTL code** 
 
 ```verilog
