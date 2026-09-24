@@ -1,4 +1,4 @@
-# ◈ 1-to-4 Demultiplexer (`demux_1to4`)
+# ◈ 1-to-4 Demultiplexer 
 
 ### Combinational Circuit • Demultiplexer • Dataflow Modeling
 
