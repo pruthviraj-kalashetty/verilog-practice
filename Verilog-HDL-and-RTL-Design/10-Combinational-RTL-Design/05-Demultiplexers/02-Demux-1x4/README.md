@@ -1,3 +1,15 @@
+# ◈ 1-to-4 Demultiplexer (`demux_1to4`)
+
+### Combinational Circuit • Demultiplexer • Dataflow Modeling
+
+---
+
+## 📌 Module Description
+
+The **1-to-4 Demultiplexer** is a combinational circuit that routes a **single input signal** `I` to one of **four output signals**, `Y0` to `Y3`, based on the **2-bit Select (`S1:S0`)** input. The selected output receives the input signal, while all other outputs remain LOW (`0`). Implemented using continuous assignment (`assign`) in dataflow abstraction.
+
+---
+
 # ◈ **Verilog RTL code** 
 
 ```verilog
