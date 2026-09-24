@@ -1,3 +1,15 @@
+# ◈ 1-to-8 Demultiplexer (`demux_1to8`)
+
+### Combinational Circuit • Demultiplexer • Dataflow Modeling
+
+---
+
+## 📌 Module Description
+
+The **1-to-8 Demultiplexer** is a combinational circuit that routes a **single input signal** `I` to one of **eight output signals**, `Y0` to `Y7`, based on the **3-bit Select (`S2:S0`)** input. The selected output receives the input signal, while all other outputs remain LOW (`0`). Implemented using continuous assignment (`assign`) in dataflow abstraction.
+
+---
+
 # ◈ **Verilog RTL code** 
 
 ```verilog
