@@ -1,3 +1,15 @@
+# ◈ 1-to-2 Demultiplexer (`demux_1to2`)
+
+### Combinational Circuit • Demultiplexer • Dataflow Modeling
+
+---
+
+## 📌 Module Description
+
+The **1-to-2 Demultiplexer** is a combinational circuit that routes a **single input signal** `I` to one of **two output signals**, `Y0` or `Y1`, based on the **Select (`S`)** input. The selected output receives the input signal, while the other output remains LOW (`0`). Implemented using continuous assignment (`assign`) in dataflow abstraction.
+
+---
+
 # ◈ **Verilog RTL code** 
 
 ```verilog
