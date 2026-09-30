@@ -39,7 +39,7 @@ end
 
 //End simulation
 initial begin 
-    #100;
+    #200;
     $finish;
 end
 
