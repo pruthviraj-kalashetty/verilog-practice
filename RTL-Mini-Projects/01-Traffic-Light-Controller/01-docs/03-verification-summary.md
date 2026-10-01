@@ -36,9 +36,9 @@ The design was simulated using Icarus Verilog, and the waveform was inspected in
 | TC-03 | NS yellow operation | NS = YELLOW, EW = RED for 2 cycles | PASS |
 | TC-04 | First all-red transition | Both directions RED for 1 cycle | PASS |
 | TC-05 | EW green operation | EW = GREEN, NS = RED for 5 cycles | PASS |
-| TC-06 | EW yellow operation | EW = YELLOW, NS = RED for 2 cycles | *(re-run pending)* |
-| TC-07 | Second all-red transition | Both directions RED for 1 cycle | *(re-run pending)* |
-| TC-08 | Complete FSM cycle | FSM returns to `NS_GREEN` after the full sequence | *(re-run pending)* |
+| TC-06 | EW yellow operation | EW = YELLOW, NS = RED for 2 cycles | Pass |
+| TC-07 | Second all-red transition | Both directions RED for 1 cycle | Pass |
+| TC-08 | Complete FSM cycle | FSM returns to `NS_GREEN` after the full sequence | Pass |
 | TC-09 | No simultaneous green | NS and EW never both GREEN | PASS |
 | TC-10 | No simultaneous yellow | NS and EW never both YELLOW | PASS |
 
