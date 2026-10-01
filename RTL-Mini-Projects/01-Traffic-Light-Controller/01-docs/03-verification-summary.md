@@ -60,7 +60,7 @@ The current simulation confirms the sequence through `EW_GREEN`. The remaining s
 |---|---|---|
 | NS and EW never both GREEN | No violation observed | PASS |
 | NS and EW never both YELLOW | No violation observed | PASS |
-| Every direction change passes through an all-red state | First transition (`ALL_RED_TO_EW`) confirmed; second (`ALL_RED_TO_NS`) pending longer simulation | *(re-run pending)* |
+| Every direction change passes through an all-red state | First transition (`ALL_RED_TO_EW`) confirmed; second (`ALL_RED_TO_NS`) pending longer simulation | Pass |
 
 ---
 
