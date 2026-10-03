@@ -1103,4 +1103,367 @@ Digital-Systems-and-VLSI
 │    ├── Binary-Multiplication.md<br>
 │    └── Binary-Division.md
 │</details>
+---
+<details>
+<summary><b>[01]-Digital-Basics</b></summary>
+│   ├── 01-Digital-vs-Analog.md<br>
+│   └── 02-Digital-System-Overview.md
+</details>
+<details>
+<summary><b>[02]-Number-Systems</b></summary>
+│   ├── Binary-System.md<br>
+│   ├── Decimal-System.md<br>
+│   ├── Octal-System.md<br>
+│   ├── Hexadecimal-System.md<br>
+│   └── Number-System-Conversion.md
+</details>
+<details>
+<summary><b>[03]-Binary-Arithmetic</b></summary>
+│   ├── Binary-Addition.md<br>
+│   ├── Binary-Subtraction.md<br>
+│   ├── Binary-Multiplication.md<br>
+│   └── Binary-Division.md
+</details>
+<details>
+<summary><b>[04]-Binary-Codes</b></summary>
+│   ├── BCD-Code.md<br>
+│   ├── Gray-Code.md<br>
+│   ├── ASCII-Code.md<br>
+│   ├── Excess-3-Code.md<br>
+│   ├── Binary-to-Gray.md<br>
+│   ├── Gray-to-Binary.md<br>
+│   ├── BCD-to-Excess-3.md<br>
+│   └── Excess-3-to-BCD.md
+</details>
+<details>
+<summary><b>[05]-Boolean-Algebra</b></summary>
+│   ├── Boolean-Basics.md<br>
+│   ├── Boolean-Laws.md<br>
+│   ├── DeMorgan-Theorem.md<br>
+│   └── Boolean-Expression.md
+</details>
+<details>
+<summary><b>[06]-Logic-Gates</b></summary>
+│   ├── 01-AND-Gate.md<br>
+│   ├── 02-OR-Gate.md<br>
+│   ├── 03-NOT-Gate.md<br>
+│   ├── 04-NAND-Gate.md<br>
+│   ├── 05-NOR-Gate.md<br>
+│   ├── 06-XOR-Gate.md<br>
+│   └── 07-XNOR-Gate.md
+</details>
+<details>
+<summary><b>[07]-Combinational-Logic</b></summary>
+│   ├── 01-Introduction.md<br>
+│   ├── 02-Truth-Tables.md<br>
+│   ├── 03-Minterms-Maxterms.md<br>
+│   └── 04-Combinational-vs-Sequential.md
+</details>
+<details>
+<summary><b>[08]-Karnaugh-Map</b></summary>
+│   ├── 01-KMap-3-Variable.md<br>
+│   ├── 02-KMap-4-Variable.md<br>
+│   └── 03-Dont-Care-Conditions.md
+</details>
+<details>
+<summary>├── <b>[09]-Combinational-Circuits</b></summary>
+│   <details>
+<summary>├── <b>[01]Adders</b></summary>
+│   │   ├── 01-Half-Adder.md<br>
+│   │   ├── 02-Full-Adder.md<br>
+│   │   └── 03-Full-Adder-Using-Two-Half-Adder.md
+</summary>
+   </details>
+<details>
+<summary>├── <b>Subctractor</b></summary>
+│   │   ├── Half-Subctractor.md<br>
+│   │   ├── Full-Subctractor.md<br>
+│   │   └── Full-Subctractor-Using-Two-Half-Subctractor.md
+</summary>
+   </details>
+<details>
+<summary>├── <b>Multiplexer</b></summary>
+│   │   ├── 2x1.md<br>
+│   │   ├── 4x1.md<br>
+│   │   └── 8x1.md
+</summary>
+   </details>
+<details>
+<summary>├── <b>Demultiplexer</b></summary>
+│   │   ├── 1x2.md<br>
+│   │   ├── 1x4.md<br>
+│   │   └── 1x8.md
+</summary>
+   </details>
+<details>
+<summary>├── <b>Decoder</b></summary>
+│   │   ├── 2x4.md<br>
+│   │   └── 3x8.md
+</summary>
+   </details>
+<details>
+<summary>├── <b>Encoder</b></summary>
+│   │   ├── 4x2.md<br>
+│   │   ├── 8x3.md<br>
+│   │   └── Priority-Encoder.md
+</summary>
+   </details>
+<details>
+<summary>├── <b>Comparator</b></summary>
+│   │   ├── 1-bit.md<br>
+│   │   ├── 2-bit.md<br>
+│   │   └── 3-bit.md
+</summary>
+   </details>
+│   └── Ripple-Carry-Adder.md
+</details>
+<details>
+<summary><b>[10]-Flip-Flops</b></summary>
+│   ├── SR-FlipFlop.md<br>
+│   ├── D-FlipFlop.md<br>
+│   ├── JK-FlipFlop.md<br>
+│   ├── T-FlipFlop.md<br>
+│   ├── Characteristic-Table.md<br>
+│   └── Excitation-Table.md
+</details>
+<details>
+<summary><b>[11]-Registers</b></summary>
+│   ├── Register-Basics.md<br>
+│   ├── Shift-Registers.md<br>
+│   ├── SISO-Register.md<br>
+│   ├── SIPO-Register.md<br>
+│   ├── PISO-Register.md<br>
+│   └── PIPO-Register.md
+</details>
+<details>
+<summary>├── <b>[12]-Counters</b></summary>
+│   <details>
+<summary>├── <b>Asynchronous-Counters</b></summary>
+│   │   ├── 3-Bit-Asynchoronous-Up-Counter.md<br>
+│   │   ├── 3-Bit-Asynchoronous-Down-Counter.md<br>
+│   │   ├── 4-Bit-Asynchoronous-Up-Counter.md<br>
+│   │   └── 4-Bit-Asynchoronous-Down-Counter.md
+</summary>
+   </details>
+<details>
+<summary>├── <b>Synchronous-Counters</b></summary>
+│   │   ├── Up-Counter.md<br>
+│   │   ├── Down-Counter.md<br>
+│   │   ├── Up-Down-Counter.md<br>
+│   │   └── Mod-N-Counter.md
+</summary>
+   </details>
+<details>
+<summary>└── <b>Special-Counters</b></summary>
+│        ├── Ring-Counter.md<br>
+│        └── Johnson-Counter.md
+</summary>
+   </details>
+</details>
+<details>
+<summary>└── <b>[13]-Finite-State-Machines</b></summary>
+        ├── FSM-Introduction.md<br>
+        ├── State-Diagram.md<br>
+        ├── State-Table.md<br>
+        ├── Moore-Machine.md<br>
+        ├── Mealy-Machine.md<br>
+        └── Sequence-Detector.md
+</details>
 
+<details>
+<summary>📁 <b>Semiconductor-and-CMOS</b></summary>
+
+<details>
+<summary>├── <b>[01]-Semiconductor-Basics</b></summary>
+│   ├── Semiconductor-Types.md<br>
+│   ├── Intrinsic-Semiconductor.md<br>
+│   ├── Extrinsic-Semiconductor.md<br>
+│   ├── Doping.md<br>
+│   ├── N-Type-Semiconductor.md<br>
+│   ├── P-Type-Semiconductor.md<br>
+│   ├── Semiconductor Manufacturing Process<br>
+│   ├── From Sand to Silicon<br>
+│   ├── Silicon Wafer Manufacturing<br>
+│   ├── Semiconductor Fabrication Plant<br>
+│   ├── Clean Room Technology<br>
+│   ├── Photolithography<br>
+│   ├── EUV Lithography<br>
+│   ├── Wafer Testing<br>
+│   ├── Chip Packaging<br>
+│   └── Semiconductor Ecosystem
+</details>
+<details>
+<summary>├── <b>[02]-MOS-Devices</b></summary>
+│   ├── What is MOSFET.md<br>
+│   ├── NMOS.md<br>
+│   ├── PMOS.md<br>
+│   ├── MOS-Operation.md<br>
+│   └── Threshold-Voltage.md
+</details>
+<details>
+<summary>└── <b>[03]-CMOS-Fundamentals</b></summary>
+<details>
+<summary>        ├── <b>[01]-CMOS-Basics</b></summary>
+        │   ├── What is CMOS?<br>
+        │   ├── Complementary NMOS + PMOS<br>
+        │   ├── CMOS Inverter<br>
+        │   ├── CMOS Logic Operation<br>
+        │   └── Pull-up and Pull-down Networks
+</details>
+<details>
+<summary>        ├── <b>[02]-CMOS-Logic-Gates</b></summary>
+        │   ├── CMOS NOT (Inverter)<br>
+        │   ├── CMOS NAND<br>
+        │   ├── CMOS NOR<br>
+        │   ├── CMOS AND<br>
+        │   ├── CMOS OR<br>
+        │   └── CMOS XOR / XNOR
+</details>
+<details>
+<summary>        ├── <b>[03]-CMOS-Characteristics</b></summary>
+        │   ├── Logic 0 and Logic 1<br>
+        │   ├── Voltage Levels<br>
+        │   ├── Noise Margin<br>
+        │   ├── Propagation Delay<br>
+        │   ├── Rise Time<br>
+        │   └── Fall Time
+</details>
+<details>
+<summary>        ├── <b>[04]-CMOS-Power</b></summary>
+        │    ├── Dynamic Power<br>
+        │    ├── Static Power<br>
+        │    ├── Switching Activity<br>
+        │    ├── Short-Circuit Power<br>
+        │    └── Leakage Power
+</details>
+<details>
+<summary>        └── <b>[05]-CMOS-Digital-Design-Concepts</b></summary>
+            ├── Fan-in<br>
+            ├── Fan-out<br>
+            ├── Load Capacitance<br>
+            ├── Drive Strength<br>
+            ├── PVT Variations<br>
+            └── Process Technology Nodes
+</details>
+</details>
+
+</details>
+
+<details>
+<summary>📁 <b>VLSI-Fundamentals</b></summary>
+
+<details>
+<summary>├── <b>[01]-Introduction-to-VLSI</b></summary>
+│   ├── 01-What-is-VLSI<br>
+│   ├── 02-VLSI-Levels-of-Integration<br>
+│   ├── 03-VLSI-Design-Types<br>
+│   ├── 04-Digital-vs-Analog-IC<br>
+│   └── 05-VLSI-Applications
+</details>
+<details>
+<summary>├── <b>[02]-ASIC-vs-FPGA</b></summary>
+│    ├── 01-ASIC<br>
+│    ├── 02-FPGA<br>
+│    ├── 03-ASIC-vs-FPGA<br>
+│    ├── 04-Advantages-and-Disadvantages<br>
+│    └── 05-RTL-in-ASIC-and-FPGA
+</details>
+<details>
+<summary>├── <b>[03]-Front-End-vs-Back-End</b></summary>
+│    ├── Front-End-Design<br>
+│    ├── RTL-Design<br>
+│    ├── Functional-Verification<br>
+│    ├── Logic-Synthesis<br>
+│    ├── Back-End-Design<br>
+│    └── Physical-Design
+</details>
+<details>
+<summary>├── <b>[04]-RTL-to-GDSII-Flow</b></summary>
+│   ├── Specification<br>
+│   ├── RTL-Coding<br>
+│   ├── Functional-Verification<br>
+│   ├── Logic-Synthesis<br>
+│   ├── Floor-planning<br>
+│   ├── Placement<br>
+│   ├── Clock-Tree-Synthesis<br>
+│   ├── Routing<br>
+│   ├── STA<br>
+│   ├── Physical-Verification<br>
+│   └── GDSII
+</details>
+<details>
+<summary>├── <b>[05]-PPA</b></summary>
+│   ├── Power<br>
+│   ├── Performance<br>
+│   ├── Area<br>
+│   ├── PPA-Tradeoffs<br>
+│   └── RTL-Level-PPA-Optimization
+</details>
+<details>
+<summary>├── <b>[06]-Parasitic-RC-Basics</b></summary>
+│   ├── Resistance<br>
+│   ├── Capacitance<br>
+│   ├── Interconnect<br>
+│   ├── RC-Delay<br>
+│   └── Impact-on-Timing
+</details>
+<details>
+<summary>└── <b>[07]-Logical-Effort-Basics</b></summary>
+         ├── Gate-Delay<br>
+         ├── Logical-Effort<br>
+         ├── Electrical-Effort<br>
+         ├── Parasitic-Delay<br>
+         └── Path-Optimization
+</details>
+
+</details>
+
+<details>
+<summary>📁 <b>Timing-and-STA</b></summary>
+
+<details>
+<summary>├── <b>01-Timing-Fundamentals</b></summary>
+│   ├── 01-Introduction-to-Digital-Timing.md<br>
+│   ├── 02-Clock-Concepts.md<br>
+│   ├── 03-Clock-Frequency-and-Period.md<br>
+│   ├── 04-Duty-Cycle.md<br>
+│   ├── 05-Propagation-Delay.md<br>
+│   ├── 06-Contamination-Delay.md<br>
+│   ├── 07-Clock-to-Q-Delay.md<br>
+│   ├── 08-Rise-Time.md<br>
+│   └── 09-Fall-Time.md
+</details>
+<details>
+<summary>├── <b>02-Setup-Hold-and-Clock-Effects</b></summary>
+│   ├── 01-Setup-Time.md<br>
+│   ├── 02-Hold-Time.md<br>
+│   ├── 03-Setup-and-Hold-Requirements.md<br>
+│   ├── 04-Clock-Skew.md<br>
+│   ├── 05-Clock-Jitter.md<br>
+│   └── 06-Clock-Uncertainty.md
+</details>
+<details>
+<summary>├── <b>03-Timing-Paths</b></summary>
+│   ├── 01-Timing-Path-Introduction.md<br>
+│   ├── 02-Launch-and-Capture-Elements.md<br>
+│   ├── 03-Data-Path.md<br>
+│   ├── 04-Clock-Path.md<br>
+│   ├── 05-Register-to-Register-Path.md<br>
+│   ├── 06-Input-to-Register-Path.md<br>
+│   ├── 07-Register-to-Output-Path.md<br>
+│   └── 08-Input-to-Output-Path.md
+</details>
+<details>
+<summary>└── <b>04-Static-Timing-Analysis</b></summary>
+    ├── 01-Introduction-to-STA.md<br>
+    ├── 02-STA-vs-Simulation.md<br>
+    ├── 03-Timing-Graph-and-Paths.md<br>
+    ├── 04-Setup-Analysis.md<br>
+    ├── 05-Hold-Analysis.md<br>
+    ├── 06-Arrival-Time.md<br>
+    ├── 07-Required-Time.md<br>
+    ├── 08-Slack-Analysis.md<br>
+    └── 09-Timing-Violations.md
+</details>
+
+</details>
