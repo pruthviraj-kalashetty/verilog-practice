@@ -176,7 +176,7 @@ The verification process shall use simulation waveforms to confirm state transit
 ## 9. Related Engineering Documentation
 
 - [Requirements and Specification](./01-requirements-and-specification.md)
-- [FSM Specification](./03-fsm-specification.md)
+- [FSM Specification](./02-fsm-specification.md)
 - [Verification Plan](./05-verification-plan.md)
 - [Design Decisions](./06-design-decisions.md)
 - [Project README](../README.md)
