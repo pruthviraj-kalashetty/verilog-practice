@@ -164,7 +164,7 @@ Future revisions can add additional request handling and safety features while p
 
 ## 10. Related Engineering Documentation
 
-- [FSM Specification](./03-fsm-specification.md)
+- [FSM Specification](./02-fsm-specification.md)
 - [Timing Specification](./04-timing-specification.md)
 - [Verification Plan](./05-verification-plan.md)
 - [Design Decisions](./06-design-decisions.md)
