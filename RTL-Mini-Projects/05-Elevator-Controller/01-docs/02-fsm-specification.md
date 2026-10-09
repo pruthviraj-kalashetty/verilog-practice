@@ -219,7 +219,6 @@ The emergency-stop condition must take priority over normal movement and door-ti
 ## 9. Related Engineering Documentation
 
 - [Requirements and Specification](./01-requirements-and-specification.md)
-- [Block Diagram Documentation](./02-block-diagram.md)
 - [Timing Specification](./04-timing-specification.md)
 - [Verification Plan](./05-verification-plan.md)
 - [Design Decisions](./06-design-decisions.md)
