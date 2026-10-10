@@ -1,4 +1,4 @@
-# 📘 Engineering Documentation — Elevator Controller
+# 📘 Elevator Controller — Documentation  
 
 <p align="center">
   <strong>Design Specifications • FSM Architecture • Timing • Verification Planning</strong>
