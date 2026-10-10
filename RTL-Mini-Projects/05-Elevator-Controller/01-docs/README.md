@@ -1,5 +1,7 @@
 # 📘 Elevator Controller — Documentation  
 
+https://img.shields.io/badge/Design%20Specification-Complete-success?style=for-the-badge
+
 <p align="center">
   <strong>Design Specifications • FSM Architecture • Timing • Verification Planning</strong>
 </p>
