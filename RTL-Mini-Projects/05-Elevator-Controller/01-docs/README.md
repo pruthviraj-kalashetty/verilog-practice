@@ -148,7 +148,7 @@ These features are outside the current Version 1 scope.
 - [📋 Requirements and Specification](01-requirements-and-specification.md)
 - [🔀 FSM Specification](02-fsm-specification.md)
 - [⏱️ Timing Specification](03-timing-specification.md)
-- [🧪 Verification Plan](04-verification-plan.md)
+- [🧪 Verification Plan](04-verification-summary.md)
 - [⚖️ Design Decisions](05-design-decisions.md)
 
 ---
