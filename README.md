@@ -557,41 +557,41 @@ This repository serves as a hands-on implementation foundation for **Verilog HDL
 │       │   │   └── waveform.png
 │       │   │
 │       │   └── 03-Gray-Encoding
-│       │       ├── README.md
-│       │       ├── gray_encoding.v
-│       │       ├── gray_encoding_tb.v
-│       │       ├── rtl-schematic.png
-│       │       └── waveform.png
-│       │
-│       ├── 06-FSM-RTL-Design-Patterns
-│       │   ├── 01-Two-Process-FSM
-│       │   │   ├── README.md
-│       │   │   ├── two_process_fsm.v
-│       │   │   ├── two_process_fsm_tb.v
-│       │   │   ├── rtl-schematic.png
-│       │   │   └── waveform.png
-│       │   │
-│       │   └── 02-Three-Process-FSM
-│       │       ├── README.md
-│       │       ├── three_process_fsm.v
-│       │       ├── three_process_fsm_tb.v
-│       │       ├── rtl-schematic.png
-│       │       └── waveform.png
-│       │
-│       └── 07-FSM-Reset-and-Initialization
-│           ├── 01-Synchronous-Reset
-│           │   ├── README.md
-│           │   ├── fsm_sync_reset.v
-│           │   ├── fsm_sync_reset_tb.v
-│           │   ├── rtl-schematic.png
-│           │   └── waveform.png
-│           │
-│           └── 02-Asynchronous-Reset
-│               ├── README.md
-│               ├── fsm_async_reset.v
-│               ├── fsm_async_reset_tb.v
-│               ├── rtl-schematic.png
-│               └── waveform.png
+        │       ├── README.md
+       │       ├── gray_encoding.v
+        │       ├── gray_encoding_tb.v
+        │       ├── rtl-schematic.png
+        │       └── waveform.png
+        │
+        ├── 06-FSM-RTL-Design-Patterns
+        │   ├── 01-Two-Process-FSM
+        │   │   ├── README.md
+        │   │   ├── two_process_fsm.v
+        │   │   ├── two_process_fsm_tb.v
+        │   │   ├── rtl-schematic.png
+        │   │   └── waveform.png
+        │   │
+        │   └── 02-Three-Process-FSM
+        │       ├── README.md
+        │       ├── three_process_fsm.v
+        │       ├── three_process_fsm_tb.v
+        │       ├── rtl-schematic.png
+        │       └── waveform.png
+        │
+        └── 07-FSM-Reset-and-Initialization
+            ├── 01-Synchronous-Reset
+            │   ├── README.md
+            │   ├── fsm_sync_reset.v
+            │   ├── fsm_sync_reset_tb.v
+            │   ├── rtl-schematic.png
+            │   └── waveform.png
+            │
+            └── 02-Asynchronous-Reset
+                ├── README.md
+                ├── fsm_async_reset.v
+                ├── fsm_async_reset_tb.v
+                ├── rtl-schematic.png
+                └── waveform.png
 
 ```
 
