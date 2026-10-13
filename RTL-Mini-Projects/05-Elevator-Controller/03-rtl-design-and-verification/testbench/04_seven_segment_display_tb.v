@@ -11,7 +11,7 @@ module seven_segment_display_tb;
   
   initial begin
      $dumpfile("04_seven_segment_display.vcd");
-     $dumpvars(0, 04_seven_segment_display_tb);
+     $dumpvars(0, seven_segment_display_tb);
 
      floor_display = 2'b00;
      #10;
@@ -27,4 +27,4 @@ module seven_segment_display_tb;
 
      $finish;
     end    
-endcase
+endmodule
