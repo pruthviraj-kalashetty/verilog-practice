@@ -8,6 +8,11 @@ module seven_segment_display_tb;
     .floor_display(floor_display),
     .segments(segments)
   );
+  
+  initial begin
+  $dumpfile("04_seven_segment_display.vcd");
+  $dumpvars(0, 04_seven_segment_display_tb);
+  end
 
   initial begin
      floor_display = 2'b00;
