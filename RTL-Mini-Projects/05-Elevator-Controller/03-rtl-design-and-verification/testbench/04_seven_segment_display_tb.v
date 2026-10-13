@@ -10,11 +10,9 @@ module seven_segment_display_tb;
   );
   
   initial begin
-  $dumpfile("04_seven_segment_display.vcd");
-  $dumpvars(0, 04_seven_segment_display_tb);
-  end
+     $dumpfile("04_seven_segment_display.vcd");
+     $dumpvars(0, 04_seven_segment_display_tb);
 
-  initial begin
      floor_display = 2'b00;
      #10;
 
