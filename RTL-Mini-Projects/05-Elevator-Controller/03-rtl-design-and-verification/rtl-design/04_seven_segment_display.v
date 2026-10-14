@@ -1,8 +1,12 @@
+// Seven Segment Display Module
 module seven_segment_display(
+
+    // Inputs and Output
     input wire [1:0] floor_display,
     output reg [6:0] segments
 );
 
+// Display Logic
 always @(*) begin
     case (floor_display)
       2'b00: segments = 7'b1111110; // Floor 0 
