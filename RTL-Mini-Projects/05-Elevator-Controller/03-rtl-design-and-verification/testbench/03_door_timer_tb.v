@@ -1,12 +1,17 @@
 `timescale 1ns/1ps
 
+// Door Timer Testbench
 module door_timer_tb;
+
+   // Inputs and Output
    reg clk;
    reg reset;
    reg door_timer_start;
    reg door_timer_clear;
    wire door_timer_done;
 
+
+   // DUT Instantiation
    door_timer dut(
     .clk(clk),
     .reset(reset),
@@ -15,11 +20,13 @@ module door_timer_tb;
     .door_timer_done(door_timer_done)
    );
    
+   // Clock Generation
     initial begin
       clk = 0;
       forever #5 clk =~ clk;
     end  
 
+    // Test Sequence
     initial begin
        reset = 1;
        door_timer_start = 0;
@@ -54,6 +61,7 @@ module door_timer_tb;
        $finish;
     end
 
+    // Waveform Dump
     initial begin
        $dumpfile("03_door_timer.vcd");
        $dumpvars(0, door_timer_tb);
