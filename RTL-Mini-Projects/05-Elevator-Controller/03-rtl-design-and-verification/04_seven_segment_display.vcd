@@ -1,0 +1,44 @@
+$date
+	Tue Oct 13 16:12:03 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module seven_segment_display_tb $end
+$var wire 7 ! segments [6:0] $end
+$var reg 2 " floor_display [1:0] $end
+$scope module dut $end
+$var wire 2 # floor_display [1:0] $end
+$var reg 7 $ segments [6:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+b1111110 $
+b0 #
+b0 "
+b1111110 !
+$end
+#10000
+b110000 !
+b110000 $
+b1 "
+b1 #
+#20000
+b1101101 !
+b1101101 $
+b10 "
+b10 #
+#30000
+b0 !
+b0 $
+b11 "
+b11 #
+#40000
