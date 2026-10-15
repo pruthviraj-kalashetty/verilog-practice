@@ -1,3 +1,4 @@
+// Floor Request Module
 module floor_request_handler(
     input clk,
     input reset,
