@@ -38,7 +38,7 @@ module elevator_controller_tb;
     initial begin
         
         reset = 1'b1;
-        floor_request = 2'b00;
+        floor_request = 2'b11;
         emergency_stop = 1'b0;
 
         #20;
@@ -59,8 +59,22 @@ module elevator_controller_tb;
         end      
 
         floor_request = 2'b10;
+        repeat (3) begin
+           @(posedge clk);
+           #1;
+           $display("Time=%0t req=%b accept=%b valid=%b target=%b floor=%b state=%b",
+                    $time, floor_request, DUT.accept_request,
+                    DUT.request_valid, DUT.requested_floor,
+                    current_floor, DUT.current_state);
+        end
 
-        wait (door_open == 1'b1);
+        repeat (20) begin
+            @(posedge clk);
+            #1;
+            $display("Time=%0t floor=%b up=%b down=%b door=%b state=%b",
+                    $time, current_floor, move_up, move_down,
+                     door_open, DUT.current_state);
+        end
 
         
         if (current_floor == 2'b10 &&
