@@ -1,3 +1,4 @@
+`timescale 1ns/1ps
 // Seven Segment Display Module
 module seven_segment_display(
 

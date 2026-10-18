@@ -1,3 +1,4 @@
+`timescale 1ns/1ps
 // Floor Request Module
 module floor_request_handler(
     input clk,

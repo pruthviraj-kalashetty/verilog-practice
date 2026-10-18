@@ -1,3 +1,4 @@
+`timescale 1ns/1ps
 // Elevator Controller
 module elevator_controller(
 

@@ -1,3 +1,4 @@
+`timescale 1ns/1ps
 // Door Timer Module
 module door_timer #(
 
