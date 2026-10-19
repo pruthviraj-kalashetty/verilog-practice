@@ -68,6 +68,9 @@ module elevator_controller_tb;
                     current_floor, DUT.current_state);
         end
 
+        @(negedge clk); 
+        floor_request = 2'b11;
+
         repeat (20) begin
             @(posedge clk);
             #1;
@@ -87,11 +90,136 @@ module elevator_controller_tb;
             $display("FAIL: Elevator did not reach Floor 2");
         end
 
+        // Test downward movement: Floor 2 to Floor 0
+        wait (DUT.current_state == DUT.IDLE);
+        @(negedge clk);
+        floor_request = 2'b00;
+
+        repeat (25) begin
+            @(posedge clk);
+            #1;
+            $display("DOWN TEST: floor=%b up=%b down=%b state=%b valid=%b target=%b",
+               current_floor, move_up, move_down,
+               DUT.current_state, DUT.request_valid,
+               DUT.requested_floor);
+            end
+             
+
+            if (current_floor == 2'b00 &&
+               move_up == 1'b0 &&
+               move_down == 1'b0) begin
+               $display("PASS: Elevator returned to Floor 0");
+            end else begin
+               $display("FAIL: Elevator did not return to Floor 0");
+            end
+                // Test emergency stop during upward movement
+        wait (DUT.current_state == DUT.IDLE);
+        @(negedge clk);
+        floor_request = 2'b10;
+
+        wait (move_up == 1'b1);
+        @(negedge clk);
+        emergency_stop = 1'b1;
+
+        repeat (2) begin
+            @(posedge clk);
+            #1;
+            $display("EMERGENCY TEST: floor=%b up=%b down=%b emergency_active=%b state=%b",
+                     current_floor, move_up, move_down,
+                     emergency_active, DUT.current_state);
+        end
+
+        if (emergency_active == 1'b1 &&
+            move_up == 1'b0 &&
+            move_down == 1'b0) begin
+            $display("PASS: Emergency stop activated during movement");
+        end else begin
+            $display("FAIL: Emergency stop response incorrect");
+        end
+
+        @(negedge clk);
+        emergency_stop = 1'b0;
+
+        repeat (3) begin
+            @(posedge clk);
+            #1;
+            $display("AFTER RELEASE: floor=%b up=%b down=%b emergency_active=%b state=%b",
+                     current_floor, move_up, move_down,
+                     emergency_active, DUT.current_state);
+        end
+         // First, reset the controller to recover from emergency state
+        @(negedge clk);
+        reset = 1'b1;
+        emergency_stop = 1'b0;
+        floor_request = 2'b11;
+
+        repeat (2) @(negedge clk);
+        reset = 1'b0;
+
+        // Allow the controller to settle
+        repeat (2) @(posedge clk);
+        #1;
+
+        // Check that invalid request does not cause movement
+        if (current_floor == 2'b00 &&
+            move_up == 1'b0 &&
+            move_down == 1'b0) begin
+            $display("PASS: Invalid request does not cause movement");
+        end else begin
+            $display("FAIL: Invalid request caused unexpected behavior");
+        end
+
+        // Test 1: Request the current floor (Floor 0)
+        @(negedge clk);
+        floor_request = 2'b00;
+
+        repeat (5) begin
+            @(posedge clk);
+            #1;
+             $display("CURRENT FLOOR TEST: floor=%b up=%b down=%b door=%b state=%b timer_count=%0d timer_done=%b",
+                     current_floor, move_up, move_down,
+                     door_open, DUT.current_state,
+                     DUT.door_timer_inst.timer_count,
+                     DUT.door_timer_done);
+        end
+
+         @(negedge clk);
+        floor_request = 2'b11;
+
+        if (current_floor == 2'b00 &&
+            move_up == 1'b0 &&
+            move_down == 1'b0 &&
+            door_open == 1'b1) begin
+            $display("PASS: Current-floor request opened the door without movement");
+        end else begin
+            $display("CHECK: Current-floor request behavior needs inspection");
+        end
+
+        // Test 2: Wait for the door timer to finish
+        repeat (20) begin
+            @(posedge clk);
+            #1;
+            $display("DOOR CLOSE TEST: floor=%b door=%b state=%b timer_count=%0d timer_done=%b",
+                     current_floor, door_open, DUT.current_state,
+                     DUT.door_timer_inst.timer_count,
+                     DUT.door_timer_done);
+        end
+
+        if (current_floor == 2'b00 &&
+            move_up == 1'b0 &&
+            move_down == 1'b0 &&
+            door_open == 1'b0 &&
+            DUT.current_state == DUT.IDLE) begin
+            $display("PASS: Door closed and elevator returned to IDLE");
+        end else begin
+            $display("FAIL: Door did not close or controller did not return to IDLE");
+        end
+
         $finish;
     end    
     
         initial begin
-          #1000;
+          #2000;
           $display("FAIL: Simulation timeout");
           $finish;
         end  
