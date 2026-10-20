@@ -271,6 +271,16 @@ module elevator_controller_tb;
         repeat (2) @(posedge clk);
         #1;
 
+        // Check reset recovery from emergency
+        if (DUT.current_state == DUT.IDLE &&
+           emergency_active == 1'b0 &&
+           move_up == 1'b0 &&
+           move_down == 1'b0) begin
+           $display("PASS: Reset cleared emergency and returned to IDLE");
+        end else begin
+           $display("FAIL: Reset did not clear emergency correctly");
+        end
+
         // Check that invalid request does not cause movement
         if (current_floor == 2'b00 &&
             move_up == 1'b0 &&
