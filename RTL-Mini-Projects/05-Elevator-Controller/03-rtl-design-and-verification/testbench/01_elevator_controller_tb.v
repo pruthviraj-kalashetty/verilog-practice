@@ -56,7 +56,8 @@ module elevator_controller_tb;
         else begin
 
            $display("FAIL: Elevator reset test failed");
-        end      
+        end     
+         
 
         floor_request = 2'b10;
         repeat (3) begin
@@ -103,17 +104,93 @@ module elevator_controller_tb;
                DUT.current_state, DUT.request_valid,
                DUT.requested_floor);
             end
-             
+            
+                    // Check: Elevator returned to Floor 0
+        if (current_floor == 2'b00 &&
+            move_up == 1'b0 &&
+            move_down == 1'b0) begin
+            $display("PASS: Elevator returned to Floor 0");
+        end else begin
+            $display("FAIL: Elevator did not return to Floor 0");
+        end
 
-            if (current_floor == 2'b00 &&
-               move_up == 1'b0 &&
-               move_down == 1'b0) begin
-               $display("PASS: Elevator returned to Floor 0");
-            end else begin
-               $display("FAIL: Elevator did not return to Floor 0");
-            end
-                // Test emergency stop during upward movement
+                // Test: Move from Floor 0 to Floor 1
+        @(negedge clk);
+        floor_request = 2'b11;
+
+        // Allow the previous request to clear
+         
         wait (DUT.current_state == DUT.IDLE);
+        wait (DUT.request_valid == 1'b0);
+        @(negedge clk);
+
+        floor_request = 2'b01;
+
+        @(posedge clk);
+        #1;
+        $display("FLOOR 1 REQUEST CHECK: req=%b accept=%b valid=%b target=%b state=%b",
+                 floor_request, DUT.accept_request, DUT.request_valid,
+                 DUT.requested_floor, DUT.current_state);
+
+        repeat (10) begin
+            @(posedge clk);
+            #1;
+            $display("FLOOR 1 TEST: floor=%b up=%b down=%b door=%b state=%b",
+                     current_floor, move_up, move_down,
+                     door_open, DUT.current_state);
+        end
+
+        @(negedge clk);
+        floor_request = 2'b11;
+
+        if (current_floor == 2'b01 &&
+            move_up == 1'b0 &&
+            move_down == 1'b0) begin
+            $display("PASS: Elevator reached Floor 1");
+        end else begin
+            $display("FAIL: Elevator did not reach Floor 1");
+        end
+
+                // Test: Move from Floor 1 to Floor 2, then return to Floor 1
+        @(negedge clk);
+        floor_request = 2'b10;
+
+        wait (current_floor == 2'b10);
+        wait (DUT.current_state == DUT.IDLE);
+        wait (DUT.request_valid == 1'b0);
+
+        @(negedge clk);
+        floor_request = 2'b01;
+
+        wait (current_floor == 2'b01);
+        wait (DUT.current_state == DUT.IDLE);
+
+        @(negedge clk);
+        floor_request = 2'b11;
+
+        if (current_floor == 2'b01 &&
+            move_up == 1'b0 &&
+            move_down == 1'b0) begin
+            $display("PASS: Elevator returned from Floor 2 to Floor 1");
+        end else begin
+            $display("FAIL: Elevator did not return to Floor 1");
+        end
+
+        // Reset before the emergency test
+        @(negedge clk);
+        reset = 1'b1;
+        floor_request = 2'b11;
+
+        repeat (2) @(negedge clk);
+        reset = 1'b0;
+
+        repeat (2) @(posedge clk);
+        #1;
+            
+
+        // Test emergency stop during upward movement
+        wait (DUT.current_state == DUT.IDLE);
+        wait (DUT.request_valid == 1'b0);
         @(negedge clk);
         floor_request = 2'b10;
 
@@ -147,7 +224,31 @@ module elevator_controller_tb;
                      current_floor, move_up, move_down,
                      emergency_active, DUT.current_state);
         end
-         // First, reset the controller to recover from emergency state
+         
+
+        // Test: New floor request is ignored during emergency
+        @(negedge clk);
+        floor_request = 2'b10;
+
+        repeat (2) begin
+            @(posedge clk);
+            #1;
+        end
+
+        if (DUT.current_state == DUT.EMERGENCY &&
+            emergency_active == 1'b1 &&
+            DUT.request_valid == 1'b0 &&
+            move_up == 1'b0 &&
+            move_down == 1'b0) begin
+            $display("PASS: Floor request ignored during emergency");
+        end else begin
+            $display("FAIL: Floor request was not ignored during emergency");
+        end
+
+        @(negedge clk);
+        floor_request = 2'b11;
+
+        // First, reset the controller to recover from emergency state
         @(negedge clk);
         reset = 1'b1;
         emergency_stop = 1'b0;
