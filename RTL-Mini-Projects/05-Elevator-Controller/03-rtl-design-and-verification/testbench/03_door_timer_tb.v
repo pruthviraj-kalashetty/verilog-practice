@@ -26,8 +26,8 @@ module door_timer_tb;
       forever #5 clk =~ clk;
     end  
 
-    // Test Sequence
-    initial begin
+      // Test Sequence
+      initial begin
        reset = 1;
        door_timer_start = 0;
        door_timer_clear = 0;
@@ -35,29 +35,40 @@ module door_timer_tb;
        #20;
        reset = 0;
 
-       #10;
+       // Start the timer
+       @(negedge clk);
        door_timer_start = 1;
 
-       #170;
-       door_timer_start = 0;
-     
+       // Check that the timer is not done initially
+       @(negedge clk);
+       if (door_timer_done == 1'b0)
+         $display("PASS: Timer starts without early completion");
+       else
+         $display("FAIL: Timer completed too early");
 
-       if (door_timer_done == 1) 
-         $display("PASS: Door timer completed");
-       else 
-         $display("FAIL: Door timer did not complete");   
-       
-       #10;
+       // Keep the timer enabled for 16 rising clock edges
+       repeat (16) @(posedge clk);
+       #1;
+
+       if (door_timer_done == 1'b1)
+         $display("PASS: Timer completed after counting");
+       else
+         $display("FAIL: Timer did not complete after counting");
+
+       // Stop the timer and clear it
+       @(negedge clk);
+       door_timer_start = 0;
        door_timer_clear = 1;
 
-       #10;
+       @(negedge clk);
        door_timer_clear = 0;
 
+       #1;
        if (door_timer_done == 1'b0)
-          $display("PASS: Door timer cleared");
+         $display("PASS: Door timer cleared");
        else
-          $display("FAIL: Door timer clear failed");
-       
+         $display("FAIL: Door timer clear failed");
+
        $finish;
     end
 
