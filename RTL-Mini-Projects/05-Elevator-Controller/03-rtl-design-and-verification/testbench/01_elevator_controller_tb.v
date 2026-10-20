@@ -235,13 +235,14 @@ module elevator_controller_tb;
             #1;
         end
 
-               $display("EMERGENCY REQUEST CHECK: state=%b emergency_active=%b request_valid=%b target=%b up=%b down=%b",
-                 DUT.current_state,
-                 emergency_active,
-                 DUT.request_valid,
-                 DUT.requested_floor,
-                 move_up,
-                 move_down);
+        $display("EMERGENCY REQUEST CHECK: state=%b emergency_active=%b accept=%b request_valid=%b target=%b up=%b down=%b",
+             DUT.current_state,
+             emergency_active,
+             DUT.accept_request,
+             DUT.request_valid,
+             DUT.requested_floor,
+             move_up,
+             move_down);
 
         if (DUT.current_state == DUT.EMERGENCY &&
             emergency_active == 1'b1 &&
