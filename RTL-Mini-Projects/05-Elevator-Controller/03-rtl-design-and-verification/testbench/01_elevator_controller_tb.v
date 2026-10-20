@@ -228,7 +228,7 @@ module elevator_controller_tb;
 
         // Test: New floor request is ignored during emergency
         @(negedge clk);
-        floor_request = 2'b10;
+        floor_request = 2'b01;
 
         repeat (2) begin
             @(posedge clk);
@@ -245,9 +245,11 @@ module elevator_controller_tb;
              move_down);
 
         if (DUT.current_state == DUT.EMERGENCY &&
-            emergency_active == 1'b1 &&
-            move_up == 1'b0 &&
-            move_down == 1'b0) begin
+           emergency_active == 1'b1 &&
+           DUT.accept_request == 1'b0 &&
+           DUT.requested_floor == 2'b10 &&
+           move_up == 1'b0 &&
+           move_down == 1'b0) begin
             $display("PASS: Elevator remains stopped during emergency");
         end else begin
             $display("FAIL: Emergency state or stopped outputs are incorrect");
