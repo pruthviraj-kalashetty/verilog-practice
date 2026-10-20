@@ -250,7 +250,7 @@ module elevator_controller_tb;
            DUT.requested_floor == 2'b10 &&
            move_up == 1'b0 &&
            move_down == 1'b0) begin
-            $display("PASS: Elevator remains stopped during emergency");
+            $display("PASS: New floor request ignored during emergency");
         end else begin
             $display("FAIL: Emergency state or stopped outputs are incorrect");
         end
