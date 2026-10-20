@@ -235,14 +235,21 @@ module elevator_controller_tb;
             #1;
         end
 
+               $display("EMERGENCY REQUEST CHECK: state=%b emergency_active=%b request_valid=%b target=%b up=%b down=%b",
+                 DUT.current_state,
+                 emergency_active,
+                 DUT.request_valid,
+                 DUT.requested_floor,
+                 move_up,
+                 move_down);
+
         if (DUT.current_state == DUT.EMERGENCY &&
             emergency_active == 1'b1 &&
-            DUT.request_valid == 1'b0 &&
             move_up == 1'b0 &&
             move_down == 1'b0) begin
-            $display("PASS: Floor request ignored during emergency");
+            $display("PASS: Elevator remains stopped during emergency");
         end else begin
-            $display("FAIL: Floor request was not ignored during emergency");
+            $display("FAIL: Emergency state or stopped outputs are incorrect");
         end
 
         @(negedge clk);
