@@ -1,1 +1,171 @@
+# Elevator Controller using Verilog HDL
+
+## Overview
+
+This project implements a three-floor Elevator Controller using Verilog HDL. The controller manages floor requests, upward and downward movement, door timing, emergency-stop behavior, and floor display output.
+
+The design uses a Finite State Machine (FSM) and is divided into separate RTL modules for easier understanding, simulation, and verification.
+
+## Features
+
+- Three-floor operation: Floor 0, Floor 1, and Floor 2
+- FSM-based elevator control
+- Upward and downward floor movement
+- Floor request handling
+- Invalid floor request rejection (`2'b11`)
+- Parameterized door timer with a default value of 16 cycles
+- Emergency-stop handling with reset-based recovery
+- Seven-segment display decoding for the three valid floors
+- Separate testbenches for the main controller and supporting modules
+
+## Design Architecture
+
+The project contains four RTL modules:
+
+| Module | Description |
+|---|---|
+| `elevator_controller.v` | Main controller that manages the FSM, floor movement, door control, and emergency state |
+| `floor_request_handler.v` | Accepts valid floor requests, stores the requested floor, and clears completed requests |
+| `door_timer.v` | Counts clock cycles and indicates when the configured timing interval has completed |
+| `seven_segment_display.v` | Converts the binary floor value into a seven-segment display pattern |
+
+## FSM States
+
+The main controller uses the following seven states:
+
+| State | Encoding | Purpose |
+|---|---|---|
+| `IDLE` | `3'b000` | Waits for a floor request |
+| `MOVE_UP` | `3'b001` | Moves the elevator upward |
+| `MOVE_DOWN` | `3'b010` | Moves the elevator downward |
+| `DOOR_OPEN` | `3'b011` | Opens the door |
+| `DOOR_TIMER` | `3'b100` | Maintains the door-open condition while timing |
+| `DOOR_CLOSE` | `3'b101` | Closes the door |
+| `EMERGENCY` | `3'b110` | Stops normal operation until reset |
+
+### Normal Operation
+
+The normal movement sequence is:
+
+```text
+IDLE → MOVE_UP → DOOR_OPEN → DOOR_TIMER → DOOR_CLOSE → IDLE
+```
+
+For downward movement, `MOVE_UP` is replaced with `MOVE_DOWN`.
+
+When the requested floor is the current floor, the controller proceeds directly from `IDLE` to `DOOR_OPEN`.
+
+The emergency state remains active until reset is applied.
+
+## Repository Structure
+
+```text
+05-Elevator-Controller/
+├── README.md
+├── docs/
+│   ├── 01-requirements-and-design.md
+│   ├── 02-fsm-specification.md
+│   ├── 03-verification-summary.md
+│   └── 04-design-decisions.md
+└── 03-rtl-design-and-verification/
+    ├── rtl-design/
+    │   ├── 01_elevator_controller.v
+    │   ├── 02_floor_request_handler.v
+    │   ├── 03_door_timer.v
+    │   └── 04_seven_segment_display.v
+    ├── testbench/
+    │   ├── 01_elevator_controller_tb.v
+    │   ├── 02_floor_request_handler_tb.v
+    │   ├── 03_door_timer_tb.v
+    │   └── 04_seven_segment_display_tb.v
+    └── verification-results/
+```
+
+*Adjust this tree if your actual folder structure differs.*
+
+## Tools Used
+
+- **HDL:** Verilog-2001
+- **Simulation:** Icarus Verilog
+- **Waveform Analysis:** GTKWave
+- **Version Control:** Git and GitHub
+
+## Simulation and Verification
+
+The RTL modules were simulated using Icarus Verilog.
+
+The reported simulation results include:
+
+- Main controller: reset, floor movement, current-floor requests, invalid requests, emergency activation and recovery, and door-timer behavior produced the expected PASS messages.
+- Floor request handler: valid request acceptance, invalid request rejection, and request clearing passed.
+- Door timer: timer completion and clearing passed.
+- Seven-segment display: Floor 0, Floor 1, and Floor 2 output checks passed.
+
+The main simulation also generated a VCD waveform for inspection in GTKWave.
+
+Some safety properties, including explicit checks for simultaneous movement outputs and door closure during emergency, require additional confirmation before being described as fully verified.
+
+## Running the Simulations
+
+Run the following commands from the `03-rtl-design-and-verification` directory.
+
+### 1. Main Elevator Controller
+
+```bash
+iverilog -o elevator_test rtl-design/01_elevator_controller.v rtl-design/02_floor_request_handler.v rtl-design/03_door_timer.v rtl-design/04_seven_segment_display.v testbench/01_elevator_controller_tb.v
+vvp elevator_test
+```
+
+### 2. Floor Request Handler
+
+```bash
+iverilog -o floor_request_test rtl-design/02_floor_request_handler.v testbench/02_floor_request_handler_tb.v
+vvp floor_request_test
+```
+
+### 3. Door Timer
+
+```bash
+iverilog -o door_timer_test rtl-design/03_door_timer.v testbench/03_door_timer_tb.v
+vvp door_timer_test
+```
+
+### 4. Seven-Segment Display
+
+```bash
+iverilog -o seven_segment_test rtl-design/04_seven_segment_display.v testbench/04_seven_segment_display_tb.v
+vvp seven_segment_test
+```
+
+## Waveform Inspection
+
+The simulations generate VCD waveform files that can be inspected using GTKWave.
+
+For example:
+
+```bash
+gtkwave 01_elevator_controller.vcd
+```
+
+Use the actual waveform filename generated by your testbench if it differs.
+
+## Learning Objectives
+
+- Understand FSM-based RTL design
+- Practise sequential and combinational logic in Verilog
+- Learn modular hardware design
+- Implement request handling and counter-based timing
+- Verify RTL using simulation testbenches
+- Inspect digital signals and state transitions using waveforms
+
+## Project Status
+
+**Status:** Core RTL simulations completed with the reported test cases passing. Additional explicit safety verification remains to be completed.
+
+## Author
+
+**Pruthviraj Kalashetty**
+
+Electronics and Communication Engineering (ECE)
+
 
