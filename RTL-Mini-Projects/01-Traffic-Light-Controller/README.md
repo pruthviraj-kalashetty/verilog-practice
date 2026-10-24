@@ -1,5 +1,257 @@
 <div align="center">
 
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0D1117,50:161B22,100:2563EB&height=120&section=header&text=ELEVATOR%20CONTROLLER&fontSize=30&fontColor=FFFFFF&animation=fadeIn&fontAlignY=65"/>
+
+
+Moore FSM • Floor Request Handling • Timed Door Control
+<p>
+  <img src="https://img.shields.io/badge/%E2%97%88%20TYPE-MOORE%20FSM-0F172A?style=for-the-badge&labelColor=020617&color=3B82F6"/>
+  <img src="https://img.shields.io/badge/%E2%97%88%20FLOORS-3-0F172A?style=for-the-badge&labelColor=020617&color=14B8A6"/>
+  <img src="https://img.shields.io/badge/%E2%97%88%20RTL-VERILOG-0F172A?style=for-the-badge&labelColor=020617&color=8B5CF6"/>
+  <img src="https://img.shields.io/badge/%E2%97%88%20VERIFICATION-SIMULATED-0F172A?style=for-the-badge&labelColor=020617&color=14B8A6"/>
+</p>
+
+</div>
+
+📋 Introduction
+Elevator controllers are digital control systems that manage floor requests, movement direction, door operation, and emergency conditions in a coordinated way. They use sequential logic to move between defined operating states and respond to user requests.
+This project implements an Elevator Controller in Verilog HDL using a 7-state Moore Finite State Machine (FSM). The design includes floor-request handling, floor-by-floor movement, timed door control, emergency-stop handling, and a floor-display interface. The RTL is organized into separate modules to make the design easier to understand, simulate, and verify.
+📌 Project Summary
+- Architecture: 7-state Moore Finite State Machine (FSM)
+- Design Language: Verilog HDL (Verilog-2001 style)
+- Floor Support: Floor 0, Floor 1, and Floor 2
+- Control Features: Synchronous reset, floor request handling, up/down movement, door timing, and latched emergency state
+- Door Timing: Parameterized using DOOR_OPEN_CYCLES (default: 16)
+- Verification Scope: Main-controller and submodule testbenches, functional simulation, and waveform inspection
+🔌 Interface Specifications
+[!NOTE]
+Quick Interface Overview
+The table below summarizes the top-level elevator_controller interface. The internal module behavior is handled by the RTL design modules.
+
+Port	Direction	Width	Description
+clk	Input	1	Master system clock
+reset	Input	1	Synchronous active-high reset
+floor_request	Input	2	Requested floor: 00, 01, or 10; 11 is invalid
+emergency_stop	Input	1	Requests entry into the emergency state
+current_floor	Output	2	Current floor number in binary
+move_up	Output	1	Indicates upward movement state
+move_down	Output	1	Indicates downward movement state
+door_open	Output	1	Indicates door-open / door-timing state
+floor_display	Output	2	Binary floor value for the display interface
+emergency_active	Output	1	Indicates that the controller is in the emergency state
+
+
+🏗️ Architecture
+The elevator controller is organized around a state register, next-state logic, output decoding, and supporting modules. The floor-request handler stores a valid request, the door timer tracks the door-open interval, and the seven-segment display module decodes the floor value.
+ 
+FSM State Diagram
+The controller uses seven states:
+State	Encoding	Purpose
+IDLE	3'b000	Waits for a valid floor request
+MOVE_UP	3'b001	Moves one floor upward per clock cycle while required
+MOVE_DOWN	3'b010	Moves one floor downward per clock cycle while required
+DOOR_OPEN	3'b011	Opens the door and clears the timer
+DOOR_TIMER	3'b100	Keeps the door open while the timer runs
+DOOR_CLOSE	3'b101	Closes the door and clears the completed request
+EMERGENCY	3'b110	Holds the emergency state until reset
+
+
+ 
+Timing Flow
+The timing diagram can be used to inspect the relationship between clock edges, floor movement, door control, and the timer completion signal.
+ 
+[!NOTE]
+Detailed FSM Behavior
+The FSM state names and encodings above follow the current RTL implementation. Use the project’s design documents and simulation results as the reference for detailed transition behavior.
+
+💻 RTL Implementation
+The RTL is divided into a top-level controller and supporting modules:
+- Elevator Controller: Coordinates FSM transitions, floor movement, door output, and emergency handling.
+- Floor Request Handler: Accepts valid floor requests (00, 01, 10), stores the requested floor, and clears completed requests.
+- Door Timer: Counts clock cycles while timing is enabled and signals timer completion.
+- Seven-Segment Display: Decodes floor values 00, 01, and 10 into segment patterns; the invalid floor code uses the default output pattern.
+The controller uses separate sequential and combinational logic for state updates and next-state decisions. Default assignments are used in combinational output logic to avoid unintended latch inference.
+The RTL source files and testbenches are available in
+[03-rtl-design-and-verification/](./03-rtl-design-and-verification/).
+
+<table align="center">
+<tr>
+
+<td align="center" width="50%">
+
+<a href="./03-rtl-design-and-verification/rtl-design/01_elevator_controller.v">
+
+<img src="https://img.shields.io/badge/RTL%20DESIGN%20SOURCE-58A6FF?style=for-the-badge&logo=verilog&logoColor=white">
+
+
+
+
+<img src="https://img.icons8.com/fluency/96/document.png" width="55">
+
+
+Elevator Controller RTL
+Synthesizable Verilog RTL
+01_elevator_controller.v
+
+<a href="./03-rtl-design-and-verification/rtl-design/01_elevator_controller.v">
+<img src="https://img.shields.io/badge/OPEN%20RTL-→-1F6FEB?style=flat-square">
+</a>
+
+</td>
+
+<td align="center" width="50%">
+
+<a href="./03-rtl-design-and-verification/testbench/01_elevator_controller_tb.v">
+
+<img src="https://img.shields.io/badge/VERIFICATION%20TESTBENCH-F0883E?style=for-the-badge&logo=verilog&logoColor=white">
+
+
+
+
+<img src="https://img.icons8.com/fluency/96/test-tube.png" width="55">
+
+
+Elevator Controller Testbench
+Simulation & Verification
+01_elevator_controller_tb.v
+
+<a href="./03-rtl-design-and-verification/testbench/01_elevator_controller_tb.v">
+<img src="https://img.shields.io/badge/OPEN%20TESTBENCH-→-F0883E?style=flat-square">
+</a>
+
+</td>
+
+</tr>
+</table>
+
+
+🧪 Verification Strategy
+The testbenches are used to check the main controller and supporting modules, including:
+- Reset behavior and return to the initial IDLE state
+- Floor movement for requests from Floor 0 to Floor 1 and Floor 2
+- Downward movement from Floor 2 to Floor 1 and Floor 0
+- A request for the current floor without unnecessary movement
+- Door opening, timer completion, and return to the idle state
+- Invalid floor request 2'b11
+- Emergency-stop entry, request rejection during emergency, and reset recovery
+- Floor-request handler acceptance, invalid-request rejection, and request clearing
+- Door timer completion and clearing
+- Seven-segment output patterns for Floors 0, 1, and 2
+[!NOTE]
+Verification Evidence
+The simulation outputs from the main controller and individual module testbenches should be retained in the project’s verification-results folder. Only mark a test as passing when the corresponding simulation output confirms it.
+
+📈 Simulation Evidence
+Waveform
+ 
+The waveform can be used to inspect state transitions, current floor, movement outputs, door control, request validity, and timer completion. Update the image path above if your saved waveform uses a different filename.
+RTL Schematic
+If an RTL schematic is generated using a synthesis tool, place the image in the verification-results folder and link it here. A schematic is not included by default because a confirmed image path was not provided.
+📚 Documentation
+- [Block Diagram](./02-architecture/01-block-diagram.png)
+- [FSM State Diagram](./02-architecture/02-fsm-state-diagram.png)
+- [Timing Diagram](./02-architecture/03-timing-diagram.png)
+- [RTL Design and Verification Files](./03-rtl-design-and-verification/)
+🧪 Verification & Simulation Results
+The following summary reflects the test scenarios reported during project development. Refer to the latest simulation logs for the complete output.
+Test Case	Scenario Description	Expected Behavior	Reported Result
+TC_01	Reset	Controller returns to Floor 0 and IDLE	✅ PASS
+TC_02	Floor 0 to Floor 2	Controller moves upward to Floor 2	✅ PASS
+TC_03	Floor 2 to Floor 0	Controller moves downward to Floor 0	✅ PASS
+TC_04	Floor 0 to Floor 1	Controller moves upward to Floor 1	✅ PASS
+TC_05	Floor 2 to Floor 1	Controller moves downward to Floor 1	✅ PASS
+TC_06	Current-floor request	Door opens without floor movement	✅ PASS
+TC_07	Invalid floor request (2'b11)	Invalid request does not cause movement	✅ PASS
+TC_08	Emergency stop	Controller enters and remains in emergency state until reset	✅ PASS
+TC_09	Request during emergency	New request is ignored while emergency is active	✅ PASS
+TC_10	Emergency reset recovery	Reset clears emergency and returns controller to IDLE	✅ PASS
+TC_11	Floor request handler	Valid request, invalid request, and clear behavior checked	✅ PASS
+TC_12	Door timer	Timer completion and clear behavior checked	✅ PASS
+TC_13	Seven-segment display	Floor 0, Floor 1, and Floor 2 patterns checked	✅ PASS
+
+
+Repository Structure
+└── 05-Elevator-Controller/
+    │
+    ├── README.md
+    │
+    ├── 02-architecture/
+    │   ├── 01-block-diagram.png
+    │   ├── 02-fsm-state-diagram.png
+    │   └── 03-timing-diagram.png
+    │
+    └── 03-rtl-design-and-verification/
+        │
+        ├── rtl-design/
+        │   ├── 01_elevator_controller.v
+        │   ├── 02_floor_request_handler.v
+        │   ├── 03_door_timer.v
+        │   └── 04_seven_segment_display.v
+        │
+        ├── testbench/
+        │   ├── 01_elevator_controller_tb.v
+        │   ├── 02_floor_request_handler_tb.v
+        │   ├── 03_door_timer_tb.v
+        │   └── 04_seven_segment_display_tb.v
+        │
+        └── verification-results/
+            ├── simulation logs
+            ├── VCD waveform files
+            └── saved screenshots (if generated)
+🛠️ Tools & Technologies
+- HDL: Verilog HDL
+- Simulation Engine: Icarus Verilog
+- Waveform Debugger: GTKWave
+- Synthesis / RTL Inspection: Xilinx Vivado (if used for schematic generation)
+- Version Control: Git & GitHub
+📚 Key RTL Concepts Applied
+- Moore FSM Design: Outputs are decoded from the current state.
+- Sequential Logic: State and floor registers update on the active clock edge.
+- Combinational Next-State Logic: Determines the next FSM state from current inputs and status signals.
+- Request Handling: Stores valid floor requests and clears completed requests.
+- Counter-Based Timing: Uses a counter to determine when the door timer has completed.
+- Emergency-State Retention: Keeps the controller in the emergency state until reset.
+- Modular RTL Design: Separates the controller, request handler, timer, and display decoder.
+- Testbench-Based Verification: Uses simulation to check expected controller and submodule behavior.
+💬 Interview Questions
+Q: Why is an FSM used in the elevator controller?
+A: An FSM organizes the controller into clear operating states such as idle, movement, door timing, and emergency handling.
+Q: Why is the requested floor stored separately?
+A: The request handler holds the target floor while the controller decides how to reach it.
+Q: Why is a timer used for the door?
+A: The timer allows the controller to keep the door open for a defined number of clock cycles before closing it.
+Q: What happens if the invalid floor code 2'b11 is requested?
+A: The floor request handler does not accept that code as a valid request.
+Q: How does the emergency state recover?
+A: The controller remains in the emergency state until reset returns it to the initial state.
+Q: Why split the design into multiple modules?
+A: Separate modules make each function easier to understand, test, and debug.
+⚖️ Design Decisions & Trade-offs
+- Moore FSM: Makes controller behavior easier to reason about using explicit states.
+- Separate Request Handler: Keeps request storage and validation outside the main controller.
+- Dedicated Door Timer: Separates timing behavior from the FSM control logic.
+- Modular Display Decoder: Keeps floor-display decoding independent of movement control.
+- Synchronous Reset: Aligns state and register reset behavior with the clock.
+- Three-Floor Scope: Keeps the current design focused on a compact elevator-control example.
+🚀 Future Improvements
+- Add a more advanced request scheduler for multiple queued floor requests.
+- Add door obstruction detection and safe door reopening behavior.
+- Add input synchronization and debouncing for physical buttons.
+- Add assertions and broader automated coverage for edge cases.
+- Generate and include a verified RTL schematic and annotated waveform screenshot.
+- Extend the design to support more floors using parameterized floor width and movement logic.
+🔗 Related
+Part of the [RTL Mini-Projects](../README.md) collection.
+This project builds practical experience in FSM design, sequential logic, request handling, counter-based timing, modular Verilog RTL, and simulation-based verification.
+
+
+
+
+---
+
+
+<div align="center">
+
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0D1117,50:161B22,100:238636&height=120&section=header&text=TRAFFIC%20LIGHT%20CONTROLLER&fontSize=28&fontColor=FFFFFF&animation=fadeIn&fontAlignY=65"/>
 
 <br>
