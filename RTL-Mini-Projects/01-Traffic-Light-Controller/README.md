@@ -279,6 +279,3 @@ Part of the [RTL Mini-Projects](../README.md) collection.
 
 This project strengthens practical FSM and RTL design skills and provides a
 foundation for larger control-oriented digital hardware projects.
-
-
-
