@@ -263,6 +263,32 @@ Execute the compiled simulation using vvp to generate the waveform dump file.
 ```bash
 vvp traffic_light_controller_sim
 ```
+
+## 🛠️ Step-by-Step Simulation Workflow
+
+Follow the commands below to compile the source files, execute the simulation runtime, and visualize the output waveforms:
+
+### 1. Compile the RTL and Testbench
+Combine the main design module, its supporting RTL modules, and the verification testbench into a compiled simulation executable using `iverilog`.
+
+```bash
+iverilog -o elevator_controller_sim rtl-design/01_elevator_controller.v rtl-design/02_floor_request_handler.v rtl-design/03_door_timer.v rtl-design/04_seven_segment_display.v testbench/01_elevator_controller_tb.v
+```
+
+### 2. Run the Simulation
+Execute the compiled simulation using vvp to generate the waveform dump file.
+
+```bash
+vvp elevator_controller_sim
+```
+
+### 3. Open the Waveform
+Open the generated waveform file using GTKWave.
+
+```bash
+gtkwave 01_elevator_controller.vcd
+```
+
 ### 3. Open the Waveform
 Open the generated waveform file using GTKWave.
 ```bash
