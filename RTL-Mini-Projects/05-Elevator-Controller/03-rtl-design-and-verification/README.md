@@ -251,24 +251,6 @@ Behavioral simulation for the Traffic Light Controller is executed using **Icaru
 Follow the commands below to compile the source files, execute the simulation runtime, and visualize the output waveforms:
 
 ### 1. Compile the RTL and Testbench
-Combine the main design module and the verification testbench into a compiled simulation executable using `iverilog`.
-
-```bash
-iverilog -o traffic_light_controller_sim traffic_light_controller.v traffic_light_controller_tb.v
-```
-
-### 2. Run the Simulation
-Execute the compiled simulation using vvp to generate the waveform dump file.
-
-```bash
-vvp traffic_light_controller_sim
-```
-
-## 🛠️ Step-by-Step Simulation Workflow
-
-Follow the commands below to compile the source files, execute the simulation runtime, and visualize the output waveforms:
-
-### 1. Compile the RTL and Testbench
 Combine the main design module, its supporting RTL modules, and the verification testbench into a compiled simulation executable using `iverilog`.
 
 ```bash
@@ -289,11 +271,6 @@ Open the generated waveform file using GTKWave.
 gtkwave 01_elevator_controller.vcd
 ```
 
-### 3. Open the Waveform
-Open the generated waveform file using GTKWave.
-```bash
-gtkwave traffic_light_controller.vcd
-```
 # 🔷 **RTL Schematics**
 
 ![mealy-FSM RTL Schematic](rtl-schematic.png)
